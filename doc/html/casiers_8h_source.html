@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de casiers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a9a0d6c88e3926224aeb01e6621f931.html">terminalmobile</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">casiers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="casiers_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CASIERS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CASIERS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_casiers.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_casiers.html">Casiers</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_casiers.html#a7c4b1df1f2e320c22489234fee991f18">   13</a></span>&#160;    Q_PROPERTY(QString m_nbCasiers READ getNbCasiers NOTIFY nbCasiersChanged)</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_casiers.html#a936c4711e83f6577852a72909731fd89">   14</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_casiers.html#a936c4711e83f6577852a72909731fd89">listeCasiers</a> READ getCasiers NOTIFY listeCasiersChanged)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;public:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    explicit <a class="code" href="class_casiers.html">Casiers</a>(QObject *parent = <span class="keywordtype">nullptr</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="class_casiers.html">Casiers</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_casiers.html#a7b1d58f40217ef13a5dd0d966df38c9a">lire</a>(QString adresseIPArmoire, <span class="keywordtype">bool</span> debug=true);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> arreterRafraichissement();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    QString getNbCasiers();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    QVariant getCasiers();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;private:    </div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_casiers.html#ad8fba25144a82ba49b2cd2490dcf975b">   25</a></span>&#160;    QList&lt;QObject*&gt; casiers;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_casiers.html#ae6ac6b09a5cffe28291fc9b3289ff011">   26</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *m_pBaseDeDonnees;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString m_nbCasiers;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_casiers.html#af745ce1cdce8dce725444e19437e0155">   28</a></span>&#160;    QString m_adresseIPArmoire;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_casiers.html#a2e2ee8b7f70d1c22acca56257d257ae6">   29</a></span>&#160;    QTimer *m_timer;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;signals:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> listeCasiersChanged();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> nbCasiersChanged();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;public slots:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> actualiser();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // CASIERS_H</span></div><div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.h:25</div></div>
+<div class="ttc" id="class_casiers_html"><div class="ttname"><a href="class_casiers.html">Casiers</a></div><div class="ttdef"><b>Definition:</b> casiers.h:10</div></div>
+<div class="ttc" id="class_casiers_html_a7b1d58f40217ef13a5dd0d966df38c9a"><div class="ttname"><a href="class_casiers.html#a7b1d58f40217ef13a5dd0d966df38c9a">Casiers::lire</a></div><div class="ttdeci">Q_INVOKABLE QString lire(QString adresseIPArmoire, bool debug=true)</div><div class="ttdef"><b>Definition:</b> casiers.cpp:35</div></div>
+<div class="ttc" id="class_casiers_html_a936c4711e83f6577852a72909731fd89"><div class="ttname"><a href="class_casiers.html#a936c4711e83f6577852a72909731fd89">Casiers::listeCasiers</a></div><div class="ttdeci">QVariant listeCasiers</div><div class="ttdef"><b>Definition:</b> casiers.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

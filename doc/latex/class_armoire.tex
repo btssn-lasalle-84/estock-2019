@@ -1,0 +1,188 @@
+\hypertarget{class_armoire}{}\subsection{Référence de la classe Armoire}
+\label{class_armoire}\index{Armoire@{Armoire}}
+
+
+{\ttfamily \#include $<$armoire.\+h$>$}
+
+
+
+Graphe de collaboration de Armoire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_armoire__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_armoire_ade857388a0843a13530b463e44be9a72}{nom\+Changed} ()
+\item 
+void \hyperlink{class_armoire_a97945eb55aa0acea7a74ab6c986534e4}{adresse\+I\+P\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_armoire_a07fe0cc415ac18d95a338b73412fead9}{Armoire} (Q\+String p\+\_\+nom=\char`\"{}\char`\"{}, Q\+String p\+\_\+adresse\+IP=\char`\"{}\char`\"{}, Q\+Object $\ast$parent=nullptr)
+\item 
+void \hyperlink{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}{set\+Armoire} (Q\+String\+List p\+\_\+armoire)
+\item 
+Q\+String \hyperlink{class_armoire_a0045e45e0c9a465af765667344ce8bee}{get\+Nom} () const
+\item 
+void \hyperlink{class_armoire_ab05030741c5930bb73a8fef5b378ed37}{set\+Nom} (Q\+String p\+\_\+nom)
+\item 
+Q\+String \hyperlink{class_armoire_a5196fec5f44f63216ddce5fbc512c919}{get\+Adresse\+IP} () const
+\item 
+void \hyperlink{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}{set\+Adresse\+IP} (Q\+String p\+\_\+adresse\+IP)
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\+\_\+nom}
+\item 
+Q\+String \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\+\_\+adresse\+IP}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_armoire_a07fe0cc415ac18d95a338b73412fead9}\label{class_armoire_a07fe0cc415ac18d95a338b73412fead9}} 
+\index{Armoire@{Armoire}!Armoire@{Armoire}}
+\index{Armoire@{Armoire}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{Armoire()}{Armoire()}}
+{\footnotesize\ttfamily Armoire\+::\+Armoire (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+nom = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{p\+\_\+adresse\+IP = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}
+00003                                                                     : QObject(parent), 
+      \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\_nom}(p\_nom), \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\_adresseIP}(p\_adresseIP)
+00004 \{
+00005 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_armoire_a97945eb55aa0acea7a74ab6c986534e4}\label{class_armoire_a97945eb55aa0acea7a74ab6c986534e4}} 
+\index{Armoire@{Armoire}!adresse\+I\+P\+Changed@{adresse\+I\+P\+Changed}}
+\index{adresse\+I\+P\+Changed@{adresse\+I\+P\+Changed}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{adresse\+I\+P\+Changed}{adresseIPChanged}}
+{\footnotesize\ttfamily void Armoire\+::adresse\+I\+P\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_armoire_a5196fec5f44f63216ddce5fbc512c919}\label{class_armoire_a5196fec5f44f63216ddce5fbc512c919}} 
+\index{Armoire@{Armoire}!get\+Adresse\+IP@{get\+Adresse\+IP}}
+\index{get\+Adresse\+IP@{get\+Adresse\+IP}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{get\+Adresse\+I\+P()}{getAdresseIP()}}
+{\footnotesize\ttfamily Q\+String Armoire\+::get\+Adresse\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\+\_\+adresse\+IP}.
+
+
+\begin{DoxyCode}
+00027 \{
+00028     \textcolor{keywordflow}{return} \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\_adresseIP};
+00029 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoire_a0045e45e0c9a465af765667344ce8bee}\label{class_armoire_a0045e45e0c9a465af765667344ce8bee}} 
+\index{Armoire@{Armoire}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Armoire\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00017 \{
+00018     \textcolor{keywordflow}{return} \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\_nom};
+00019 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoire_ade857388a0843a13530b463e44be9a72}\label{class_armoire_ade857388a0843a13530b463e44be9a72}} 
+\index{Armoire@{Armoire}!nom\+Changed@{nom\+Changed}}
+\index{nom\+Changed@{nom\+Changed}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{nom\+Changed}{nomChanged}}
+{\footnotesize\ttfamily void Armoire\+::nom\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}\label{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}} 
+\index{Armoire@{Armoire}!set\+Adresse\+IP@{set\+Adresse\+IP}}
+\index{set\+Adresse\+IP@{set\+Adresse\+IP}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{set\+Adresse\+I\+P()}{setAdresseIP()}}
+{\footnotesize\ttfamily void Armoire\+::set\+Adresse\+IP (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+adresse\+IP }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\+\_\+adresse\+IP}.
+
+
+\begin{DoxyCode}
+00032 \{
+00033     \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\_adresseIP} = p\_adresseIP;
+00034 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}\label{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}} 
+\index{Armoire@{Armoire}!set\+Armoire@{set\+Armoire}}
+\index{set\+Armoire@{set\+Armoire}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{set\+Armoire()}{setArmoire()}}
+{\footnotesize\ttfamily void Armoire\+::set\+Armoire (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{p\+\_\+armoire }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\+\_\+adresse\+IP}, et \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00008 \{
+00009     \textcolor{keywordflow}{if} (p\_armoire.size() > 0)
+00010     \{
+00011         \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\_nom} = p\_armoire.at(0);
+00012         \hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{m\_adresseIP} = p\_armoire.at(1);
+00013     \}
+00014 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoire_ab05030741c5930bb73a8fef5b378ed37}\label{class_armoire_ab05030741c5930bb73a8fef5b378ed37}} 
+\index{Armoire@{Armoire}!set\+Nom@{set\+Nom}}
+\index{set\+Nom@{set\+Nom}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{set\+Nom()}{setNom()}}
+{\footnotesize\ttfamily void Armoire\+::set\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+nom }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00022 \{
+00023     \hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{m\_nom} = p\_nom;
+00024 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}\label{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}} 
+\index{Armoire@{Armoire}!m\+\_\+adresse\+IP@{m\+\_\+adresse\+IP}}
+\index{m\+\_\+adresse\+IP@{m\+\_\+adresse\+IP}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+adresse\+IP}{m\_adresseIP}}
+{\footnotesize\ttfamily Q\+String Armoire\+::m\+\_\+adresse\+IP\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+Référencé par \hyperlink{class_armoire_a5196fec5f44f63216ddce5fbc512c919}{get\+Adresse\+I\+P()}, \hyperlink{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}{set\+Adresse\+I\+P()}, et \hyperlink{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}{set\+Armoire()}.
+
+\mbox{\Hypertarget{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}\label{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}} 
+\index{Armoire@{Armoire}!m\+\_\+nom@{m\+\_\+nom}}
+\index{m\+\_\+nom@{m\+\_\+nom}!Armoire@{Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+nom}{m\_nom}}
+{\footnotesize\ttfamily Q\+String Armoire\+::m\+\_\+nom\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+Référencé par \hyperlink{class_armoire_a0045e45e0c9a465af765667344ce8bee}{get\+Nom()}, \hyperlink{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}{set\+Armoire()}, et \hyperlink{class_armoire_ab05030741c5930bb73a8fef5b378ed37}{set\+Nom()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{armoire_8h}{armoire.\+h}\item 
+\hyperlink{armoire_8cpp}{armoire.\+cpp}\end{DoxyCompactItemize}

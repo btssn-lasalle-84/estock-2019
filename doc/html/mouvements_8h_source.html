@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de mouvements.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a9a0d6c88e3926224aeb01e6621f931.html">terminalmobile</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mouvements.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mouvements_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOUVEMENTS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOUVEMENTS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_mouvements.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mouvements.html">Mouvements</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_mouvements.html#a8f00148228ead33e98cc8e3a6ad9e806">   12</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_mouvements.html#a8f00148228ead33e98cc8e3a6ad9e806">listeMouvements</a> READ <a class="code" href="class_mouvements.html#a3ab449208a00af567cc5f638d12b98ef">getMouvements</a> NOTIFY <a class="code" href="class_mouvements.html#af7abb930cc252388d03b74b144b83084">listeMouvementsChanged</a>)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_mouvements.html#a42a511c836761016e503d66850da0b35">Mouvements</a>(QObject *p_parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_mouvements.html#a89683efbe6894fe23d05c0a7bd6e5d23">~Mouvements</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_mouvements.html#a1d8306c0672efe509e71d2bdbd60208b">lire</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QVariant <a class="code" href="class_mouvements.html#a3ab449208a00af567cc5f638d12b98ef">getMouvements</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_mouvements.html#a5de7bbf3118ba8257e270011f2edf152">   21</a></span>&#160;    QList&lt;QObject*&gt; <a class="code" href="class_mouvements.html#a5de7bbf3118ba8257e270011f2edf152">m_mouvements</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_mouvements.html#a8cb8047917f2e94adf9798c40b618d31">   22</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *<a class="code" href="class_mouvements.html#a8cb8047917f2e94adf9798c40b618d31">m_pBaseDeDonnees</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;signals:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvements.html#af7abb930cc252388d03b74b144b83084">listeMouvementsChanged</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // MOUVEMENTS_H</span></div><div class="ttc" id="class_mouvements_html_a5de7bbf3118ba8257e270011f2edf152"><div class="ttname"><a href="class_mouvements.html#a5de7bbf3118ba8257e270011f2edf152">Mouvements::m_mouvements</a></div><div class="ttdeci">QList&lt; QObject * &gt; m_mouvements</div><div class="ttdef"><b>Definition:</b> mouvements.h:21</div></div>
+<div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.h:25</div></div>
+<div class="ttc" id="class_mouvements_html_a42a511c836761016e503d66850da0b35"><div class="ttname"><a href="class_mouvements.html#a42a511c836761016e503d66850da0b35">Mouvements::Mouvements</a></div><div class="ttdeci">Mouvements(QObject *p_parent=nullptr)</div><div class="ttdef"><b>Definition:</b> mouvements.cpp:5</div></div>
+<div class="ttc" id="class_mouvements_html_a89683efbe6894fe23d05c0a7bd6e5d23"><div class="ttname"><a href="class_mouvements.html#a89683efbe6894fe23d05c0a7bd6e5d23">Mouvements::~Mouvements</a></div><div class="ttdeci">~Mouvements()</div><div class="ttdef"><b>Definition:</b> mouvements.cpp:10</div></div>
+<div class="ttc" id="class_mouvements_html_a3ab449208a00af567cc5f638d12b98ef"><div class="ttname"><a href="class_mouvements.html#a3ab449208a00af567cc5f638d12b98ef">Mouvements::getMouvements</a></div><div class="ttdeci">QVariant getMouvements()</div><div class="ttdef"><b>Definition:</b> mouvements.cpp:40</div></div>
+<div class="ttc" id="class_mouvements_html_a8f00148228ead33e98cc8e3a6ad9e806"><div class="ttname"><a href="class_mouvements.html#a8f00148228ead33e98cc8e3a6ad9e806">Mouvements::listeMouvements</a></div><div class="ttdeci">QVariant listeMouvements</div><div class="ttdef"><b>Definition:</b> mouvements.h:12</div></div>
+<div class="ttc" id="class_mouvements_html_af7abb930cc252388d03b74b144b83084"><div class="ttname"><a href="class_mouvements.html#af7abb930cc252388d03b74b144b83084">Mouvements::listeMouvementsChanged</a></div><div class="ttdeci">void listeMouvementsChanged()</div></div>
+<div class="ttc" id="class_mouvements_html_a8cb8047917f2e94adf9798c40b618d31"><div class="ttname"><a href="class_mouvements.html#a8cb8047917f2e94adf9798c40b618d31">Mouvements::m_pBaseDeDonnees</a></div><div class="ttdeci">BaseDeDonnees * m_pBaseDeDonnees</div><div class="ttdef"><b>Definition:</b> mouvements.h:22</div></div>
+<div class="ttc" id="class_mouvements_html_a1d8306c0672efe509e71d2bdbd60208b"><div class="ttname"><a href="class_mouvements.html#a1d8306c0672efe509e71d2bdbd60208b">Mouvements::lire</a></div><div class="ttdeci">Q_INVOKABLE bool lire()</div><div class="ttdef"><b>Definition:</b> mouvements.cpp:15</div></div>
+<div class="ttc" id="class_mouvements_html"><div class="ttname"><a href="class_mouvements.html">Mouvements</a></div><div class="ttdef"><b>Definition:</b> mouvements.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

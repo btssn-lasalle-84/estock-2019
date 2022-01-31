@@ -1,0 +1,1024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock: Référence de la classe IhmGestionArmoire</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_ihm_gestion_armoire-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe IhmGestionArmoire</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ihm_gestion_armoire_8h_source.html">IhmGestionArmoire.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de IhmGestionArmoire:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ihm_gestion_armoire__coll__graph.png" border="0" usemap="#_ihm_gestion_armoire_coll__map" alt="Collaboration graph"/></div>
+<map name="_ihm_gestion_armoire_coll__map" id="_ihm_gestion_armoire_coll__map">
+<area shape="rect" id="node8" href="class_ihm_gestion_groupe.html" title="La fenêtre de gestion des groupes. " alt="" coords="195,1505,366,1832"/>
+<area shape="rect" id="node3" href="class_article.html" title="{Article\n|&#45; nomArticle\l&#45; quantite\l&#45; horodatage\l|+ Article()\l+ ~Article()\l+ rechercherArticle()\l+ recupererArticle()\l+ restituerArticle()\l+ visualiserLesMouvements()\l}" alt="" coords="43,571,236,751"/>
+<area shape="rect" id="node5" href="class_utilisateur.html" title="{Utilisateur\n|&#45; idProfil\l&#45; idUtilisateur\l&#45; idGroupe\l&#45; nom\l&#45; prenom\l&#45; badge\l&#45; dateValidite\l&#45; identifiant\l&#45; motDePasse\l&#45; email\l&#45; profil\l&#45; groupe\l&#45; valide\l|+ Utilisateur()\l+ Utilisateur()\l+ ~Utilisateur()\l+ estAdministrateur()\l+ estGestionnaire()\l+ estUtilisateur()\l+ getIdUtilisateur()\l+ getIdGroupe()\l+ getNom()\l+ getPrenom()\l+ getProfil()\l+ getGroupe()\l+ setNom()\l+ setPrenom()\l+ lireUtilisateur()\l+ receptionDonneeUtilisateur()\l&#45; lire()\l}" alt="" coords="209,775,408,1263"/>
+<area shape="rect" id="node6" href="class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; nomBDD\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ estConnecte()\let 9 de plus...\l+ getInstance()\l+ detruireInstance()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l&#45; getNomBDD()\l}" alt="" coords="340,132,485,547"/>
+<area shape="rect" id="node7" href="class_gestion_balances.html" title="Déclaration de la classe GestionBalances. " alt="" coords="565,1287,714,1481"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a7fef1d21e4dcce9c4550d33b15e8dc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer</a> ()</td></tr>
+<tr class="memdesc:a7fef1d21e4dcce9c4550d33b15e8dc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">ferme l'<a class="el" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a> et supprime l'utilisateur crée  <a href="#a7fef1d21e4dcce9c4550d33b15e8dc29">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7fef1d21e4dcce9c4550d33b15e8dc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd664c766e29593d3fedf2baea6a330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">gererGroupe</a> ()</td></tr>
+<tr class="memdesc:a4cd664c766e29593d3fedf2baea6a330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifiaction du status de l'utilisateur gestionnaire ou administrateur.  <a href="#a4cd664c766e29593d3fedf2baea6a330">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4cd664c766e29593d3fedf2baea6a330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e2365408fcbf66c0e75bb828b40162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">selectionnerCasier</a> (int)</td></tr>
+<tr class="memdesc:ac2e2365408fcbf66c0e75bb828b40162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir quel casier a était sélectionner.  <a href="#ac2e2365408fcbf66c0e75bb828b40162">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac2e2365408fcbf66c0e75bb828b40162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594f25b58b70700e19e3e7f567325c40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle</a> ()</td></tr>
+<tr class="memdesc:a594f25b58b70700e19e3e7f567325c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requete permettant la recherche d'article dans les casiers.  <a href="#a594f25b58b70700e19e3e7f567325c40">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a594f25b58b70700e19e3e7f567325c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c12ea50f463c14c835b02d3db22025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a71c12ea50f463c14c835b02d3db22025">effacerRechercheArticle</a> ()</td></tr>
+<tr class="separator:a71c12ea50f463c14c835b02d3db22025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cf47ddfe3942435b5f3bf40578d96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a65cf47ddfe3942435b5f3bf40578d96a">effacerLaListeArticle</a> ()</td></tr>
+<tr class="separator:a65cf47ddfe3942435b5f3bf40578d96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa432c67c648097bbec288694077d83e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#aa432c67c648097bbec288694077d83e6">effacerLaSelectionArticle</a> ()</td></tr>
+<tr class="separator:aa432c67c648097bbec288694077d83e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38dab807125ddb3baecf9345906e3c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a38dab807125ddb3baecf9345906e3c4b">effacerMessageNumeroCasier</a> ()</td></tr>
+<tr class="separator:a38dab807125ddb3baecf9345906e3c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28970b692994ad7201c03decd42ec0e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle</a> (int index)</td></tr>
+<tr class="separator:a28970b692994ad7201c03decd42ec0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a7aa5e1514dd5d1b5648a2f6dd36970f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a7aa5e1514dd5d1b5648a2f6dd36970f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d854653399972a013f79edfe32b04cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a6d854653399972a013f79edfe32b04cb">~IhmGestionArmoire</a> ()</td></tr>
+<tr class="memdesc:a6d854653399972a013f79edfe32b04cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la fenêtre gestion armoire.  <a href="#a6d854653399972a013f79edfe32b04cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6d854653399972a013f79edfe32b04cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024905507f9700b2afa794d7c357546f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_utilisateur.html">Utilisateur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a024905507f9700b2afa794d7c357546f">getUtilisateur</a> ()</td></tr>
+<tr class="memdesc:a024905507f9700b2afa794d7c357546f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'association utilisateur.  <a href="#a024905507f9700b2afa794d7c357546f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a024905507f9700b2afa794d7c357546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347e1dc419cb74e5046dc95b5ffbf09e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_casier.html">Casier</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a347e1dc419cb74e5046dc95b5ffbf09e">getCasier</a> ()</td></tr>
+<tr class="separator:a347e1dc419cb74e5046dc95b5ffbf09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63a0c4424edd90a3c45506dde527b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#af63a0c4424edd90a3c45506dde527b4e">setUtilisateur</a> (<a class="el" href="class_utilisateur.html">Utilisateur</a> *<a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>)</td></tr>
+<tr class="memdesc:af63a0c4424edd90a3c45506dde527b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée l'association utilisateur.  <a href="#af63a0c4424edd90a3c45506dde527b4e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af63a0c4424edd90a3c45506dde527b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:ad0f3d63f9b93fc902de40a9a546f709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#ad0f3d63f9b93fc902de40a9a546f709c">showEvent</a> (QShowEvent *ev)</td></tr>
+<tr class="memdesc:ad0f3d63f9b93fc902de40a9a546f709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">S'exécute à chaque fois que la fenêtre <a class="el" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a> est affichée.  <a href="#ad0f3d63f9b93fc902de40a9a546f709c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad0f3d63f9b93fc902de40a9a546f709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a3bd9b576cab980cae3dc591f412309fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a3bd9b576cab980cae3dc591f412309fc">initialiserFenetre</a> ()</td></tr>
+<tr class="memdesc:a3bd9b576cab980cae3dc591f412309fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise le mode plein écran.  <a href="#a3bd9b576cab980cae3dc591f412309fc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3bd9b576cab980cae3dc591f412309fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189ab3f034720597eedf3930631e6dd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a189ab3f034720597eedf3930631e6dd1">initialiserClavierVirtuel</a> ()</td></tr>
+<tr class="memdesc:a189ab3f034720597eedf3930631e6dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise le clavier virtuel.  <a href="#a189ab3f034720597eedf3930631e6dd1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a189ab3f034720597eedf3930631e6dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82ab8c9ad48f26ab928b7a72e4dcee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#ac82ab8c9ad48f26ab928b7a72e4dcee0">supprimerClavierVirtuel</a> ()</td></tr>
+<tr class="memdesc:ac82ab8c9ad48f26ab928b7a72e4dcee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime le clavier virtuel.  <a href="#ac82ab8c9ad48f26ab928b7a72e4dcee0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac82ab8c9ad48f26ab928b7a72e4dcee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527e704e792dd5634b3c0a738a922429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a527e704e792dd5634b3c0a738a922429">fermerClavierVirtuel</a> ()</td></tr>
+<tr class="memdesc:a527e704e792dd5634b3c0a738a922429"><td class="mdescLeft">&#160;</td><td class="mdescRight">ferme le clavier virtuel  <a href="#a527e704e792dd5634b3c0a738a922429">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a527e704e792dd5634b3c0a738a922429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04201173bd9ac135227ac56a6c22a999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers</a> ()</td></tr>
+<tr class="separator:a04201173bd9ac135227ac56a6c22a999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b7ba5bc7f7475b35162b13d3b3db13"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a68b7ba5bc7f7475b35162b13d3b3db13">lireAdresseIP</a> ()</td></tr>
+<tr class="separator:a68b7ba5bc7f7475b35162b13d3b3db13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a793a2816dc21b3161566138d2af5a8b9"><td class="memItemLeft" align="right" valign="top">Ui::IhmGestionArmoire *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a></td></tr>
+<tr class="memdesc:a793a2816dc21b3161566138d2af5a8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">agrégation de la définition de la fenêtre UI  <a href="#a793a2816dc21b3161566138d2af5a8b9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a793a2816dc21b3161566138d2af5a8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d3a89bbcfa9f0e50ff5c50ec64d707"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_base_de_donnees.html">BaseDeDonnees</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a></td></tr>
+<tr class="memdesc:ad0d3a89bbcfa9f0e50ff5c50ec64d707"><td class="mdescLeft">&#160;</td><td class="mdescRight">agrégation de l'objet <a class="el" href="class_base_de_donnees.html">BaseDeDonnees</a>  <a href="#ad0d3a89bbcfa9f0e50ff5c50ec64d707">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad0d3a89bbcfa9f0e50ff5c50ec64d707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14adf3863cf09947411fc33e413076c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_utilisateur.html">Utilisateur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a></td></tr>
+<tr class="separator:aa14adf3863cf09947411fc33e413076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3186adbd003db3309c640ac414d39d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gestion_balances.html">GestionBalances</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a3186adbd003db3309c640ac414d39d2e">gestionBalances</a></td></tr>
+<tr class="separator:a3186adbd003db3309c640ac414d39d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af590a9a2a114e7ee791db540f87c01ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a></td></tr>
+<tr class="memdesc:af590a9a2a114e7ee791db540f87c01ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">la fenêtre de gestion des groupes  <a href="#af590a9a2a114e7ee791db540f87c01ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af590a9a2a114e7ee791db540f87c01ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd01a783a46b27a1b8d1535f5ce16212"><td class="memItemLeft" align="right" valign="top">QVector&lt; <a class="el" href="class_casier.html">Casier</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a></td></tr>
+<tr class="memdesc:acd01a783a46b27a1b8d1535f5ce16212"><td class="mdescLeft">&#160;</td><td class="mdescRight">les casier de l'armoire  <a href="#acd01a783a46b27a1b8d1535f5ce16212">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acd01a783a46b27a1b8d1535f5ce16212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21821dc4f15d87125efb933991eb4385"><td class="memItemLeft" align="right" valign="top">QVector&lt; QStringList &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a></td></tr>
+<tr class="separator:a21821dc4f15d87125efb933991eb4385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3af042f7a9d5a6bac634e2b053828d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_article.html">Article</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">article</a></td></tr>
+<tr class="separator:a0a3af042f7a9d5a6bac634e2b053828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a7aa5e1514dd5d1b5648a2f6dd36970f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa5e1514dd5d1b5648a2f6dd36970f9">&#9670;&nbsp;</a></span>IhmGestionArmoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IhmGestionArmoire::IhmGestionArmoire </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>, <a class="el" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>, <a class="el" href="class_base_de_donnees.html#ac20da193923a9bfea5e38ee5a54820cd">BaseDeDonnees::connecter()</a>, <a class="el" href="class_base_de_donnees.html#a00388973f3ec42e5c8e76e7af7e124b2">BaseDeDonnees::estConnecte()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">gererGroupe()</a>, <a class="el" href="class_base_de_donnees.html#a80028aa2b6b4fbf30fb2e36357b7d3d3">BaseDeDonnees::getInstance()</a>, <a class="el" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>, <a class="el" href="class_ihm_gestion_armoire.html#a3bd9b576cab980cae3dc591f412309fc">initialiserFenetre()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                    : QWidget(parent), <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>(<span class="keyword">new</span> Ui::IhmGestionArmoire), <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>(<span class="keyword">nullptr</span>)<span class="comment">//, casiers(NB_CASIERS_MAX, nullptr)</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;setupUi(<span class="keyword">this</span>);    </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a> = <a class="code" href="class_base_de_donnees.html#a80028aa2b6b4fbf30fb2e36357b7d3d3">BaseDeDonnees::getInstance</a>();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>-&gt;<a class="code" href="class_base_de_donnees.html#a00388973f3ec42e5c8e76e7af7e124b2">estConnecte</a>())</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>-&gt;<a class="code" href="class_base_de_donnees.html#ac20da193923a9bfea5e38ee5a54820cd">connecter</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// crée les casiers</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a> = <span class="keyword">new</span> <a class="code" href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>-&gt;hide();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Temporaire</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//gestionBalances = new GestionBalances;</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    connect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;boutonFermeture, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer</a>()));</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//connect(ui-&gt;lineEditRechercheArticle, SIGNAL(editingFinished()), this, SLOT(rechercherArticle()));</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    connect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;boutonRechercheArticle, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle</a>()));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    connect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles, SIGNAL(currentIndexChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle</a>(<span class="keywordtype">int</span>)));</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// pour administrateur</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    connect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;boutonGestionGroupe, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">gererGroupe</a>()));    </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a3bd9b576cab980cae3dc591f412309fc">initialiserFenetre</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="class_base_de_donnees_html_a80028aa2b6b4fbf30fb2e36357b7d3d3"><div class="ttname"><a href="class_base_de_donnees.html#a80028aa2b6b4fbf30fb2e36357b7d3d3">BaseDeDonnees::getInstance</a></div><div class="ttdeci">static BaseDeDonnees * getInstance(QString type=&quot;QMYSQL&quot;)</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:38</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_ad0d3a89bbcfa9f0e50ff5c50ec64d707"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">IhmGestionArmoire::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:38</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a04201173bd9ac135227ac56a6c22a999"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">IhmGestionArmoire::afficherCasiers</a></div><div class="ttdeci">void afficherCasiers()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:325</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_base_de_donnees_html_a00388973f3ec42e5c8e76e7af7e124b2"><div class="ttname"><a href="class_base_de_donnees.html#a00388973f3ec42e5c8e76e7af7e124b2">BaseDeDonnees::estConnecte</a></div><div class="ttdeci">bool estConnecte()</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:70</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a7fef1d21e4dcce9c4550d33b15e8dc29"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">IhmGestionArmoire::fermer</a></div><div class="ttdeci">void fermer()</div><div class="ttdoc">ferme l&amp;#39;IhmGestionArmoire et supprime l&amp;#39;utilisateur crée </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:194</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a28970b692994ad7201c03decd42ec0e5"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">IhmGestionArmoire::selectionnerArticle</a></div><div class="ttdeci">void selectionnerArticle(int index)</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:290</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a4cd664c766e29593d3fedf2baea6a330"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">IhmGestionArmoire::gererGroupe</a></div><div class="ttdeci">void gererGroupe()</div><div class="ttdoc">Identifiaction du status de l&amp;#39;utilisateur gestionnaire ou administrateur. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:214</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_af590a9a2a114e7ee791db540f87c01ef"><div class="ttname"><a href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">IhmGestionArmoire::ihmGestionGroupe</a></div><div class="ttdeci">IhmGestionGroupe * ihmGestionGroupe</div><div class="ttdoc">la fenêtre de gestion des groupes </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:41</div></div>
+<div class="ttc" id="class_ihm_gestion_groupe_html"><div class="ttname"><a href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a></div><div class="ttdoc">La fenêtre de gestion des groupes. </div><div class="ttdef"><b>Definition:</b> IhmGestionGroupe.h:37</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+<div class="ttc" id="class_base_de_donnees_html_ac20da193923a9bfea5e38ee5a54820cd"><div class="ttname"><a href="class_base_de_donnees.html#ac20da193923a9bfea5e38ee5a54820cd">BaseDeDonnees::connecter</a></div><div class="ttdeci">bool connecter(QString nomBase=BDD_NOMBASE, QString username=BDD_USERNAME, QString password=BDD_PASSWORD, QString serveur=BDD_SERVEUR)</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:76</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a594f25b58b70700e19e3e7f567325c40"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">IhmGestionArmoire::rechercherArticle</a></div><div class="ttdeci">void rechercherArticle()</div><div class="ttdoc">Requete permettant la recherche d&amp;#39;article dans les casiers. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:249</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a3bd9b576cab980cae3dc591f412309fc"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a3bd9b576cab980cae3dc591f412309fc">IhmGestionArmoire::initialiserFenetre</a></div><div class="ttdeci">void initialiserFenetre()</div><div class="ttdoc">Initialise le mode plein écran. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:128</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d854653399972a013f79edfe32b04cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d854653399972a013f79edfe32b04cb">&#9670;&nbsp;</a></span>~IhmGestionArmoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IhmGestionArmoire::~IhmGestionArmoire </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a>();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_base_de_donnees_html_a457401c0816b888c77ce915997545f4e"><div class="ttname"><a href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a></div><div class="ttdeci">static void detruireInstance()</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a04201173bd9ac135227ac56a6c22a999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04201173bd9ac135227ac56a6c22a999">&#9670;&nbsp;</a></span>afficherCasiers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::afficherCasiers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>, <a class="el" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a>, <a class="el" href="class_ihm_gestion_armoire.html#a68b7ba5bc7f7475b35162b13d3b3db13">lireAdresseIP()</a>, <a class="el" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer()</a>, <a class="el" href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">selectionnerCasier()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    QString nbCasiers;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    QString adresseIP = <a class="code" href="class_ihm_gestion_armoire.html#a68b7ba5bc7f7475b35162b13d3b3db13">lireAdresseIP</a>();</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;adresseIP&quot;</span> &lt;&lt; adresseIP;</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span>(!adresseIP.isEmpty())</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    {</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        QString requeteNbCasiers = <span class="stringliteral">&quot;SELECT Armoire.nbCasiers FROM Armoire WHERE Armoire.AdresseIP = &#39;&quot;</span> + adresseIP + <span class="stringliteral">&quot;&#39;&quot;</span>;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>-&gt;<a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(requeteNbCasiers, nbCasiers);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nbCasiers&quot;</span> &lt;&lt; nbCasiers;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt; nbCasiers.toInt(); i++)</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        {</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <a class="code" href="class_casier.html">Casier</a>* casier = <span class="keyword">new</span> <a class="code" href="class_casier.html">Casier</a>(i+1, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">this</span>); <span class="comment">// autorisé et présent</span></div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a>.push_back(casier);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            connect(casier, SIGNAL(clicked(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">selectionnerCasier</a>(<span class="keywordtype">int</span>)));</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="comment">// pair/impair -&gt; droite/gauche ?</span></div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span>((i+1)%2)</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            {</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;gridLayoutArmoire-&gt;addWidget(casier, i/2, 0, 1, 1);</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            }</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            {</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;gridLayoutArmoire-&gt;addWidget(casier, i/2, 1, 1, 1);</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            }</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_ad0d3a89bbcfa9f0e50ff5c50ec64d707"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">IhmGestionArmoire::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:38</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a68b7ba5bc7f7475b35162b13d3b3db13"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a68b7ba5bc7f7475b35162b13d3b3db13">IhmGestionArmoire::lireAdresseIP</a></div><div class="ttdeci">QString lireAdresseIP()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:353</div></div>
+<div class="ttc" id="class_casier_html"><div class="ttname"><a href="class_casier.html">Casier</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/casier.h:6</div></div>
+<div class="ttc" id="class_base_de_donnees_html_a77539baad389f5acf754cd2cd452403e"><div class="ttname"><a href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer</a></div><div class="ttdeci">bool recuperer(QString requete, QString &amp;donnees)</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:190</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_acd01a783a46b27a1b8d1535f5ce16212"><div class="ttname"><a href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">IhmGestionArmoire::casiers</a></div><div class="ttdeci">QVector&lt; Casier * &gt; casiers</div><div class="ttdoc">les casier de l&amp;#39;armoire </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:42</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_ac2e2365408fcbf66c0e75bb828b40162"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">IhmGestionArmoire::selectionnerCasier</a></div><div class="ttdeci">void selectionnerCasier(int)</div><div class="ttdoc">Permet de savoir quel casier a était sélectionner. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:232</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a65cf47ddfe3942435b5f3bf40578d96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65cf47ddfe3942435b5f3bf40578d96a">&#9670;&nbsp;</a></span>effacerLaListeArticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::effacerLaListeArticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles-&gt;clear();</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa432c67c648097bbec288694077d83e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa432c67c648097bbec288694077d83e6">&#9670;&nbsp;</a></span>effacerLaSelectionArticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::effacerLaSelectionArticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageArticle-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38dab807125ddb3baecf9345906e3c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38dab807125ddb3baecf9345906e3c4b">&#9670;&nbsp;</a></span>effacerMessageNumeroCasier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::effacerMessageNumeroCasier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageNumeroCasier-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a71c12ea50f463c14c835b02d3db22025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c12ea50f463c14c835b02d3db22025">&#9670;&nbsp;</a></span>effacerRechercheArticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::effacerRechercheArticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;lineEditRechercheArticle-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fef1d21e4dcce9c4550d33b15e8dc29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fef1d21e4dcce9c4550d33b15e8dc29">&#9670;&nbsp;</a></span>fermer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::fermer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a65cf47ddfe3942435b5f3bf40578d96a">effacerLaListeArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#aa432c67c648097bbec288694077d83e6">effacerLaSelectionArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a38dab807125ddb3baecf9345906e3c4b">effacerMessageNumeroCasier()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    close();</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a65cf47ddfe3942435b5f3bf40578d96a">effacerLaListeArticle</a>();</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#aa432c67c648097bbec288694077d83e6">effacerLaSelectionArticle</a>();</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a38dab807125ddb3baecf9345906e3c4b">effacerMessageNumeroCasier</a>();</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_aa432c67c648097bbec288694077d83e6"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa432c67c648097bbec288694077d83e6">IhmGestionArmoire::effacerLaSelectionArticle</a></div><div class="ttdeci">void effacerLaSelectionArticle()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:315</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a38dab807125ddb3baecf9345906e3c4b"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a38dab807125ddb3baecf9345906e3c4b">IhmGestionArmoire::effacerMessageNumeroCasier</a></div><div class="ttdeci">void effacerMessageNumeroCasier()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:320</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a65cf47ddfe3942435b5f3bf40578d96a"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a65cf47ddfe3942435b5f3bf40578d96a">IhmGestionArmoire::effacerLaListeArticle</a></div><div class="ttdeci">void effacerLaListeArticle()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:310</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a527e704e792dd5634b3c0a738a922429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527e704e792dd5634b3c0a738a922429">&#9670;&nbsp;</a></span>fermerClavierVirtuel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::fermerClavierVirtuel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#ac82ab8c9ad48f26ab928b7a72e4dcee0">supprimerClavierVirtuel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#ac82ab8c9ad48f26ab928b7a72e4dcee0">supprimerClavierVirtuel</a>();</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    close();</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_ac82ab8c9ad48f26ab928b7a72e4dcee0"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ac82ab8c9ad48f26ab928b7a72e4dcee0">IhmGestionArmoire::supprimerClavierVirtuel</a></div><div class="ttdeci">void supprimerClavierVirtuel()</div><div class="ttdoc">Supprime le clavier virtuel. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:167</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4cd664c766e29593d3fedf2baea6a330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd664c766e29593d3fedf2baea6a330">&#9670;&nbsp;</a></span>gererGroupe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::gererGroupe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">Utilisateur::estAdministrateur()</a>, <a class="el" href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">Utilisateur::estGestionnaire()</a>, <a class="el" href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">Utilisateur::getNom()</a>, <a class="el" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>, <a class="el" href="class_ihm_gestion_groupe.html#a88bbe8b5652781d4a80a50ed6bf9d329">IhmGestionGroupe::setUtilisateur()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Nom&quot;</span> &lt;&lt; <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">getNom</a>() &lt;&lt; <span class="stringliteral">&quot;Administrateur&quot;</span> &lt;&lt; <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">estAdministrateur</a>() &lt;&lt; <span class="stringliteral">&quot;estGestionnaire&quot;</span> &lt;&lt; <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">estGestionnaire</a>();</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">estAdministrateur</a>() || <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">estGestionnaire</a>())</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>-&gt;<a class="code" href="class_ihm_gestion_groupe.html#a88bbe8b5652781d4a80a50ed6bf9d329">setUtilisateur</a>(<a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>);</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>-&gt;show();</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_groupe_html_a88bbe8b5652781d4a80a50ed6bf9d329"><div class="ttname"><a href="class_ihm_gestion_groupe.html#a88bbe8b5652781d4a80a50ed6bf9d329">IhmGestionGroupe::setUtilisateur</a></div><div class="ttdeci">void setUtilisateur(Utilisateur *utilisateur)</div><div class="ttdef"><b>Definition:</b> IhmGestionGroupe.cpp:59</div></div>
+<div class="ttc" id="class_utilisateur_html_a2c4ede0ec936ebd64d73df1e1dde3a5d"><div class="ttname"><a href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">Utilisateur::estAdministrateur</a></div><div class="ttdeci">bool estAdministrateur() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:27</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_af590a9a2a114e7ee791db540f87c01ef"><div class="ttname"><a href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">IhmGestionArmoire::ihmGestionGroupe</a></div><div class="ttdeci">IhmGestionGroupe * ihmGestionGroupe</div><div class="ttdoc">la fenêtre de gestion des groupes </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:41</div></div>
+<div class="ttc" id="class_utilisateur_html_a3c86ddd77b243fd3f12ad2e85ff06759"><div class="ttname"><a href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">Utilisateur::estGestionnaire</a></div><div class="ttdeci">bool estGestionnaire() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:34</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+<div class="ttc" id="class_utilisateur_html_adfffec2519ba338497de55b61e7bc420"><div class="ttname"><a href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">Utilisateur::getNom</a></div><div class="ttdeci">QString getNom() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:58</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a347e1dc419cb74e5046dc95b5ffbf09e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347e1dc419cb74e5046dc95b5ffbf09e">&#9670;&nbsp;</a></span>getCasier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_casier.html">Casier</a>* IhmGestionArmoire::getCasier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a024905507f9700b2afa794d7c357546f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024905507f9700b2afa794d7c357546f">&#9670;&nbsp;</a></span>getUtilisateur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utilisateur.html">Utilisateur</a> * IhmGestionArmoire::getUtilisateur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd>Utilisateur* </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a189ab3f034720597eedf3930631e6dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189ab3f034720597eedf3930631e6dd1">&#9670;&nbsp;</a></span>initialiserClavierVirtuel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::initialiserClavierVirtuel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#ad0f3d63f9b93fc902de40a9a546f709c">showEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    QProcess processus;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QString programme = <span class="stringliteral">&quot;/usr/bin/florence&quot;</span>;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    QStringList arguments;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    arguments &lt;&lt; <span class="stringliteral">&quot;--use-config=/usr/share/doc/florence/examples/florence.conf&quot;</span>;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    processus.startDetached(programme, arguments);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3bd9b576cab980cae3dc591f412309fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd9b576cab980cae3dc591f412309fc">&#9670;&nbsp;</a></span>initialiserFenetre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::initialiserFenetre </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="e-stock_8h.html#a7185157bd11830373a0f95d0dc88b2c3">IHM_CSS</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    setStyleSheet(<a class="code" href="e-stock_8h.html#a7185157bd11830373a0f95d0dc88b2c3">IHM_CSS</a>);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">    #ifndef DESKTOP</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> w = qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).width();</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> h = qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).height();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    resize(w, h);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">    #else</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// 800×480</span></div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    resize(800, 480);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">    #endif</span></div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    setWindowFlags(Qt::FramelessWindowHint | Qt::Dialog); <span class="comment">// Ajouter Qt::WindowStaysOnTopHint</span></div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//showMaximized();</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    setWindowModality(Qt::WindowModal);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;lineEditRechercheArticle-&gt;setFocus();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="e-stock_8h_html_a7185157bd11830373a0f95d0dc88b2c3"><div class="ttname"><a href="e-stock_8h.html#a7185157bd11830373a0f95d0dc88b2c3">IHM_CSS</a></div><div class="ttdeci">#define IHM_CSS</div><div class="ttdef"><b>Definition:</b> e-stock.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68b7ba5bc7f7475b35162b13d3b3db13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b7ba5bc7f7475b35162b13d3b3db13">&#9670;&nbsp;</a></span>lireAdresseIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString IhmGestionArmoire::lireAdresseIP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">//QNetworkInterface interface = QNetworkInterface::interfaceFromName(&quot;wlan0&quot;);</span></div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">//qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; interface.hardwareAddress();</span></div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    QList&lt;QHostAddress&gt; adresses = QNetworkInterface::allAddresses();</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; adresses.size(); i++)</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">if</span>(adresses.at(i).isInSubnet(QHostAddress::parseSubnet(<span class="stringliteral">&quot;192.168.52.0/24&quot;</span>)))</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">return</span> adresses.at(i).toString();</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a594f25b58b70700e19e3e7f567325c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594f25b58b70700e19e3e7f567325c40">&#9670;&nbsp;</a></span>rechercherArticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IhmGestionArmoire::rechercherArticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Affiche l'article selectionner. </p>
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>, <a class="el" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>, <a class="el" href="class_ihm_gestion_armoire.html#a71c12ea50f463c14c835b02d3db22025">effacerRechercheArticle()</a>, <a class="el" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    QString mot = <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;lineEditRechercheArticle-&gt;text();</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; mot;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">/*if(mot.isEmpty())</span></div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">        return;*/</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    QString requete = <span class="stringliteral">&quot;SELECT Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite, Stock.Disponible, Article.Designation FROM Stock INNER JOIN Article ON Stock.idArticle = Article.idArticle WHERE Article.Nom LIKE &#39;%&quot;</span> + mot + <span class="stringliteral">&quot;%&#39; OR Article.Code LIKE &#39;%&quot;</span> + mot + <span class="stringliteral">&quot;%&#39; OR Article.Designation LIKE &#39;%&quot;</span> + mot + <span class="stringliteral">&quot;%&#39; ORDER BY Stock.NumeroCasier ASC&quot;</span>;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">//QString requete = &quot;SELECT * FROM Article WHERE Nom LIKE &#39;%&quot; + mot + &quot;%&#39; OR Code LIKE &#39;%&quot; + mot + &quot;%&#39; OR Designation LIKE &#39;%&quot; + mot + &quot;%&#39;&quot;;</span></div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; requete;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    disconnect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles, SIGNAL(currentIndexChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle</a>(<span class="keywordtype">int</span>)));</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles-&gt;clear();</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>.clear();</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>-&gt;<a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(requete, <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;articlesTrouves&quot;</span> &lt;&lt; <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>.size() &lt;&lt; <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles-&gt;addItem(<span class="stringliteral">&quot;Sélectionner un article&quot;</span>);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0 ; i &lt; <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>.size() ; i++)</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles-&gt;addItem(<a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>[i].at(2));</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    connect(<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;comboBoxListeArticles, SIGNAL(currentIndexChanged(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle</a>(<span class="keywordtype">int</span>)));</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">/*if(articlesTrouves.size() &gt; 0)</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">    {</span></div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">        selectionnerArticle(1);</span></div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">        ui-&gt;labelMessageNumeroCasier-&gt;setText(&quot;L&#39;article se trouve\ndans le casier numéro : &quot; + articlesTrouves[0].at(0));</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">    }*/</span></div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a71c12ea50f463c14c835b02d3db22025">effacerRechercheArticle</a>();</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_ad0d3a89bbcfa9f0e50ff5c50ec64d707"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">IhmGestionArmoire::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:38</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a21821dc4f15d87125efb933991eb4385"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">IhmGestionArmoire::articlesTrouves</a></div><div class="ttdeci">QVector&lt; QStringList &gt; articlesTrouves</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:43</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a28970b692994ad7201c03decd42ec0e5"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">IhmGestionArmoire::selectionnerArticle</a></div><div class="ttdeci">void selectionnerArticle(int index)</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:290</div></div>
+<div class="ttc" id="class_base_de_donnees_html_a77539baad389f5acf754cd2cd452403e"><div class="ttname"><a href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer</a></div><div class="ttdeci">bool recuperer(QString requete, QString &amp;donnees)</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:190</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a71c12ea50f463c14c835b02d3db22025"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a71c12ea50f463c14c835b02d3db22025">IhmGestionArmoire::effacerRechercheArticle</a></div><div class="ttdeci">void effacerRechercheArticle()</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:279</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a28970b692994ad7201c03decd42ec0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28970b692994ad7201c03decd42ec0e5">&#9670;&nbsp;</a></span>selectionnerArticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::selectionnerArticle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">article</a>, <a class="el" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>.size() == 0 || index &lt; 0)</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">if</span>(index &gt; 0)</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    {</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">//Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite, Stock.Disponible, Article.Designation</span></div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        QString <a class="code" href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">article</a> = <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>[index-1].at(5);</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        QString qte = QString::fromUtf8(<span class="stringliteral">&quot;Quantité : &quot;</span>) + <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>[index-1].at(3);</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        QString dispo = QString::fromUtf8(<span class="stringliteral">&quot;Disponible : &quot;</span>) + <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>[index-1].at(4);</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageArticle-&gt;setText(article + <span class="stringliteral">&quot;\n&quot;</span> + qte + <span class="stringliteral">&quot;\n&quot;</span> + dispo);</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageNumeroCasier-&gt;setText(<span class="stringliteral">&quot;Casier &quot;</span> + <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>[index-1].at(0));</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    {</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageArticle-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelMessageNumeroCasier-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a21821dc4f15d87125efb933991eb4385"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">IhmGestionArmoire::articlesTrouves</a></div><div class="ttdeci">QVector&lt; QStringList &gt; articlesTrouves</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:43</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a0a3af042f7a9d5a6bac634e2b053828d"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">IhmGestionArmoire::article</a></div><div class="ttdeci">Article * article</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2e2365408fcbf66c0e75bb828b40162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e2365408fcbf66c0e75bb828b40162">&#9670;&nbsp;</a></span>selectionnerCasier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::selectionnerCasier </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroCasier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroCasier</td><td>int </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>, <a class="el" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a>, et <a class="el" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroCasier&quot;</span> &lt;&lt; numeroCasier;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    QString requete = <span class="stringliteral">&quot;SELECT Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite, Stock.Disponible, Article.Designation FROM Stock INNER JOIN Article ON Stock.idArticle = Article.idArticle WHERE Stock.NumeroCasier=&#39;&quot;</span> + QString::number(numeroCasier) + <span class="stringliteral">&quot;&#39;&quot;</span>;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; requete;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    QStringList articleCasier;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>-&gt;<a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(requete, articleCasier);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;articleCasier&quot;</span> &lt;&lt; articleCasier;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a>[numeroCasier-1]-&gt;actionner();</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_ad0d3a89bbcfa9f0e50ff5c50ec64d707"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">IhmGestionArmoire::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:38</div></div>
+<div class="ttc" id="class_base_de_donnees_html_a77539baad389f5acf754cd2cd452403e"><div class="ttname"><a href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer</a></div><div class="ttdeci">bool recuperer(QString requete, QString &amp;donnees)</div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.cpp:190</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_acd01a783a46b27a1b8d1535f5ce16212"><div class="ttname"><a href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">IhmGestionArmoire::casiers</a></div><div class="ttdeci">QVector&lt; Casier * &gt; casiers</div><div class="ttdoc">les casier de l&amp;#39;armoire </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af63a0c4424edd90a3c45506dde527b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63a0c4424edd90a3c45506dde527b4e">&#9670;&nbsp;</a></span>setUtilisateur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IhmGestionArmoire::setUtilisateur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_utilisateur.html">Utilisateur</a> *&#160;</td>
+          <td class="paramname"><em>utilisateur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">utilisateur</td><td>Utilisateur* </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">Utilisateur::estAdministrateur()</a>, <a class="el" href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">Utilisateur::estGestionnaire()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>, et <a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_authentification.html#add8f8e7a0fbf70cef9399ba9f7db7b7e">IhmAuthentification::autoriserSansBadge()</a>, <a class="el" href="class_ihm_authentification.html#a6a67fe1c8e354a9ad123d8c53c16c6c4">IhmAuthentification::passerSansBadge()</a>, et <a class="el" href="class_ihm_authentification.html#ad62f646310fff597d3bf50af2c3d5d0c">IhmAuthentification::validerAcces()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    this-&gt;utilisateur = <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>(utilisateur-&gt;<a class="code" href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">estAdministrateur</a>() || utilisateur-&gt;<a class="code" href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">estGestionnaire</a>())</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;boutonGestionGroupe-&gt;setEnabled(<span class="keyword">true</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;boutonGestionGroupe-&gt;setEnabled(<span class="keyword">false</span>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div><div class="ttc" id="class_utilisateur_html_a2c4ede0ec936ebd64d73df1e1dde3a5d"><div class="ttname"><a href="class_utilisateur.html#a2c4ede0ec936ebd64d73df1e1dde3a5d">Utilisateur::estAdministrateur</a></div><div class="ttdeci">bool estAdministrateur() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:27</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_utilisateur_html_a3c86ddd77b243fd3f12ad2e85ff06759"><div class="ttname"><a href="class_utilisateur.html#a3c86ddd77b243fd3f12ad2e85ff06759">Utilisateur::estGestionnaire</a></div><div class="ttdeci">bool estGestionnaire() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:34</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad0f3d63f9b93fc902de40a9a546f709c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f3d63f9b93fc902de40a9a546f709c">&#9670;&nbsp;</a></span>showEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::showEvent </td>
+          <td>(</td>
+          <td class="paramtype">QShowEvent *&#160;</td>
+          <td class="paramname"><em>ev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_utilisateur.html#a9922d48c4d295c9357ad8102399322ec">Utilisateur::getGroupe()</a>, <a class="el" href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">Utilisateur::getNom()</a>, <a class="el" href="class_utilisateur.html#ac4483808ad54888c66a4235133d135d5">Utilisateur::getPrenom()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a189ab3f034720597eedf3930631e6dd1">initialiserClavierVirtuel()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>, et <a class="el" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QString informationsUtilisateur;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    QString informationsGroupe;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Affiche des informations sur l&#39;utilisateur qui a accès à l&#39;armoire</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        informationsUtilisateur = <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">getNom</a>() + <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#ac4483808ad54888c66a4235133d135d5">getPrenom</a>();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        informationsGroupe = <a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>-&gt;<a class="code" href="class_utilisateur.html#a9922d48c4d295c9357ad8102399322ec">getGroupe</a>();</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelUtilisateur-&gt;setText(informationsUtilisateur);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>-&gt;labelGroupe-&gt;setText(informationsGroupe);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html#a189ab3f034720597eedf3930631e6dd1">initialiserClavierVirtuel</a>();</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div><div class="ttc" id="class_ihm_gestion_armoire_html_a189ab3f034720597eedf3930631e6dd1"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a189ab3f034720597eedf3930631e6dd1">IhmGestionArmoire::initialiserClavierVirtuel</a></div><div class="ttdeci">void initialiserClavierVirtuel()</div><div class="ttdoc">Initialise le clavier virtuel. </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.cpp:152</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_utilisateur_html_a9922d48c4d295c9357ad8102399322ec"><div class="ttname"><a href="class_utilisateur.html#a9922d48c4d295c9357ad8102399322ec">Utilisateur::getGroupe</a></div><div class="ttdeci">QString getGroupe() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:73</div></div>
+<div class="ttc" id="class_utilisateur_html_ac4483808ad54888c66a4235133d135d5"><div class="ttname"><a href="class_utilisateur.html#ac4483808ad54888c66a4235133d135d5">Utilisateur::getPrenom</a></div><div class="ttdeci">QString getPrenom() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:63</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+<div class="ttc" id="class_utilisateur_html_adfffec2519ba338497de55b61e7bc420"><div class="ttname"><a href="class_utilisateur.html#adfffec2519ba338497de55b61e7bc420">Utilisateur::getNom</a></div><div class="ttdeci">QString getNom() const</div><div class="ttdef"><b>Definition:</b> utilisateur.cpp:58</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac82ab8c9ad48f26ab928b7a72e4dcee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82ab8c9ad48f26ab928b7a72e4dcee0">&#9670;&nbsp;</a></span>supprimerClavierVirtuel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IhmGestionArmoire::supprimerClavierVirtuel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a527e704e792dd5634b3c0a738a922429">fermerClavierVirtuel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    QProcess processus;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    QString programme = <span class="stringliteral">&quot;killall&quot;</span>; <span class="comment">// le nom du programme</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QStringList arguments; <span class="comment">// arguments du programme</span></div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    arguments &lt;&lt; <span class="stringliteral">&quot;florence&quot;</span>;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    processus.startDetached(programme, arguments);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a0a3af042f7a9d5a6bac634e2b053828d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3af042f7a9d5a6bac634e2b053828d">&#9670;&nbsp;</a></span>article</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_article.html">Article</a>* IhmGestionArmoire::article</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle()</a>.</p>
+
+</div>
+</div>
+<a id="a21821dc4f15d87125efb933991eb4385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21821dc4f15d87125efb933991eb4385">&#9670;&nbsp;</a></span>articlesTrouves</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QStringList&gt; IhmGestionArmoire::articlesTrouves</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle()</a>.</p>
+
+</div>
+</div>
+<a id="ad0d3a89bbcfa9f0e50ff5c50ec64d707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d3a89bbcfa9f0e50ff5c50ec64d707">&#9670;&nbsp;</a></span>bdd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_de_donnees.html">BaseDeDonnees</a>* IhmGestionArmoire::bdd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">selectionnerCasier()</a>.</p>
+
+</div>
+</div>
+<a id="acd01a783a46b27a1b8d1535f5ce16212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd01a783a46b27a1b8d1535f5ce16212">&#9670;&nbsp;</a></span>casiers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;<a class="el" href="class_casier.html">Casier</a> *&gt; IhmGestionArmoire::casiers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#ac2e2365408fcbf66c0e75bb828b40162">selectionnerCasier()</a>.</p>
+
+</div>
+</div>
+<a id="a3186adbd003db3309c640ac414d39d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3186adbd003db3309c640ac414d39d2e">&#9670;&nbsp;</a></span>gestionBalances</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gestion_balances.html">GestionBalances</a>* IhmGestionArmoire::gestionBalances</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af590a9a2a114e7ee791db540f87c01ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af590a9a2a114e7ee791db540f87c01ef">&#9670;&nbsp;</a></span>ihmGestionGroupe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a>* IhmGestionArmoire::ihmGestionGroupe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">gererGroupe()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>.</p>
+
+</div>
+</div>
+<a id="a793a2816dc21b3161566138d2af5a8b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793a2816dc21b3161566138d2af5a8b9">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::IhmGestionArmoire* IhmGestionArmoire::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a04201173bd9ac135227ac56a6c22a999">afficherCasiers()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a65cf47ddfe3942435b5f3bf40578d96a">effacerLaListeArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#aa432c67c648097bbec288694077d83e6">effacerLaSelectionArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a38dab807125ddb3baecf9345906e3c4b">effacerMessageNumeroCasier()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a71c12ea50f463c14c835b02d3db22025">effacerRechercheArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a7aa5e1514dd5d1b5648a2f6dd36970f9">IhmGestionArmoire()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a3bd9b576cab980cae3dc591f412309fc">initialiserFenetre()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a594f25b58b70700e19e3e7f567325c40">rechercherArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a28970b692994ad7201c03decd42ec0e5">selectionnerArticle()</a>, <a class="el" href="class_ihm_gestion_armoire.html#af63a0c4424edd90a3c45506dde527b4e">setUtilisateur()</a>, <a class="el" href="class_ihm_gestion_armoire.html#ad0f3d63f9b93fc902de40a9a546f709c">showEvent()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#a6d854653399972a013f79edfe32b04cb">~IhmGestionArmoire()</a>.</p>
+
+</div>
+</div>
+<a id="aa14adf3863cf09947411fc33e413076c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14adf3863cf09947411fc33e413076c">&#9670;&nbsp;</a></span>utilisateur</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utilisateur.html">Utilisateur</a>* IhmGestionArmoire::utilisateur</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_ihm_gestion_armoire.html#a7fef1d21e4dcce9c4550d33b15e8dc29">fermer()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a4cd664c766e29593d3fedf2baea6a330">gererGroupe()</a>, <a class="el" href="class_ihm_gestion_armoire.html#a024905507f9700b2afa794d7c357546f">getUtilisateur()</a>, <a class="el" href="class_ihm_gestion_armoire.html#af63a0c4424edd90a3c45506dde527b4e">setUtilisateur()</a>, et <a class="el" href="class_ihm_gestion_armoire.html#ad0f3d63f9b93fc902de40a9a546f709c">showEvent()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="_ihm_gestion_armoire_8h_source.html">IhmGestionArmoire.h</a></li>
+<li><a class="el" href="_ihm_gestion_armoire_8cpp.html">IhmGestionArmoire.cpp</a></li>
+<li><a class="el" href="_ihm_gestion_groupe_8cpp.html">IhmGestionGroupe.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,59 @@
+\hypertarget{utilisateur_8h_source}{}\subsection{utilisateur.\+h}
+\label{utilisateur_8h_source}\index{utilisateur.\+h@{utilisateur.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef UTILISATEUR\_H}
+00002 \textcolor{preprocessor}{#define UTILISATEUR\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QString>}
+00006 
+00007 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00008 \textcolor{keyword}{class }ihmAuthentificationSansBadge;
+00009 
+\Hypertarget{utilisateur_8h_source_l00010}\hyperlink{class_utilisateur}{00010} \textcolor{keyword}{class }\hyperlink{class_utilisateur}{Utilisateur} : \textcolor{keyword}{public} QObject
+00011 \{
+00012     Q\_OBJECT
+00013 
+00014 \textcolor{keyword}{private}:
+\Hypertarget{utilisateur_8h_source_l00015}\hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{00015}     QString \hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{idProfil};
+\Hypertarget{utilisateur_8h_source_l00016}\hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{00016}     QString \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur};
+\Hypertarget{utilisateur_8h_source_l00017}\hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{00017}     QString \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{idGroupe};
+\Hypertarget{utilisateur_8h_source_l00018}\hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{00018}     QString \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom};
+\Hypertarget{utilisateur_8h_source_l00019}\hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{00019}     QString \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom};
+\Hypertarget{utilisateur_8h_source_l00020}\hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{00020}     QString \hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge};
+\Hypertarget{utilisateur_8h_source_l00021}\hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{00021}     QString \hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{dateValidite};
+\Hypertarget{utilisateur_8h_source_l00022}\hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{00022}     QString \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant};
+\Hypertarget{utilisateur_8h_source_l00023}\hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{00023}     QString \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{motDePasse};
+\Hypertarget{utilisateur_8h_source_l00024}\hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{00024}     QString \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email};
+\Hypertarget{utilisateur_8h_source_l00025}\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{00025}     QString \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil};
+\Hypertarget{utilisateur_8h_source_l00026}\hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{00026}     QString \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe};
+\Hypertarget{utilisateur_8h_source_l00027}\hyperlink{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}{00027}     \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}{valide};
+\Hypertarget{utilisateur_8h_source_l00028}\hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{00028}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}; 
+00029 
+00030     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire}();
+00031 
+00032 \textcolor{keyword}{public}:
+00033     \hyperlink{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}{Utilisateur}();
+00034     \hyperlink{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}{Utilisateur}(QString idUtilisateur);
+00035     \hyperlink{class_utilisateur_a6631539ceecd6140fe525eb91485537b}{~Utilisateur}();
+00036 
+00037     \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() \textcolor{keyword}{const};
+00038     \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}() \textcolor{keyword}{const};
+00039     \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_a9b01ce9996c2242b1be952c3c7574fac}{estUtilisateur}() \textcolor{keyword}{const};
+00040     QString \hyperlink{class_utilisateur_aae4df3c09e4bd421407ea526876a2eaf}{getIdUtilisateur}() \textcolor{keyword}{const};
+00041     QString \hyperlink{class_utilisateur_a12d3730085761780dd54ffbcf4741721}{getIdGroupe}() \textcolor{keyword}{const};
+00042     QString \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() \textcolor{keyword}{const};
+00043     QString \hyperlink{class_utilisateur_ac4483808ad54888c66a4235133d135d5}{getPrenom}() \textcolor{keyword}{const};
+00044     QString \hyperlink{class_utilisateur_a8d838ae68c0be760d6fb4a27d8d7ba08}{getProfil}() \textcolor{keyword}{const};
+00045     QString \hyperlink{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}{getGroupe}() \textcolor{keyword}{const};
+00046     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_aec15176f18c3ae77a04214dd35e917db}{setNom}(QString nom);
+00047     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_a41e12e2817f4b6ad1fe5ef0f3417caf3}{setPrenom}(QString prenom);
+00048     \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lireUtilisateur}(QString identifiant, QString password);
+00049 
+00050 \textcolor{keyword}{public} slots:
+00051     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}{receptionDonneeUtilisateur}(QString nom,QString motDePasse);
+00052 \};
+00053 
+00054 \textcolor{preprocessor}{#endif // UTILISATEUR\_H}
+\end{DoxyCode}

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de mouvement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a9a0d6c88e3926224aeb01e6621f931.html">terminalmobile</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mouvement.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mouvement_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOUVEMENT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOUVEMENT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_mouvement.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mouvement.html">Mouvement</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// Les propriétés</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_mouvement.html#a186f483cf82ff2866da1e10031838567">   11</a></span>&#160;    Q_PROPERTY(QString m_casier READ <a class="code" href="class_mouvement.html#ae3ebc2911605104452a612aaf8a48e64">getCasier</a> WRITE <a class="code" href="class_mouvement.html#ad47317b7671e3b9b7e6e060f667924a7">setCasier</a> NOTIFY casierChanged)</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_mouvement.html#a24f34a74c17068f6c98635400862adcd">   12</a></span>&#160;    Q_PROPERTY(QString m_horodatage READ <a class="code" href="class_mouvement.html#ab6990fd5ea6c47ab3fb6a8a4944c2df9">getHorodatage</a> WRITE <a class="code" href="class_mouvement.html#ab0bd90180d06f2ed37fb2b796f31aeb8">setHorodatage</a> NOTIFY horodatageChanged)</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_mouvement.html#adee253bf00365d1cb4c45bd58d8b3e58">   13</a></span>&#160;    Q_PROPERTY(QString m_utilisateur READ <a class="code" href="class_mouvement.html#a80c65d0cba3e7918f7112fd7f85a1471">getUtilisateur</a> WRITE <a class="code" href="class_mouvement.html#abd38b265d54e55a4dd897e3270141a84">setUtilisateur</a> NOTIFY utilisateurChanged)</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_mouvement.html#af0444a7f837bdf252f2a3ccd4eb8a701">   14</a></span>&#160;    Q_PROPERTY(QString m_action READ <a class="code" href="class_mouvement.html#a683576b69fc9ab0bef8b85b1468408e2">getAction</a> WRITE <a class="code" href="class_mouvement.html#a2c64d36ea78ea6b428ddd0a0610411c1">setAction</a> NOTIFY actionChanged)</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_mouvement.html#a631b133243576c36fec6e1912415d7d6">   15</a></span>&#160;    Q_PROPERTY(QString m_contenu READ <a class="code" href="class_mouvement.html#a6a288ea183789e4b99f6f520ff7a32ab">getContenu</a> WRITE <a class="code" href="class_mouvement.html#a07e3d77c7d7af6a74e3ac5e7eb195ff9">setContenu</a> NOTIFY contenuChanged)</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_mouvement.html#ab6040d52ca99ef88d253b1742e70ffd3">   16</a></span>&#160;    Q_PROPERTY(QString m_quantite READ <a class="code" href="class_mouvement.html#a427e1320936bfaf09ca0b2c42ae9dd98">getQuantite</a> WRITE <a class="code" href="class_mouvement.html#aa9ed36b12cb4c46f851682d630cc28f8">setQuantite</a> NOTIFY quantiteChanged)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;public:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    explicit <a class="code" href="class_mouvement.html">Mouvement</a>(QString p_casier=&quot;&quot;, QString p_horodatage=&quot;&quot;, QString p_utilisateur=&quot;&quot;, QString p_action=&quot;&quot;,</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                       QString p_contenu=&quot;&quot;, QString p_quantite=&quot;&quot;, QObject *p_parent = <span class="keywordtype">nullptr</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#a5c7f0e876b2292627e9d1bef12de03a3">setMouvement</a>(QStringList p_mouvement);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Les accesseurs</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QString <a class="code" href="class_mouvement.html#ae3ebc2911605104452a612aaf8a48e64">getCasier</a>() const;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#ad47317b7671e3b9b7e6e060f667924a7">setCasier</a>(QString p_casier);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QString <a class="code" href="class_mouvement.html#ab6990fd5ea6c47ab3fb6a8a4944c2df9">getHorodatage</a>() const;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#ab0bd90180d06f2ed37fb2b796f31aeb8">setHorodatage</a>(QString p_horodatage);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QString <a class="code" href="class_mouvement.html#a80c65d0cba3e7918f7112fd7f85a1471">getUtilisateur</a>() const;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#abd38b265d54e55a4dd897e3270141a84">setUtilisateur</a>(QString p_utilisateur);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QString <a class="code" href="class_mouvement.html#a683576b69fc9ab0bef8b85b1468408e2">getAction</a>() const;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#a2c64d36ea78ea6b428ddd0a0610411c1">setAction</a>(QString p_action);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QString <a class="code" href="class_mouvement.html#a6a288ea183789e4b99f6f520ff7a32ab">getContenu</a>() const;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#a07e3d77c7d7af6a74e3ac5e7eb195ff9">setContenu</a>(QString p_contenu);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QString <a class="code" href="class_mouvement.html#a427e1320936bfaf09ca0b2c42ae9dd98">getQuantite</a>() const;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mouvement.html#aa9ed36b12cb4c46f851682d630cc28f8">setQuantite</a>(QString quantite);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;private:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString m_casier;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString m_horodatage;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QString m_utilisateur;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QString m_action;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QString m_contenu;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QString m_quantite;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;signals:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> casierChanged();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> horodatageChanged();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> utilisateurChanged();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> actionChanged();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> contenuChanged();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> quantiteChanged();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;public slots:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // MOUVEMENT_H</span></div><div class="ttc" id="class_mouvement_html_aa9ed36b12cb4c46f851682d630cc28f8"><div class="ttname"><a href="class_mouvement.html#aa9ed36b12cb4c46f851682d630cc28f8">Mouvement::setQuantite</a></div><div class="ttdeci">void setQuantite(QString quantite)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:78</div></div>
+<div class="ttc" id="class_mouvement_html_ab6990fd5ea6c47ab3fb6a8a4944c2df9"><div class="ttname"><a href="class_mouvement.html#ab6990fd5ea6c47ab3fb6a8a4944c2df9">Mouvement::getHorodatage</a></div><div class="ttdeci">QString getHorodatage() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:33</div></div>
+<div class="ttc" id="class_mouvement_html_a6a288ea183789e4b99f6f520ff7a32ab"><div class="ttname"><a href="class_mouvement.html#a6a288ea183789e4b99f6f520ff7a32ab">Mouvement::getContenu</a></div><div class="ttdeci">QString getContenu() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:63</div></div>
+<div class="ttc" id="class_mouvement_html_ad47317b7671e3b9b7e6e060f667924a7"><div class="ttname"><a href="class_mouvement.html#ad47317b7671e3b9b7e6e060f667924a7">Mouvement::setCasier</a></div><div class="ttdeci">void setCasier(QString p_casier)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:28</div></div>
+<div class="ttc" id="class_mouvement_html_a427e1320936bfaf09ca0b2c42ae9dd98"><div class="ttname"><a href="class_mouvement.html#a427e1320936bfaf09ca0b2c42ae9dd98">Mouvement::getQuantite</a></div><div class="ttdeci">QString getQuantite() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:73</div></div>
+<div class="ttc" id="class_mouvement_html_a2c64d36ea78ea6b428ddd0a0610411c1"><div class="ttname"><a href="class_mouvement.html#a2c64d36ea78ea6b428ddd0a0610411c1">Mouvement::setAction</a></div><div class="ttdeci">void setAction(QString p_action)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:58</div></div>
+<div class="ttc" id="class_mouvement_html_ab0bd90180d06f2ed37fb2b796f31aeb8"><div class="ttname"><a href="class_mouvement.html#ab0bd90180d06f2ed37fb2b796f31aeb8">Mouvement::setHorodatage</a></div><div class="ttdeci">void setHorodatage(QString p_horodatage)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:38</div></div>
+<div class="ttc" id="class_mouvement_html_a07e3d77c7d7af6a74e3ac5e7eb195ff9"><div class="ttname"><a href="class_mouvement.html#a07e3d77c7d7af6a74e3ac5e7eb195ff9">Mouvement::setContenu</a></div><div class="ttdeci">void setContenu(QString p_contenu)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:68</div></div>
+<div class="ttc" id="class_mouvement_html"><div class="ttname"><a href="class_mouvement.html">Mouvement</a></div><div class="ttdef"><b>Definition:</b> mouvement.h:6</div></div>
+<div class="ttc" id="class_mouvement_html_ae3ebc2911605104452a612aaf8a48e64"><div class="ttname"><a href="class_mouvement.html#ae3ebc2911605104452a612aaf8a48e64">Mouvement::getCasier</a></div><div class="ttdeci">QString getCasier() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:23</div></div>
+<div class="ttc" id="class_mouvement_html_a5c7f0e876b2292627e9d1bef12de03a3"><div class="ttname"><a href="class_mouvement.html#a5c7f0e876b2292627e9d1bef12de03a3">Mouvement::setMouvement</a></div><div class="ttdeci">void setMouvement(QStringList p_mouvement)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:10</div></div>
+<div class="ttc" id="class_mouvement_html_a80c65d0cba3e7918f7112fd7f85a1471"><div class="ttname"><a href="class_mouvement.html#a80c65d0cba3e7918f7112fd7f85a1471">Mouvement::getUtilisateur</a></div><div class="ttdeci">QString getUtilisateur() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:43</div></div>
+<div class="ttc" id="class_mouvement_html_a683576b69fc9ab0bef8b85b1468408e2"><div class="ttname"><a href="class_mouvement.html#a683576b69fc9ab0bef8b85b1468408e2">Mouvement::getAction</a></div><div class="ttdeci">QString getAction() const</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:53</div></div>
+<div class="ttc" id="class_mouvement_html_abd38b265d54e55a4dd897e3270141a84"><div class="ttname"><a href="class_mouvement.html#abd38b265d54e55a4dd897e3270141a84">Mouvement::setUtilisateur</a></div><div class="ttdeci">void setUtilisateur(QString p_utilisateur)</div><div class="ttdef"><b>Definition:</b> mouvement.cpp:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

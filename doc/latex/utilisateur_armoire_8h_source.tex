@@ -1,0 +1,85 @@
+\hypertarget{utilisateur_armoire_8h_source}{}\subsection{utilisateur\+Armoire.\+h}
+\label{utilisateur_armoire_8h_source}\index{utilisateur\+Armoire.\+h@{utilisateur\+Armoire.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef UTILISATEUR\_ARMOIRE\_H}
+00002 \textcolor{preprocessor}{#define UTILISATEUR\_ARMOIRE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{utilisateur_armoire_8h_source_l00006}\hyperlink{class_utilisateur_armoire}{00006} \textcolor{keyword}{class }\hyperlink{class_utilisateur_armoire}{UtilisateurArmoire} : \textcolor{keyword}{public} QObject
+00007 \{
+00008     Q\_OBJECT
+00009     \textcolor{comment}{// Les propriétés}
+\Hypertarget{utilisateur_armoire_8h_source_l00010}\hyperlink{class_utilisateur_armoire_a470f47c105d9b3124c8d284b164a443d}{00010}     Q\_PROPERTY(QString m\_nomProfil READ \hyperlink{class_utilisateur_armoire_a7ab03056bcfa00c2278488f5a381ac18}{getNomProfil} WRITE 
+      \hyperlink{class_utilisateur_armoire_ad71dd9b23c6bc145a64727642b1ac3f5}{setNomProfil} NOTIFY nomProfilChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00011}\hyperlink{class_utilisateur_armoire_a6cf08d0dafdc9111d34f34a47c78b373}{00011}     Q\_PROPERTY(QString m\_nomGroupe READ \hyperlink{class_utilisateur_armoire_a714ef42e6907cf73312a55b7f896682a}{getNomGroupe} WRITE 
+      \hyperlink{class_utilisateur_armoire_a4d2361e99dd2e84533ce8a2795607306}{setNomGroupe} NOTIFY nomGroupeChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00012}\hyperlink{class_utilisateur_armoire_a39e1227fe3c7d726b161acab6a5c3434}{00012}     Q\_PROPERTY(QString m\_nom READ \hyperlink{class_utilisateur_armoire_a0c7b68d55b8a929a2522cc693b8e250a}{getNom} WRITE \hyperlink{class_utilisateur_armoire_a8a1031cc1ca9a197e49c0adeb1f54923}{setNom} NOTIFY nomChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00013}\hyperlink{class_utilisateur_armoire_a652d7a57ec09963d16ab82838a5ffc51}{00013}     Q\_PROPERTY(QString m\_prenom READ \hyperlink{class_utilisateur_armoire_a000f0cfe0e184a298c74a5eddc39bee7}{getPrenom} WRITE \hyperlink{class_utilisateur_armoire_a26a7087617a276ff5c4e349bda5fed5a}{setPrenom} NOTIFY prenomChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00014}\hyperlink{class_utilisateur_armoire_a51bd81c78d69ea2699373d820bae31e4}{00014}     Q\_PROPERTY(QString m\_dateDeValidite READ \hyperlink{class_utilisateur_armoire_a83c5fad292be7c94e38fc14a5feeae7f}{getDateDeValidite} WRITE 
+      \hyperlink{class_utilisateur_armoire_abe51b503b17f3d90c7ebe0546ed39cc0}{setDateDeValidite} NOTIFY dateDeValiditeChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00015}\hyperlink{class_utilisateur_armoire_a30cb02e16dd9085a70c6b436781bb756}{00015}     Q\_PROPERTY(QString m\_identifiant READ \hyperlink{class_utilisateur_armoire_a1ba08f24dedbe82671ae4e2930748f31}{getIdentifiant} WRITE 
+      \hyperlink{class_utilisateur_armoire_ad1ebf69b10f99b062631a92a3f0ebd2b}{setIdentifiant} NOTIFY identifiantChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00016}\hyperlink{class_utilisateur_armoire_a1a3170a83da04d9f49816a98b226baeb}{00016}     Q\_PROPERTY(QString m\_badge READ \hyperlink{class_utilisateur_armoire_a22e301861ac1c932d47727ae02a17181}{getBadge} WRITE \hyperlink{class_utilisateur_armoire_afee7add8e43ae142c815f0d14491b01e}{setBadge} NOTIFY badgeChanged)
+\Hypertarget{utilisateur_armoire_8h_source_l00017}\hyperlink{class_utilisateur_armoire_a7e3072a1a336d5ee1cf87c81d27b11e0}{00017}     Q\_PROPERTY(QString m\_idUtilisateur READ \hyperlink{class_utilisateur_armoire_a6a37ddd972e4de9db1cf3b4caa1d1755}{getIdUtilisateur} WRITE 
+      \hyperlink{class_utilisateur_armoire_a51fa6e41f395f6bbe1c3b763eaa93dee}{setIdUtilisateur} NOTIFY idUtilisateurChanged)
+00018 
+00019 public:
+00020     explicit \hyperlink{class_utilisateur_armoire}{UtilisateurArmoire}(QString p\_nomProfil="", QString p\_idGroupe="", QString 
+      p\_nom="", QString p\_prenom="",
+00021                                 QString p\_dateDeValidite="", QString p\_identifiant="", QString p\_badge="",
+00022                                 QString p\_idUtilisateur="", QObject *p\_parent = \textcolor{keywordtype}{nullptr});
+00023 
+00024     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_a523423ac9e15b8260ca7f5ffc84c008d}{setUtilisateurArmoire}(QStringList p\_utilisateurArmoire);
+00025 
+00026     \textcolor{comment}{// Les accesseurs}
+00027     QString \hyperlink{class_utilisateur_armoire_a7ab03056bcfa00c2278488f5a381ac18}{getNomProfil}() const;
+00028     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_ad71dd9b23c6bc145a64727642b1ac3f5}{setNomProfil}(QString p\_nomProfil);
+00029 
+00030     QString \hyperlink{class_utilisateur_armoire_a714ef42e6907cf73312a55b7f896682a}{getNomGroupe}() const;
+00031     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_a4d2361e99dd2e84533ce8a2795607306}{setNomGroupe}(QString p\_nomGroupe);
+00032 
+00033     QString \hyperlink{class_utilisateur_armoire_a0c7b68d55b8a929a2522cc693b8e250a}{getNom}() const;
+00034     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_a8a1031cc1ca9a197e49c0adeb1f54923}{setNom}(QString p\_nom);
+00035 
+00036     QString \hyperlink{class_utilisateur_armoire_a000f0cfe0e184a298c74a5eddc39bee7}{getPrenom}() const;
+00037     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_a26a7087617a276ff5c4e349bda5fed5a}{setPrenom}(QString p\_prenom);
+00038 
+00039     QString \hyperlink{class_utilisateur_armoire_a83c5fad292be7c94e38fc14a5feeae7f}{getDateDeValidite}() const;
+00040     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_abe51b503b17f3d90c7ebe0546ed39cc0}{setDateDeValidite}(QString p\_dateDeValidite);
+00041 
+00042     QString \hyperlink{class_utilisateur_armoire_a1ba08f24dedbe82671ae4e2930748f31}{getIdentifiant}() const;
+00043     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_ad1ebf69b10f99b062631a92a3f0ebd2b}{setIdentifiant}(QString p\_identifiant);
+00044 
+00045     QString \hyperlink{class_utilisateur_armoire_a22e301861ac1c932d47727ae02a17181}{getBadge}() const;
+00046     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_afee7add8e43ae142c815f0d14491b01e}{setBadge}(QString p\_badge);
+00047 
+00048     QString \hyperlink{class_utilisateur_armoire_a6a37ddd972e4de9db1cf3b4caa1d1755}{getIdUtilisateur}() const;
+00049     \textcolor{keywordtype}{void} \hyperlink{class_utilisateur_armoire_a51fa6e41f395f6bbe1c3b763eaa93dee}{setIdUtilisateur}(QString p\_idUtilisateur);
+00050 
+00051 private:
+00052     QString m\_nomProfil;
+00053     QString m\_nomGroupe;
+00054     QString m\_nom;
+00055     QString m\_prenom;
+00056     QString m\_dateDeValidite;
+00057     QString m\_identifiant;
+00058     QString m\_badge;
+00059     QString m\_idUtilisateur;
+00060 
+00061 signals:
+00062     \textcolor{keywordtype}{void} nomProfilChanged();
+00063     \textcolor{keywordtype}{void} nomGroupeChanged();
+00064     \textcolor{keywordtype}{void} nomChanged();
+00065     \textcolor{keywordtype}{void} prenomChanged();
+00066     \textcolor{keywordtype}{void} dateDeValiditeChanged();
+00067     \textcolor{keywordtype}{void} identifiantChanged();
+00068     \textcolor{keywordtype}{void} badgeChanged();
+00069     \textcolor{keywordtype}{void} idUtilisateurChanged();
+00070 
+00071 public slots:
+00072 \};
+00073 
+00074 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

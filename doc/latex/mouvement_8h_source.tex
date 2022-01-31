@@ -1,0 +1,72 @@
+\hypertarget{mouvement_8h_source}{}\subsection{mouvement.\+h}
+\label{mouvement_8h_source}\index{mouvement.\+h@{mouvement.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MOUVEMENT\_H}
+00002 \textcolor{preprocessor}{#define MOUVEMENT\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{mouvement_8h_source_l00006}\hyperlink{class_mouvement}{00006} \textcolor{keyword}{class }\hyperlink{class_mouvement}{Mouvement} : \textcolor{keyword}{public} QObject
+00007 \{
+00008     Q\_OBJECT
+00009 
+00010     \textcolor{comment}{// Les propriétés}
+\Hypertarget{mouvement_8h_source_l00011}\hyperlink{class_mouvement_a186f483cf82ff2866da1e10031838567}{00011}     Q\_PROPERTY(QString m\_casier READ \hyperlink{class_mouvement_ae3ebc2911605104452a612aaf8a48e64}{getCasier} WRITE \hyperlink{class_mouvement_ad47317b7671e3b9b7e6e060f667924a7}{setCasier} NOTIFY casierChanged)
+\Hypertarget{mouvement_8h_source_l00012}\hyperlink{class_mouvement_a24f34a74c17068f6c98635400862adcd}{00012}     Q\_PROPERTY(QString m\_horodatage READ \hyperlink{class_mouvement_ab6990fd5ea6c47ab3fb6a8a4944c2df9}{getHorodatage} WRITE 
+      \hyperlink{class_mouvement_ab0bd90180d06f2ed37fb2b796f31aeb8}{setHorodatage} NOTIFY horodatageChanged)
+\Hypertarget{mouvement_8h_source_l00013}\hyperlink{class_mouvement_adee253bf00365d1cb4c45bd58d8b3e58}{00013}     Q\_PROPERTY(QString m\_utilisateur READ \hyperlink{class_mouvement_a80c65d0cba3e7918f7112fd7f85a1471}{getUtilisateur} WRITE 
+      \hyperlink{class_mouvement_abd38b265d54e55a4dd897e3270141a84}{setUtilisateur} NOTIFY utilisateurChanged)
+\Hypertarget{mouvement_8h_source_l00014}\hyperlink{class_mouvement_af0444a7f837bdf252f2a3ccd4eb8a701}{00014}     Q\_PROPERTY(QString m\_action READ \hyperlink{class_mouvement_a683576b69fc9ab0bef8b85b1468408e2}{getAction} WRITE \hyperlink{class_mouvement_a2c64d36ea78ea6b428ddd0a0610411c1}{setAction} NOTIFY actionChanged)
+\Hypertarget{mouvement_8h_source_l00015}\hyperlink{class_mouvement_a631b133243576c36fec6e1912415d7d6}{00015}     Q\_PROPERTY(QString m\_contenu READ \hyperlink{class_mouvement_a6a288ea183789e4b99f6f520ff7a32ab}{getContenu} WRITE \hyperlink{class_mouvement_a07e3d77c7d7af6a74e3ac5e7eb195ff9}{setContenu} NOTIFY contenuChanged
+      )
+\Hypertarget{mouvement_8h_source_l00016}\hyperlink{class_mouvement_ab6040d52ca99ef88d253b1742e70ffd3}{00016}     Q\_PROPERTY(QString m\_quantite READ \hyperlink{class_mouvement_a427e1320936bfaf09ca0b2c42ae9dd98}{getQuantite} WRITE \hyperlink{class_mouvement_aa9ed36b12cb4c46f851682d630cc28f8}{setQuantite} NOTIFY 
+      quantiteChanged)
+00017 
+00018 public:
+00019     explicit \hyperlink{class_mouvement}{Mouvement}(QString p\_casier="", QString p\_horodatage="", QString p\_utilisateur="", 
+      QString p\_action="",
+00020                        QString p\_contenu="", QString p\_quantite="", QObject *p\_parent = \textcolor{keywordtype}{nullptr});
+00021 
+00022     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_a5c7f0e876b2292627e9d1bef12de03a3}{setMouvement}(QStringList p\_mouvement);
+00023     \textcolor{comment}{// Les accesseurs}
+00024 
+00025     QString \hyperlink{class_mouvement_ae3ebc2911605104452a612aaf8a48e64}{getCasier}() const;
+00026     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_ad47317b7671e3b9b7e6e060f667924a7}{setCasier}(QString p\_casier);
+00027 
+00028     QString \hyperlink{class_mouvement_ab6990fd5ea6c47ab3fb6a8a4944c2df9}{getHorodatage}() const;
+00029     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_ab0bd90180d06f2ed37fb2b796f31aeb8}{setHorodatage}(QString p\_horodatage);
+00030 
+00031     QString \hyperlink{class_mouvement_a80c65d0cba3e7918f7112fd7f85a1471}{getUtilisateur}() const;
+00032     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_abd38b265d54e55a4dd897e3270141a84}{setUtilisateur}(QString p\_utilisateur);
+00033 
+00034     QString \hyperlink{class_mouvement_a683576b69fc9ab0bef8b85b1468408e2}{getAction}() const;
+00035     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_a2c64d36ea78ea6b428ddd0a0610411c1}{setAction}(QString p\_action);
+00036 
+00037     QString \hyperlink{class_mouvement_a6a288ea183789e4b99f6f520ff7a32ab}{getContenu}() const;
+00038     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_a07e3d77c7d7af6a74e3ac5e7eb195ff9}{setContenu}(QString p\_contenu);
+00039 
+00040     QString \hyperlink{class_mouvement_a427e1320936bfaf09ca0b2c42ae9dd98}{getQuantite}() const;
+00041     \textcolor{keywordtype}{void} \hyperlink{class_mouvement_aa9ed36b12cb4c46f851682d630cc28f8}{setQuantite}(QString quantite);
+00042 
+00043 private:
+00044     QString m\_casier;
+00045     QString m\_horodatage;
+00046     QString m\_utilisateur;
+00047     QString m\_action;
+00048     QString m\_contenu;
+00049     QString m\_quantite;
+00050 
+00051 signals:
+00052     \textcolor{keywordtype}{void} casierChanged();
+00053     \textcolor{keywordtype}{void} horodatageChanged();
+00054     \textcolor{keywordtype}{void} utilisateurChanged();
+00055     \textcolor{keywordtype}{void} actionChanged();
+00056     \textcolor{keywordtype}{void} contenuChanged();
+00057     \textcolor{keywordtype}{void} quantiteChanged();
+00058 
+00059 public slots:
+00060 \};
+00061 
+00062 \textcolor{preprocessor}{#endif // MOUVEMENT\_H}
+\end{DoxyCode}

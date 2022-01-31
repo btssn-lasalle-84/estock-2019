@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de IhmGestionArmoire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85fb4e6df1323402507b4f681cb9e3e5.html">ihm-estock</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IhmGestionArmoire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ihm_gestion_armoire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IHMGESTIONARMOIRE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IHMGESTIONARMOIRE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_ihm_gestion_armoire_8h.html#a3b50ad4bb3a6d50ae49c854487628ce5">    6</a></span>&#160;<span class="preprocessor">#define NB_CASIERS_MAX  8</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_utilisateur.html">Utilisateur</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_gestion_balances.html">GestionBalances</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_casier.html">Casier</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_article.html">Article</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_authentification_badge.html">AuthentificationBadge</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_authentification_sans_badge.html">IhmAuthentificationSansBadge</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a> : <span class="keyword">public</span> QWidget</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~<a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_utilisateur.html">Utilisateur</a> *getUtilisateur();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_casier.html">Casier</a> *getCasier();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setUtilisateur(<a class="code" href="class_utilisateur.html">Utilisateur</a> *utilisateur);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">void</span> showEvent(QShowEvent *ev);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">   37</a></span>&#160;    Ui::IhmGestionArmoire *<a class="code" href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">ui</a>; </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">   38</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *<a class="code" href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">bdd</a>; </div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">   39</a></span>&#160;    <a class="code" href="class_utilisateur.html">Utilisateur</a> *<a class="code" href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">utilisateur</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#a3186adbd003db3309c640ac414d39d2e">   40</a></span>&#160;    <a class="code" href="class_gestion_balances.html">GestionBalances</a> *<a class="code" href="class_ihm_gestion_armoire.html#a3186adbd003db3309c640ac414d39d2e">gestionBalances</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">   41</a></span>&#160;    <a class="code" href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a> *<a class="code" href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">ihmGestionGroupe</a>; </div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">   42</a></span>&#160;    QVector&lt;Casier *&gt; <a class="code" href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">casiers</a>; </div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">   43</a></span>&#160;    QVector&lt;QStringList&gt; <a class="code" href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">articlesTrouves</a>;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">   44</a></span>&#160;    <a class="code" href="class_article.html">Article</a> *<a class="code" href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">article</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> initialiserFenetre();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> initialiserClavierVirtuel();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> supprimerClavierVirtuel();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> fermerClavierVirtuel();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> afficherCasiers();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString lireAdresseIP();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> fermer();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> gererGroupe();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> selectionnerCasier(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> rechercherArticle();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> effacerRechercheArticle();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> effacerLaListeArticle();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> effacerLaSelectionArticle();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> effacerMessageNumeroCasier();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> selectionnerArticle(<span class="keywordtype">int</span> index);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // IHMGESTIONARMOIRE_H</span></div><div class="ttc" id="class_article_html"><div class="ttname"><a href="class_article.html">Article</a></div><div class="ttdef"><b>Definition:</b> article.h:7</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_ad0d3a89bbcfa9f0e50ff5c50ec64d707"><div class="ttname"><a href="class_ihm_gestion_armoire.html#ad0d3a89bbcfa9f0e50ff5c50ec64d707">IhmGestionArmoire::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:38</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a793a2816dc21b3161566138d2af5a8b9"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a793a2816dc21b3161566138d2af5a8b9">IhmGestionArmoire::ui</a></div><div class="ttdeci">Ui::IhmGestionArmoire * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:37</div></div>
+<div class="ttc" id="class_gestion_balances_html"><div class="ttname"><a href="class_gestion_balances.html">GestionBalances</a></div><div class="ttdoc">Déclaration de la classe GestionBalances. </div><div class="ttdef"><b>Definition:</b> GestionBalances.h:33</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:18</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a21821dc4f15d87125efb933991eb4385"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a21821dc4f15d87125efb933991eb4385">IhmGestionArmoire::articlesTrouves</a></div><div class="ttdeci">QVector&lt; QStringList &gt; articlesTrouves</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:43</div></div>
+<div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.h:25</div></div>
+<div class="ttc" id="class_authentification_badge_html"><div class="ttname"><a href="class_authentification_badge.html">AuthentificationBadge</a></div><div class="ttdef"><b>Definition:</b> AuthentificationBadge.h:9</div></div>
+<div class="ttc" id="class_casier_html"><div class="ttname"><a href="class_casier.html">Casier</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/casier.h:6</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_af590a9a2a114e7ee791db540f87c01ef"><div class="ttname"><a href="class_ihm_gestion_armoire.html#af590a9a2a114e7ee791db540f87c01ef">IhmGestionArmoire::ihmGestionGroupe</a></div><div class="ttdeci">IhmGestionGroupe * ihmGestionGroupe</div><div class="ttdoc">la fenêtre de gestion des groupes </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:41</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a0a3af042f7a9d5a6bac634e2b053828d"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a0a3af042f7a9d5a6bac634e2b053828d">IhmGestionArmoire::article</a></div><div class="ttdeci">Article * article</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:44</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html"><div class="ttname"><a href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a></div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:21</div></div>
+<div class="ttc" id="class_ihm_authentification_sans_badge_html"><div class="ttname"><a href="class_ihm_authentification_sans_badge.html">IhmAuthentificationSansBadge</a></div><div class="ttdef"><b>Definition:</b> IhmAuthentificationSansBadge.h:12</div></div>
+<div class="ttc" id="class_ihm_gestion_groupe_html"><div class="ttname"><a href="class_ihm_gestion_groupe.html">IhmGestionGroupe</a></div><div class="ttdoc">La fenêtre de gestion des groupes. </div><div class="ttdef"><b>Definition:</b> IhmGestionGroupe.h:37</div></div>
+<div class="ttc" id="class_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition:</b> utilisateur.h:10</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_aa14adf3863cf09947411fc33e413076c"><div class="ttname"><a href="class_ihm_gestion_armoire.html#aa14adf3863cf09947411fc33e413076c">IhmGestionArmoire::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:39</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_acd01a783a46b27a1b8d1535f5ce16212"><div class="ttname"><a href="class_ihm_gestion_armoire.html#acd01a783a46b27a1b8d1535f5ce16212">IhmGestionArmoire::casiers</a></div><div class="ttdeci">QVector&lt; Casier * &gt; casiers</div><div class="ttdoc">les casier de l&amp;#39;armoire </div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:42</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html_a3186adbd003db3309c640ac414d39d2e"><div class="ttname"><a href="class_ihm_gestion_armoire.html#a3186adbd003db3309c640ac414d39d2e">IhmGestionArmoire::gestionBalances</a></div><div class="ttdeci">GestionBalances * gestionBalances</div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

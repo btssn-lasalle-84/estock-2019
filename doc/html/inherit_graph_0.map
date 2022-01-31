@@ -1,0 +1,7 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_ajout_armoire.html" title="La boîte de dialogue AjoutArmoire. " alt="" coords="140,5,237,32"/>
+<area shape="rect" id="node3" href="$class_ajout_utilisateur.html" title="La boîte de dialogue AjoutUtilisateur. " alt="" coords="133,56,244,83"/>
+<area shape="rect" id="node4" href="$class_gestion_casier.html" title="La boîte de dialogue GestionCasier. " alt="" coords="136,107,241,133"/>
+<area shape="rect" id="node5" href="$class_modification_utilisateur.html" title="La boîte de dialogue ModificationUtilisateur. " alt="" coords="113,157,264,184"/>
+<area shape="rect" id="node6" href="$class_suppression_utilisateur.html" title="La boîte de dialogue SuppressionUtilisateur. " alt="" coords="112,208,265,235"/>
+</map>

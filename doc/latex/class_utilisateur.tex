@@ -1,0 +1,632 @@
+\hypertarget{class_utilisateur}{}\subsection{Référence de la classe Utilisateur}
+\label{class_utilisateur}\index{Utilisateur@{Utilisateur}}
+
+
+{\ttfamily \#include $<$utilisateur.\+h$>$}
+
+
+
+Graphe de collaboration de Utilisateur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_utilisateur__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}{reception\+Donnee\+Utilisateur} (Q\+String \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}, Q\+String \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{mot\+De\+Passe})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}{Utilisateur} ()
+\item 
+\hyperlink{class_utilisateur_aa11337e30b95db151312f65201c61199}{Utilisateur} (Q\+String \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{id\+Utilisateur})
+\item 
+\hyperlink{class_utilisateur_a6631539ceecd6140fe525eb91485537b}{$\sim$\+Utilisateur} ()
+\item 
+bool \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{est\+Administrateur} () const
+\item 
+bool \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{est\+Gestionnaire} () const
+\item 
+bool \hyperlink{class_utilisateur_a9b01ce9996c2242b1be952c3c7574fac}{est\+Utilisateur} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_aae4df3c09e4bd421407ea526876a2eaf}{get\+Id\+Utilisateur} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_a12d3730085761780dd54ffbcf4741721}{get\+Id\+Groupe} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{get\+Nom} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_ac4483808ad54888c66a4235133d135d5}{get\+Prenom} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_a8d838ae68c0be760d6fb4a27d8d7ba08}{get\+Profil} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}{get\+Groupe} () const
+\item 
+void \hyperlink{class_utilisateur_aec15176f18c3ae77a04214dd35e917db}{set\+Nom} (Q\+String \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom})
+\item 
+void \hyperlink{class_utilisateur_a41e12e2817f4b6ad1fe5ef0f3417caf3}{set\+Prenom} (Q\+String \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom})
+\item 
+bool \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur} (Q\+String \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant}, Q\+String password)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{id\+Profil}
+\item 
+Q\+String \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{id\+Utilisateur}
+\item 
+Q\+String \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{id\+Groupe}
+\item 
+Q\+String \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}
+\item 
+Q\+String \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}
+\item 
+Q\+String \hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge}
+\item 
+Q\+String \hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{date\+Validite}
+\item 
+Q\+String \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant}
+\item 
+Q\+String \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{mot\+De\+Passe}
+\item 
+Q\+String \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email}
+\item 
+Q\+String \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}
+\item 
+Q\+String \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe}
+\item 
+bool \hyperlink{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}{valide}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}\label{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}} 
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{Utilisateur()}{Utilisateur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Utilisateur\+::\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}.
+
+
+\begin{DoxyCode}
+00004                          : \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}(\textcolor{stringliteral}{""}), 
+      \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{motDePasse}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}{valide}(\textcolor{keyword}{false})
+00005 \{
+00006     qDebug() << Q\_FUNC\_INFO;
+00007     \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00008     \textcolor{keywordflow}{if}(!\hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00009         \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_aa11337e30b95db151312f65201c61199}\label{class_utilisateur_aa11337e30b95db151312f65201c61199}} 
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{Utilisateur()}{Utilisateur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Utilisateur\+::\+Utilisateur (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Utilisateur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}.
+
+
+\begin{DoxyCode}
+00012                                               : \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur}(
+      \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur}), \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant}(\textcolor{stringliteral}{""}), 
+      \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{motDePasse}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email}(\textcolor{stringliteral}{""}), \hyperlink{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}{valide}(\textcolor{keyword}{false})
+00013 \{
+00014     qDebug() << Q\_FUNC\_INFO;
+00015     \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00016     \textcolor{keywordflow}{if}(!\hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00017         \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00018     \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire}();
+00019 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a6631539ceecd6140fe525eb91485537b}\label{class_utilisateur_a6631539ceecd6140fe525eb91485537b}} 
+\index{Utilisateur@{Utilisateur}!````~Utilisateur@{$\sim$\+Utilisateur}}
+\index{````~Utilisateur@{$\sim$\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{$\sim$\+Utilisateur()}{~Utilisateur()}}
+{\footnotesize\ttfamily Utilisateur\+::$\sim$\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00022 \{
+00023     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00024     qDebug() << Q\_FUNC\_INFO;
+00025 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}\label{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}} 
+\index{Utilisateur@{Utilisateur}!est\+Administrateur@{est\+Administrateur}}
+\index{est\+Administrateur@{est\+Administrateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{est\+Administrateur()}{estAdministrateur()}}
+{\footnotesize\ttfamily bool Utilisateur\+::est\+Administrateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{Ihm\+Gestion\+Groupe\+::ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{Ihm\+Gestion\+Armoire\+::gerer\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{Ihm\+Gestion\+Groupe\+::lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{Ihm\+Gestion\+Groupe\+::modifier\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}{Ihm\+Gestion\+Armoire\+::set\+Utilisateur()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{Ihm\+Gestion\+Groupe\+::supprimer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00028 \{
+00029     \textcolor{keywordflow}{if}(\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil} == \textcolor{stringliteral}{"Administrateur"})
+00030         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00031     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00032 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}\label{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}} 
+\index{Utilisateur@{Utilisateur}!est\+Gestionnaire@{est\+Gestionnaire}}
+\index{est\+Gestionnaire@{est\+Gestionnaire}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{est\+Gestionnaire()}{estGestionnaire()}}
+{\footnotesize\ttfamily bool Utilisateur\+::est\+Gestionnaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{Ihm\+Gestion\+Groupe\+::ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{Ihm\+Gestion\+Armoire\+::gerer\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{Ihm\+Gestion\+Groupe\+::lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{Ihm\+Gestion\+Groupe\+::modifier\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}{Ihm\+Gestion\+Armoire\+::set\+Utilisateur()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{Ihm\+Gestion\+Groupe\+::supprimer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00035 \{
+00036     \textcolor{keywordflow}{if}(\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil} == \textcolor{stringliteral}{"Gestionnaire"})
+00037         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00038     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00039 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a9b01ce9996c2242b1be952c3c7574fac}\label{class_utilisateur_a9b01ce9996c2242b1be952c3c7574fac}} 
+\index{Utilisateur@{Utilisateur}!est\+Utilisateur@{est\+Utilisateur}}
+\index{est\+Utilisateur@{est\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{est\+Utilisateur()}{estUtilisateur()}}
+{\footnotesize\ttfamily bool Utilisateur\+::est\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}.
+
+
+\begin{DoxyCode}
+00042 \{
+00043     \textcolor{keywordflow}{if}(\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil} == \textcolor{stringliteral}{"Utilisateur"})
+00044         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00045     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00046 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}\label{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}} 
+\index{Utilisateur@{Utilisateur}!get\+Groupe@{get\+Groupe}}
+\index{get\+Groupe@{get\+Groupe}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Groupe()}{getGroupe()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{Ihm\+Gestion\+Armoire\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00074 \{
+00075     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe};
+00076 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a12d3730085761780dd54ffbcf4741721}\label{class_utilisateur_a12d3730085761780dd54ffbcf4741721}} 
+\index{Utilisateur@{Utilisateur}!get\+Id\+Groupe@{get\+Id\+Groupe}}
+\index{get\+Id\+Groupe@{get\+Id\+Groupe}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Id\+Groupe()}{getIdGroupe()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Id\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{id\+Groupe}.
+
+
+\begin{DoxyCode}
+00054 \{
+00055     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{idGroupe};
+00056 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_aae4df3c09e4bd421407ea526876a2eaf}\label{class_utilisateur_aae4df3c09e4bd421407ea526876a2eaf}} 
+\index{Utilisateur@{Utilisateur}!get\+Id\+Utilisateur@{get\+Id\+Utilisateur}}
+\index{get\+Id\+Utilisateur@{get\+Id\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Id\+Utilisateur()}{getIdUtilisateur()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Id\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{id\+Utilisateur}.
+
+
+\begin{DoxyCode}
+00049 \{
+00050     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur};
+00051 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_adfffec2519ba338497de55b61e7bc420}\label{class_utilisateur_adfffec2519ba338497de55b61e7bc420}} 
+\index{Utilisateur@{Utilisateur}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{Ihm\+Gestion\+Groupe\+::ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{Ihm\+Gestion\+Armoire\+::gerer\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{Ihm\+Gestion\+Groupe\+::lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{Ihm\+Gestion\+Groupe\+::modifier\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{Ihm\+Gestion\+Armoire\+::show\+Event()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{Ihm\+Gestion\+Groupe\+::supprimer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00059 \{
+00060     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom};
+00061 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_ac4483808ad54888c66a4235133d135d5}\label{class_utilisateur_ac4483808ad54888c66a4235133d135d5}} 
+\index{Utilisateur@{Utilisateur}!get\+Prenom@{get\+Prenom}}
+\index{get\+Prenom@{get\+Prenom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Prenom()}{getPrenom()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{Ihm\+Gestion\+Armoire\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00064 \{
+00065     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom};
+00066 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a8d838ae68c0be760d6fb4a27d8d7ba08}\label{class_utilisateur_a8d838ae68c0be760d6fb4a27d8d7ba08}} 
+\index{Utilisateur@{Utilisateur}!get\+Profil@{get\+Profil}}
+\index{get\+Profil@{get\+Profil}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{get\+Profil()}{getProfil()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::get\+Profil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}.
+
+
+\begin{DoxyCode}
+00069 \{
+00070     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil};
+00071 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}\label{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}} 
+\index{Utilisateur@{Utilisateur}!lire@{lire}}
+\index{lire@{lire}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{lire()}{lire()}}
+{\footnotesize\ttfamily void Utilisateur\+::lire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000003}{A faire}]Vérifier la validité de l\textquotesingle{}utilisateur \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge}, \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}, \hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{date\+Validite}, \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email}, \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe}, \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant}, \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{id\+Groupe}, \hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{id\+Profil}, \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{id\+Utilisateur}, \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}, \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}, \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa11337e30b95db151312f65201c61199}{Utilisateur()}.
+
+
+\begin{DoxyCode}
+00089 \{
+00090     QString requete = \textcolor{stringliteral}{"SELECT Utilisateur.idUtilisateur, Utilisateur.Nom, Utilisateur.Prenom,
+       Utilisateur.DateValidite, Utilisateur.Identifiant, Utilisateur.Badge, Utilisateur.Email, Profil.idProfil, Profil.Nom AS
+       Profil, Groupe.idGroupe, Groupe.Nom AS Groupe FROM Utilisateur INNER JOIN Groupe ON
+       Groupe.idGroupe=Utilisateur.idGroupe INNER JOIN Profil ON Profil.idProfil=Utilisateur.idProfil WHERE Utilisateur.idUtilisateur='"} + 
+      \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur} + \textcolor{stringliteral}{"'"};
+00091     QStringList donneesUtilisateur;
+00092     \textcolor{comment}{/*}
+00093 \textcolor{comment}{     * Exemple de résultat :}
+00094 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00095 \textcolor{comment}{| idUtilisateur | Nom      | Prenom | DateValidite | Identifiant | Badge | Email                   |
+       idProfil | Profil      | idGroupe | Groupe   |}
+00096 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00097 \textcolor{comment}{|             7 | GAUTHIER | Robin  | 2019-07-01   | gauthier.r  | 4444  | rgauthier2510@gmail.com |       
+       3 | Utilisateur |        5 | T-BTS-SN |}
+00098 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00099 \textcolor{comment}{     */}
+00100 
+00101     \textcolor{keywordtype}{bool} retour = \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesUtilisateur);
+00102     \textcolor{keywordflow}{if}(retour)
+00103     \{
+00104         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesUtilisateur"} << donneesUtilisateur;
+00105 
+00106         this->\hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{idProfil} = donneesUtilisateur.at(7);
+00107         this->\hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant} = donneesUtilisateur.at(4);
+00108         this->\hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom} = donneesUtilisateur.at(1);
+00109         this->\hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom} = donneesUtilisateur.at(2);
+00110         this->\hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{dateValidite} = donneesUtilisateur.at(3);
+00111         this->\hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge} = donneesUtilisateur.at(5);
+00112         this->\hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email} = donneesUtilisateur.at(6);
+00113         this->\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil} = donneesUtilisateur.at(8);
+00114         this->\hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{idGroupe} = donneesUtilisateur.at(9);
+00115         this->\hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe} = donneesUtilisateur.at(10);
+00119     \}
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}\label{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}} 
+\index{Utilisateur@{Utilisateur}!lire\+Utilisateur@{lire\+Utilisateur}}
+\index{lire\+Utilisateur@{lire\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{lire\+Utilisateur()}{lireUtilisateur()}}
+{\footnotesize\ttfamily bool Utilisateur\+::lire\+Utilisateur (\begin{DoxyParamCaption}\item[{Q\+String}]{identifiant,  }\item[{Q\+String}]{password }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000004}{A faire}]Vérifier la validité de l\textquotesingle{}utilisateur \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge}, \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}, \hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{date\+Validite}, \hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email}, \hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe}, \hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{id\+Groupe}, \hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{id\+Profil}, \hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{id\+Utilisateur}, \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}, \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}, \hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00123 \{
+00124     QString requete = \textcolor{stringliteral}{"SELECT Utilisateur.idUtilisateur, Utilisateur.Nom, Utilisateur.Prenom,
+       Utilisateur.DateValidite, Utilisateur.Identifiant, Utilisateur.Badge, Utilisateur.Email, Profil.idProfil, Profil.Nom AS
+       Profil, Groupe.idGroupe, Groupe.Nom AS Groupe FROM Utilisateur INNER JOIN Groupe ON
+       Groupe.idGroupe=Utilisateur.idGroupe INNER JOIN Profil ON Profil.idProfil=Utilisateur.idProfil WHERE Utilisateur.Identifiant='"} + 
+      \hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant} + \textcolor{stringliteral}{"' AND Utilisateur.MotDePasse='"} + password + \textcolor{stringliteral}{"'"};
+00125     QStringList donneesUtilisateur;
+00126     \textcolor{comment}{/*}
+00127 \textcolor{comment}{     * Exemple de résultat :}
+00128 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00129 \textcolor{comment}{| idUtilisateur | Nom      | Prenom | DateValidite | Identifiant | Badge | Email                   |
+       idProfil | Profil      | idGroupe | Groupe   |}
+00130 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00131 \textcolor{comment}{|             7 | GAUTHIER | Robin  | 2019-07-01   | gauthier.r  | 4444  | rgauthier2510@gmail.com |       
+       3 | Utilisateur |        5 | T-BTS-SN |}
+00132 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00133 \textcolor{comment}{     */}
+00134 
+00135     \textcolor{keywordtype}{bool} retour = \hyperlink{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesUtilisateur);
+00136     \textcolor{keywordflow}{if}(retour)
+00137     \{
+00138         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesUtilisateur"} << donneesUtilisateur;
+00139 
+00140         this->\hyperlink{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}{idUtilisateur} = donneesUtilisateur.at(0);
+00141         this->\hyperlink{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}{idProfil} = donneesUtilisateur.at(7);
+00142         this->\hyperlink{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}{identifiant} = donneesUtilisateur.at(4);
+00143         this->\hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom} = donneesUtilisateur.at(1);
+00144         this->\hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom} = donneesUtilisateur.at(2);
+00145         this->\hyperlink{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}{dateValidite} = donneesUtilisateur.at(3);
+00146         this->\hyperlink{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}{badge} = donneesUtilisateur.at(5);
+00147         this->\hyperlink{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}{email} = donneesUtilisateur.at(6);
+00148         this->\hyperlink{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}{profil} = donneesUtilisateur.at(8);
+00149         this->\hyperlink{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}{idGroupe} = donneesUtilisateur.at(9);
+00150         this->\hyperlink{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}{groupe} = donneesUtilisateur.at(10);
+00154     \}
+00155     \textcolor{keywordflow}{return} retour;
+00156 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}\label{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}} 
+\index{Utilisateur@{Utilisateur}!reception\+Donnee\+Utilisateur@{reception\+Donnee\+Utilisateur}}
+\index{reception\+Donnee\+Utilisateur@{reception\+Donnee\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{reception\+Donnee\+Utilisateur}{receptionDonneeUtilisateur}}
+{\footnotesize\ttfamily void Utilisateur\+::reception\+Donnee\+Utilisateur (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{mot\+De\+Passe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{mot\+De\+Passe}, et \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}.
+
+
+\begin{DoxyCode}
+00159 \{
+00160     this->\hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom} = \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom};
+00161     this->\hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{motDePasse} = \hyperlink{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}{motDePasse};
+00162 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_aec15176f18c3ae77a04214dd35e917db}\label{class_utilisateur_aec15176f18c3ae77a04214dd35e917db}} 
+\index{Utilisateur@{Utilisateur}!set\+Nom@{set\+Nom}}
+\index{set\+Nom@{set\+Nom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{set\+Nom()}{setNom()}}
+{\footnotesize\ttfamily void Utilisateur\+::set\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{nom }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom}.
+
+
+\begin{DoxyCode}
+00079 \{
+00080     this->\hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom} = \hyperlink{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}{nom};
+00081 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_a41e12e2817f4b6ad1fe5ef0f3417caf3}\label{class_utilisateur_a41e12e2817f4b6ad1fe5ef0f3417caf3}} 
+\index{Utilisateur@{Utilisateur}!set\+Prenom@{set\+Prenom}}
+\index{set\+Prenom@{set\+Prenom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{set\+Prenom()}{setPrenom()}}
+{\footnotesize\ttfamily void Utilisateur\+::set\+Prenom (\begin{DoxyParamCaption}\item[{Q\+String}]{prenom }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom}.
+
+
+\begin{DoxyCode}
+00084 \{
+00085     this->\hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom} = \hyperlink{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}{prenom};
+00086 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}\label{class_utilisateur_a77b48aa9d1f0ec04c69d45476897fec6}} 
+\index{Utilisateur@{Utilisateur}!badge@{badge}}
+\index{badge@{badge}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{badge}{badge}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::badge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}\label{class_utilisateur_a94fa14e95bd90358fb67eca0170e1724}} 
+\index{Utilisateur@{Utilisateur}!bdd@{bdd}}
+\index{bdd@{bdd}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Utilisateur\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_ae76433a6d353c5f5ad0c6a6af64022ad}{Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}\label{class_utilisateur_a898cd6f5a64d733ad49a8a74388326cd}} 
+\index{Utilisateur@{Utilisateur}!date\+Validite@{date\+Validite}}
+\index{date\+Validite@{date\+Validite}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{date\+Validite}{dateValidite}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::date\+Validite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}\label{class_utilisateur_a2f45443ce5277a5e6baefe5121e66555}} 
+\index{Utilisateur@{Utilisateur}!email@{email}}
+\index{email@{email}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}\label{class_utilisateur_af795d9518a4eebe00c5b24937732ab2b}} 
+\index{Utilisateur@{Utilisateur}!groupe@{groupe}}
+\index{groupe@{groupe}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{groupe}{groupe}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}{get\+Groupe()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}\label{class_utilisateur_a1e79e47202a2c716346f47adbbeb2511}} 
+\index{Utilisateur@{Utilisateur}!identifiant@{identifiant}}
+\index{identifiant@{identifiant}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{identifiant}{identifiant}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::identifiant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}.
+
+\mbox{\Hypertarget{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}\label{class_utilisateur_a13c3425772da1d5501e6fe4a2f2b8194}} 
+\index{Utilisateur@{Utilisateur}!id\+Groupe@{id\+Groupe}}
+\index{id\+Groupe@{id\+Groupe}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{id\+Groupe}{idGroupe}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::id\+Groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_a12d3730085761780dd54ffbcf4741721}{get\+Id\+Groupe()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}\label{class_utilisateur_a042947e8b86637d1eb012c3fc89a959e}} 
+\index{Utilisateur@{Utilisateur}!id\+Profil@{id\+Profil}}
+\index{id\+Profil@{id\+Profil}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{id\+Profil}{idProfil}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::id\+Profil\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}\label{class_utilisateur_ae1763e7a52c82c63506bc4160cdabb20}} 
+\index{Utilisateur@{Utilisateur}!id\+Utilisateur@{id\+Utilisateur}}
+\index{id\+Utilisateur@{id\+Utilisateur}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{id\+Utilisateur}{idUtilisateur}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::id\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_aae4df3c09e4bd421407ea526876a2eaf}{get\+Id\+Utilisateur()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}\label{class_utilisateur_a4f6a17d0fb5c231bcb414396236a056f}} 
+\index{Utilisateur@{Utilisateur}!mot\+De\+Passe@{mot\+De\+Passe}}
+\index{mot\+De\+Passe@{mot\+De\+Passe}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{mot\+De\+Passe}{motDePasse}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::mot\+De\+Passe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}{reception\+Donnee\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}\label{class_utilisateur_a1096e809aca4b7cf453a7af93cb72502}} 
+\index{Utilisateur@{Utilisateur}!nom@{nom}}
+\index{nom@{nom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{get\+Nom()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}, \hyperlink{class_utilisateur_a81311d8a9f62ffdfb8ee65d37461ea17}{reception\+Donnee\+Utilisateur()}, et \hyperlink{class_utilisateur_aec15176f18c3ae77a04214dd35e917db}{set\+Nom()}.
+
+\mbox{\Hypertarget{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}\label{class_utilisateur_a1dd0779807b19298f30f39d9c371170f}} 
+\index{Utilisateur@{Utilisateur}!prenom@{prenom}}
+\index{prenom@{prenom}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{prenom}{prenom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::prenom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_ac4483808ad54888c66a4235133d135d5}{get\+Prenom()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_a41e12e2817f4b6ad1fe5ef0f3417caf3}{set\+Prenom()}.
+
+\mbox{\Hypertarget{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}\label{class_utilisateur_ab03707f32fadf99ae0a0a27d59470646}} 
+\index{Utilisateur@{Utilisateur}!profil@{profil}}
+\index{profil@{profil}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{profil}{profil}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+::profil\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{est\+Gestionnaire()}, \hyperlink{class_utilisateur_a9b01ce9996c2242b1be952c3c7574fac}{est\+Utilisateur()}, \hyperlink{class_utilisateur_a8d838ae68c0be760d6fb4a27d8d7ba08}{get\+Profil()}, \hyperlink{class_utilisateur_aa7d1a92ff4e06e9d302369f6c48884e1}{lire()}, et \hyperlink{class_utilisateur_a5911f84daf6d47d7f50e6d16022b292e}{lire\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}\label{class_utilisateur_ad8b12c53bc07491a54895d48631ef6a2}} 
+\index{Utilisateur@{Utilisateur}!valide@{valide}}
+\index{valide@{valide}!Utilisateur@{Utilisateur}}
+\paragraph{\texorpdfstring{valide}{valide}}
+{\footnotesize\ttfamily bool Utilisateur\+::valide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{utilisateur_8h}{utilisateur.\+h}\item 
+\hyperlink{utilisateur_8cpp}{utilisateur.\+cpp}\end{DoxyCompactItemize}

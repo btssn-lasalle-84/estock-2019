@@ -1,0 +1,620 @@
+\hypertarget{class_utilisateurs_armoire}{}\subsection{Référence de la classe Utilisateurs\+Armoire}
+\label{class_utilisateurs_armoire}\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+
+
+page des utilisateurs  
+
+
+
+
+{\ttfamily \#include $<$utilisateurs\+Armoire.\+h$>$}
+
+
+
+Graphe de collaboration de Utilisateurs\+Armoire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_utilisateurs_armoire__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_utilisateurs_armoire_ac65c676a1c55c1e04732647188c4ad5b}{liste\+Utilisateurs\+Armoire\+Changed} ()
+\item 
+void \hyperlink{class_utilisateurs_armoire_a8208260671720fdbd5d6f13b0e6827f2}{liste\+Profil\+Changed} ()
+\item 
+void \hyperlink{class_utilisateurs_armoire_ae8cbb67d285658aadff801e64f43fd97}{liste\+Groupe\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utilisateurs_armoire_a13efbad7862f1c6eff0301c659ec7360}{Utilisateurs\+Armoire} (Q\+Object $\ast$p\+\_\+parent=nullptr)
+\item 
+\hyperlink{class_utilisateurs_armoire_a980367259be2684f8f0762ea80deb9d9}{$\sim$\+Utilisateurs\+Armoire} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}{lire\+Profil} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}{lire\+Groupe} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}{inserer} (Q\+String p\+\_\+id\+Profil, Q\+String p\+\_\+id\+Groupe, Q\+String p\+\_\+nom, Q\+String p\+\_\+prenom, Q\+String p\+\_\+date\+De\+Validite, Q\+String p\+\_\+identifiant, Q\+String p\+\_\+badge)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}{modifier} (Q\+String p\+\_\+id\+Profil, Q\+String p\+\_\+id\+Groupe, Q\+String p\+\_\+nom, Q\+String p\+\_\+prenom, Q\+String p\+\_\+date\+De\+Validite, Q\+String p\+\_\+identifiant, Q\+String p\+\_\+badge, Q\+String p\+\_\+id\+Utilisateur)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}{supprimer} (Q\+String m\+\_\+nom\+Profil, Q\+String m\+\_\+nom\+Groupe, Q\+String m\+\_\+nom, Q\+String m\+\_\+prenom, Q\+String m\+\_\+date\+De\+Validite, Q\+String m\+\_\+identifiant, Q\+String m\+\_\+badge, Q\+String p\+\_\+id\+Utilisateur)
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a39e5692fe0b00097732bb7633ae5d1e5}{get\+Utilisateurs\+Armoire} ()
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a153930c5840343585f2d0195405df382}{get\+Liste\+Profil} ()
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a5fd8e356a1fffd330f47935dfb843e6a}{get\+Liste\+Groupe} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a8ba4ea6592f6588ab1cd0ddce7dc744d}{liste\+Utilisateurs\+Armoire}
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a377e5cc73178d05cdad23d8d84ae28a4}{liste\+Profil}
+\item 
+Q\+Variant \hyperlink{class_utilisateurs_armoire_a3012f6f272b32aa9a9cf6cc05dc129f5}{liste\+Groupe}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\+\_\+utilisateurs\+Armoire}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\+\_\+liste\+Profil}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\+\_\+liste\+Groupe}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}
+\item 
+var \hyperlink{class_utilisateurs_armoire_ad756dc2f8b42b46fa1e4dfaf362e9adc}{width}
+\item 
+var \hyperlink{class_utilisateurs_armoire_af77c416abcdd9953893754328bb1235c}{height}
+\item 
+var \hyperlink{class_utilisateurs_armoire_abece135e2fd9d684307d1a208bdeca13}{title}
+\item 
+var \hyperlink{class_utilisateurs_armoire_a2a416bb6bd13fb03a2c7cf6f71882a9d}{on\+Visible\+Changed}
+\item 
+Row \hyperlink{class_utilisateurs_armoire_a7d84493172558e34459abd91e0413ea5}{ligne\+Titre}
+\begin{DoxyCompactList}\small\item\em Conteneur du texte label\+Titre. \end{DoxyCompactList}\item 
+Text \hyperlink{class_utilisateurs_armoire_a4b8cc25772b0d16e2feaa676b6994832}{label\+Titre}
+\begin{DoxyCompactList}\small\item\em titre de la boîte de dialogue \end{DoxyCompactList}\item 
+Row \hyperlink{class_utilisateurs_armoire_a9b3a4397aeaea4355fcab2c0e7fa3915}{row\+Button}
+\item 
+\hyperlink{class_bouton}{Bouton} \hyperlink{class_utilisateurs_armoire_ace608d59fbb70792c0a98647bc183f01}{bouton\+Ajouter}
+\item 
+\hyperlink{class_bouton}{Bouton} \hyperlink{class_utilisateurs_armoire_abf62e560c045aab6553e34e2679ff54e}{bouton\+Modifier}
+\item 
+\hyperlink{class_bouton}{Bouton} \hyperlink{class_utilisateurs_armoire_a5d3c8fe333a18ebe157d269a01776c63}{bouton\+Supprimer}
+\item 
+\hyperlink{class_bouton}{Bouton} \hyperlink{class_utilisateurs_armoire_af8856ab16aef016e9f79b42e365958d4}{bouton\+Recharger}
+\item 
+\hyperlink{class_bouton}{Bouton} \hyperlink{class_utilisateurs_armoire_ad6ad1256c72d37d047c1b6593a7be752}{bouton\+Retour}
+\item 
+Row \hyperlink{class_utilisateurs_armoire_af5d61c0a59a9be3315c9bba2084d97f0}{row}
+\item 
+Table\+View \hyperlink{class_utilisateurs_armoire_ac303b231703ded320c6cdcda387bb5cc}{vue\+Utilisateur\+Armoire}
+\item 
+\hyperlink{class_ajout_utilisateur}{Ajout\+Utilisateur} \hyperlink{class_utilisateurs_armoire_a00bca151246db8b925412710bdf9a05d}{dialogue\+Ajout\+Utilisateur}
+\item 
+\hyperlink{class_modification_utilisateur}{Modification\+Utilisateur} \hyperlink{class_utilisateurs_armoire_a5114d5d6bbc857a27f4a0e6c91b4ddd2}{dialogue\+Modification\+Utilisateur}
+\item 
+\hyperlink{class_suppression_utilisateur}{Suppression\+Utilisateur} \hyperlink{class_utilisateurs_armoire_a361bc9b368d19641c8f9d6a88dfbfa2f}{dialogue\+Suppression\+Utilisateur}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+La page des utilisateurs.
+
+\begin{DoxyAuthor}{Auteur}
+Robin Gauthier
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a13efbad7862f1c6eff0301c659ec7360}\label{class_utilisateurs_armoire_a13efbad7862f1c6eff0301c659ec7360}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{Utilisateurs\+Armoire()}{UtilisateursArmoire()}}
+{\footnotesize\ttfamily Utilisateurs\+Armoire\+::\+Utilisateurs\+Armoire (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{p\+\_\+parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00007                                                           : QObject(p\_parent)
+00008 \{
+00009     \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a980367259be2684f8f0762ea80deb9d9}\label{class_utilisateurs_armoire_a980367259be2684f8f0762ea80deb9d9}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!````~Utilisateurs\+Armoire@{$\sim$\+Utilisateurs\+Armoire}}
+\index{````~Utilisateurs\+Armoire@{$\sim$\+Utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{$\sim$\+Utilisateurs\+Armoire()}{~UtilisateursArmoire()}}
+{\footnotesize\ttfamily Utilisateurs\+Armoire\+::$\sim$\+Utilisateurs\+Armoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00015 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a5fd8e356a1fffd330f47935dfb843e6a}\label{class_utilisateurs_armoire_a5fd8e356a1fffd330f47935dfb843e6a}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!get\+Liste\+Groupe@{get\+Liste\+Groupe}}
+\index{get\+Liste\+Groupe@{get\+Liste\+Groupe}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{get\+Liste\+Groupe()}{getListeGroupe()}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::get\+Liste\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\+\_\+liste\+Groupe}.
+
+
+\begin{DoxyCode}
+00179 \{
+00180     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\_listeGroupe});
+00181 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a153930c5840343585f2d0195405df382}\label{class_utilisateurs_armoire_a153930c5840343585f2d0195405df382}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!get\+Liste\+Profil@{get\+Liste\+Profil}}
+\index{get\+Liste\+Profil@{get\+Liste\+Profil}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{get\+Liste\+Profil()}{getListeProfil()}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::get\+Liste\+Profil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\+\_\+liste\+Profil}.
+
+
+\begin{DoxyCode}
+00174 \{
+00175     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\_listeProfil});
+00176 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a39e5692fe0b00097732bb7633ae5d1e5}\label{class_utilisateurs_armoire_a39e5692fe0b00097732bb7633ae5d1e5}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!get\+Utilisateurs\+Armoire@{get\+Utilisateurs\+Armoire}}
+\index{get\+Utilisateurs\+Armoire@{get\+Utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{get\+Utilisateurs\+Armoire()}{getUtilisateursArmoire()}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::get\+Utilisateurs\+Armoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\+\_\+utilisateurs\+Armoire}.
+
+
+\begin{DoxyCode}
+00169 \{
+00170     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\_utilisateursArmoire});
+00171 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}\label{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!inserer@{inserer}}
+\index{inserer@{inserer}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{inserer()}{inserer()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::inserer (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+id\+Profil,  }\item[{Q\+String}]{p\+\_\+id\+Groupe,  }\item[{Q\+String}]{p\+\_\+nom,  }\item[{Q\+String}]{p\+\_\+prenom,  }\item[{Q\+String}]{p\+\_\+date\+De\+Validite,  }\item[{Q\+String}]{p\+\_\+identifiant,  }\item[{Q\+String}]{p\+\_\+badge }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}, et \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00124 \{
+00125     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"p\_idProfil"} << p\_idProfil << \textcolor{stringliteral}{"p\_idGroupe"} << p\_idGroupe << \textcolor{stringliteral}{"p\_nom"} << p\_nom
+       << \textcolor{stringliteral}{"p\_prenom"} << p\_prenom << \textcolor{stringliteral}{"p\_dateDeValidite"} << p\_dateDeValidite << \textcolor{stringliteral}{"p\_identifiant"} << p\_identifiant << \textcolor{stringliteral}{
+      "p\_badge"} << p\_badge;
+00126     \textcolor{comment}{//requête INSERT}
+00127     QString requeteAjoutUtilisateur = \textcolor{stringliteral}{"INSERT INTO Utilisateur (idProfil, idGroupe, Nom, Prenom,
+       DateValidite, Identifiant, Badge, Email) VALUES ('"} + p\_idProfil + \textcolor{stringliteral}{"', '"} + p\_idGroupe + \textcolor{stringliteral}{"', '"} + p\_nom + \textcolor{stringliteral}{"', '"} + 
+      p\_prenom + \textcolor{stringliteral}{"', '"} + p\_dateDeValidite + \textcolor{stringliteral}{"', '"} + p\_identifiant + \textcolor{stringliteral}{"', '"} + p\_badge + \textcolor{stringliteral}{"', '')"};
+00128     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requeteAjoutUtilisateur"} << requeteAjoutUtilisateur;
+00129     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requeteAjoutUtilisateur))
+00130     \{
+00131         \textcolor{comment}{// relire la liste}
+00132         \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire}();
+00133         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00134     \}
+00135     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}\label{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!lire@{lire}}
+\index{lire@{lire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{lire()}{lire()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::lire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_ac65c676a1c55c1e04732647188c4ad5b}{liste\+Utilisateurs\+Armoire\+Changed()}, \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}, \hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\+\_\+utilisateurs\+Armoire}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}{inserer()}, \hyperlink{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}{modifier()}, et \hyperlink{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}{supprimer()}.
+
+
+\begin{DoxyCode}
+00018 \{
+00019     QString requete = \textcolor{stringliteral}{"SELECT Profil.Nom, Groupe.Nom, Utilisateur.Nom, Utilisateur.Prenom,
+       Utilisateur.DateValidite, Utilisateur.Identifiant, Utilisateur.Badge, Utilisateur.idUtilisateur FROM Utilisateur INNER JOIN
+       Groupe ON Utilisateur.idGroupe = Groupe.idGroupe INNER JOIN Profil ON Utilisateur.idProfil = Profil.idProfil
+      "};
+00020     QVector<QStringList> enregistrementsUtilisateursArmoire;
+00021 
+00022     \hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\_utilisateursArmoire}.clear();
+00023     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, enregistrementsUtilisateursArmoire))
+00024     \{
+00025         QStringList champsUtilisateurArmoire;
+00026 
+00027         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < enregistrementsUtilisateursArmoire.size(); i++)
+00028         \{
+00029             champsUtilisateurArmoire = enregistrementsUtilisateursArmoire.at(i);
+00030             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"champsUtilisateurArmoire"} << champsUtilisateurArmoire;
+00031 
+00032             \hyperlink{class_utilisateur_armoire}{UtilisateurArmoire} *pUtilisateurArmoire = \textcolor{keyword}{new} 
+      \hyperlink{class_utilisateur_armoire}{UtilisateurArmoire}(
+00033                         champsUtilisateurArmoire.at(0), champsUtilisateurArmoire.at(1),
+00034                         champsUtilisateurArmoire.at(2), champsUtilisateurArmoire.at(3),
+00035                         champsUtilisateurArmoire.at(4), champsUtilisateurArmoire.at(5),
+00036                         champsUtilisateurArmoire.at(6), champsUtilisateurArmoire.at(7));
+00037             \hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{m\_utilisateursArmoire}.append(pUtilisateurArmoire);
+00038         \}
+00039 
+00040         emit \hyperlink{class_utilisateurs_armoire_ac65c676a1c55c1e04732647188c4ad5b}{listeUtilisateursArmoireChanged}();
+00041 
+00042         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00043     \}
+00044 
+00045     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00046 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}\label{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!lire\+Groupe@{lire\+Groupe}}
+\index{lire\+Groupe@{lire\+Groupe}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{lire\+Groupe()}{lireGroupe()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::lire\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_ae8cbb67d285658aadff801e64f43fd97}{liste\+Groupe\+Changed()}, \hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\+\_\+liste\+Groupe}, \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00074 \{
+00075     QString requete = \textcolor{stringliteral}{"SELECT Groupe.idGroupe, Groupe.Nom FROM Groupe ORDER BY Groupe.idGroupe ASC;"};
+00076     QVector<QStringList> enregistrementsListeGroupe;
+00077 
+00078     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00079     \hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\_listeGroupe}.clear();
+00080     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, enregistrementsListeGroupe))
+00081     \{
+00082         QStringList champsListeGroupe;
+00083         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < enregistrementsListeGroupe.size(); i++)
+00084         \{
+00085             champsListeGroupe = enregistrementsListeGroupe.at(i);
+00086             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"champsListeGroupe"} << champsListeGroupe;
+00087             \hyperlink{class_groupe}{Groupe} *pGroupe = \textcolor{keyword}{new} \hyperlink{class_groupe}{Groupe}(champsListeGroupe.at(0), champsListeGroupe.at(1));
+00088             \hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{m\_listeGroupe}.append(pGroupe);
+00089         \}
+00090         emit \hyperlink{class_utilisateurs_armoire_ae8cbb67d285658aadff801e64f43fd97}{listeGroupeChanged}();
+00091 
+00092         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00093     \}
+00094 
+00095     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00096 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}\label{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!lire\+Profil@{lire\+Profil}}
+\index{lire\+Profil@{lire\+Profil}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{lire\+Profil()}{lireProfil()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::lire\+Profil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateurs_armoire_a8208260671720fdbd5d6f13b0e6827f2}{liste\+Profil\+Changed()}, \hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\+\_\+liste\+Profil}, \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00049 \{
+00050     QString requete = \textcolor{stringliteral}{"SELECT Profil.idProfil, Profil.Nom FROM Profil ORDER BY Profil.idProfil ASC;"};
+00051     QVector<QStringList> enregistrementsListeProfil;
+00052 
+00053     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00054     \hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\_listeProfil}.clear();
+00055     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, enregistrementsListeProfil))
+00056     \{
+00057         QStringList champsListeProfil;
+00058         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < enregistrementsListeProfil.size(); i++)
+00059         \{
+00060             champsListeProfil = enregistrementsListeProfil.at(i);
+00061             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"champsListeProfil"} << champsListeProfil;
+00062             \hyperlink{class_profil}{Profil} *pProfil = \textcolor{keyword}{new} \hyperlink{class_profil}{Profil}(champsListeProfil.at(0), champsListeProfil.at(1));
+00063             \hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{m\_listeProfil}.append(pProfil);
+00064         \}
+00065         emit \hyperlink{class_utilisateurs_armoire_a8208260671720fdbd5d6f13b0e6827f2}{listeProfilChanged}();
+00066 
+00067         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00068     \}
+00069 
+00070     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00071 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_ae8cbb67d285658aadff801e64f43fd97}\label{class_utilisateurs_armoire_ae8cbb67d285658aadff801e64f43fd97}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Groupe\+Changed@{liste\+Groupe\+Changed}}
+\index{liste\+Groupe\+Changed@{liste\+Groupe\+Changed}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Groupe\+Changed}{listeGroupeChanged}}
+{\footnotesize\ttfamily void Utilisateurs\+Armoire\+::liste\+Groupe\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}{lire\+Groupe()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a8208260671720fdbd5d6f13b0e6827f2}\label{class_utilisateurs_armoire_a8208260671720fdbd5d6f13b0e6827f2}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Profil\+Changed@{liste\+Profil\+Changed}}
+\index{liste\+Profil\+Changed@{liste\+Profil\+Changed}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Profil\+Changed}{listeProfilChanged}}
+{\footnotesize\ttfamily void Utilisateurs\+Armoire\+::liste\+Profil\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}{lire\+Profil()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_ac65c676a1c55c1e04732647188c4ad5b}\label{class_utilisateurs_armoire_ac65c676a1c55c1e04732647188c4ad5b}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Utilisateurs\+Armoire\+Changed@{liste\+Utilisateurs\+Armoire\+Changed}}
+\index{liste\+Utilisateurs\+Armoire\+Changed@{liste\+Utilisateurs\+Armoire\+Changed}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Utilisateurs\+Armoire\+Changed}{listeUtilisateursArmoireChanged}}
+{\footnotesize\ttfamily void Utilisateurs\+Armoire\+::liste\+Utilisateurs\+Armoire\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}\label{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!modifier@{modifier}}
+\index{modifier@{modifier}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{modifier()}{modifier()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::modifier (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+id\+Profil,  }\item[{Q\+String}]{p\+\_\+id\+Groupe,  }\item[{Q\+String}]{p\+\_\+nom,  }\item[{Q\+String}]{p\+\_\+prenom,  }\item[{Q\+String}]{p\+\_\+date\+De\+Validite,  }\item[{Q\+String}]{p\+\_\+identifiant,  }\item[{Q\+String}]{p\+\_\+badge,  }\item[{Q\+String}]{p\+\_\+id\+Utilisateur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}, et \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00139 \{
+00140     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"p\_idProfil"} << p\_idProfil << \textcolor{stringliteral}{"p\_idGroupe"} << p\_idGroupe << \textcolor{stringliteral}{"p\_nom"} << p\_nom
+       << \textcolor{stringliteral}{"p\_prenom"} << p\_prenom << \textcolor{stringliteral}{"p\_dateDeValidite"} << p\_dateDeValidite << \textcolor{stringliteral}{"p\_identifiant"} << p\_identifiant << \textcolor{stringliteral}{
+      "p\_badge"} << p\_badge << \textcolor{stringliteral}{"p\_idUtilisateur"} << p\_idUtilisateur;
+00141     \textcolor{comment}{//requête UPDATE}
+00142     QString requeteModificationUtilisateur = \textcolor{stringliteral}{"UPDATE Utilisateur SET idProfil='"} + p\_idProfil + \textcolor{stringliteral}{"
+      ',idGroupe='"} + p\_idGroupe + \textcolor{stringliteral}{"',Nom='"} + p\_nom + \textcolor{stringliteral}{"',Prenom='"} + p\_prenom + \textcolor{stringliteral}{"',DateValidite='"} + p\_dateDeValidite + \textcolor{stringliteral}{"
+      ',Identifiant='"} + p\_identifiant + \textcolor{stringliteral}{"',Badge='"} + p\_badge + \textcolor{stringliteral}{"' WHERE idUtilisateur='"} + p\_idUtilisateur + \textcolor{stringliteral}{"'"};
+00143     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requeteModificationUtilisateur"} << requeteModificationUtilisateur;
+00144     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requeteModificationUtilisateur))
+00145     \{
+00146         \textcolor{comment}{// relire la liste}
+00147         \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire}();
+00148         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00149     \}
+00150     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00151 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}\label{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!supprimer@{supprimer}}
+\index{supprimer@{supprimer}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{supprimer()}{supprimer()}}
+{\footnotesize\ttfamily bool Utilisateurs\+Armoire\+::supprimer (\begin{DoxyParamCaption}\item[{Q\+String}]{m\+\_\+nom\+Profil,  }\item[{Q\+String}]{m\+\_\+nom\+Groupe,  }\item[{Q\+String}]{m\+\_\+nom,  }\item[{Q\+String}]{m\+\_\+prenom,  }\item[{Q\+String}]{m\+\_\+date\+De\+Validite,  }\item[{Q\+String}]{m\+\_\+identifiant,  }\item[{Q\+String}]{m\+\_\+badge,  }\item[{Q\+String}]{p\+\_\+id\+Utilisateur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}, et \hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00154 \{
+00155     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"p\_idProfil"} << p\_idProfil << \textcolor{stringliteral}{"p\_idGroupe"} << p\_idGroupe << \textcolor{stringliteral}{"p\_nom"} << p\_nom
+       << \textcolor{stringliteral}{"p\_prenom"} << p\_prenom << \textcolor{stringliteral}{"p\_dateDeValidite"} << p\_dateDeValidite << \textcolor{stringliteral}{"p\_identifiant"} << p\_identifiant << \textcolor{stringliteral}{
+      "p\_badge"} << p\_badge << \textcolor{stringliteral}{"p\_idUtilisateur"} << p\_idUtilisateur;
+00156     \textcolor{comment}{//requête UPDATE}
+00157     QString requeteSuppressionUtilisateur = \textcolor{stringliteral}{"DELETE FROM Utilisateur WHERE Utilisateur.idUtilisateur = '"} +
+       p\_idUtilisateur + \textcolor{stringliteral}{"'"};
+00158     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requeteSuppressionUtilisateur"} << requeteSuppressionUtilisateur;
+00159     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requeteSuppressionUtilisateur))
+00160     \{
+00161         \textcolor{comment}{// relire la liste}
+00162         \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire}();
+00163         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00164     \}
+00165     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00166 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_utilisateurs_armoire_ace608d59fbb70792c0a98647bc183f01}\label{class_utilisateurs_armoire_ace608d59fbb70792c0a98647bc183f01}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!bouton\+Ajouter@{bouton\+Ajouter}}
+\index{bouton\+Ajouter@{bouton\+Ajouter}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Ajouter}{boutonAjouter}}
+{\footnotesize\ttfamily \hyperlink{class_bouton}{Bouton} Utilisateurs\+Armoire\+::bouton\+Ajouter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_abf62e560c045aab6553e34e2679ff54e}\label{class_utilisateurs_armoire_abf62e560c045aab6553e34e2679ff54e}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!bouton\+Modifier@{bouton\+Modifier}}
+\index{bouton\+Modifier@{bouton\+Modifier}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Modifier}{boutonModifier}}
+{\footnotesize\ttfamily \hyperlink{class_bouton}{Bouton} Utilisateurs\+Armoire\+::bouton\+Modifier\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_af8856ab16aef016e9f79b42e365958d4}\label{class_utilisateurs_armoire_af8856ab16aef016e9f79b42e365958d4}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!bouton\+Recharger@{bouton\+Recharger}}
+\index{bouton\+Recharger@{bouton\+Recharger}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Recharger}{boutonRecharger}}
+{\footnotesize\ttfamily \hyperlink{class_bouton}{Bouton} Utilisateurs\+Armoire\+::bouton\+Recharger\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_ad6ad1256c72d37d047c1b6593a7be752}\label{class_utilisateurs_armoire_ad6ad1256c72d37d047c1b6593a7be752}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!bouton\+Retour@{bouton\+Retour}}
+\index{bouton\+Retour@{bouton\+Retour}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Retour}{boutonRetour}}
+{\footnotesize\ttfamily \hyperlink{class_bouton}{Bouton} Utilisateurs\+Armoire\+::bouton\+Retour\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a5d3c8fe333a18ebe157d269a01776c63}\label{class_utilisateurs_armoire_a5d3c8fe333a18ebe157d269a01776c63}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!bouton\+Supprimer@{bouton\+Supprimer}}
+\index{bouton\+Supprimer@{bouton\+Supprimer}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Supprimer}{boutonSupprimer}}
+{\footnotesize\ttfamily \hyperlink{class_bouton}{Bouton} Utilisateurs\+Armoire\+::bouton\+Supprimer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a00bca151246db8b925412710bdf9a05d}\label{class_utilisateurs_armoire_a00bca151246db8b925412710bdf9a05d}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!dialogue\+Ajout\+Utilisateur@{dialogue\+Ajout\+Utilisateur}}
+\index{dialogue\+Ajout\+Utilisateur@{dialogue\+Ajout\+Utilisateur}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{dialogue\+Ajout\+Utilisateur}{dialogueAjoutUtilisateur}}
+{\footnotesize\ttfamily \hyperlink{class_ajout_utilisateur}{Ajout\+Utilisateur} Utilisateurs\+Armoire\+::dialogue\+Ajout\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a5114d5d6bbc857a27f4a0e6c91b4ddd2}\label{class_utilisateurs_armoire_a5114d5d6bbc857a27f4a0e6c91b4ddd2}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!dialogue\+Modification\+Utilisateur@{dialogue\+Modification\+Utilisateur}}
+\index{dialogue\+Modification\+Utilisateur@{dialogue\+Modification\+Utilisateur}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{dialogue\+Modification\+Utilisateur}{dialogueModificationUtilisateur}}
+{\footnotesize\ttfamily \hyperlink{class_modification_utilisateur}{Modification\+Utilisateur} Utilisateurs\+Armoire\+::dialogue\+Modification\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a361bc9b368d19641c8f9d6a88dfbfa2f}\label{class_utilisateurs_armoire_a361bc9b368d19641c8f9d6a88dfbfa2f}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!dialogue\+Suppression\+Utilisateur@{dialogue\+Suppression\+Utilisateur}}
+\index{dialogue\+Suppression\+Utilisateur@{dialogue\+Suppression\+Utilisateur}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{dialogue\+Suppression\+Utilisateur}{dialogueSuppressionUtilisateur}}
+{\footnotesize\ttfamily \hyperlink{class_suppression_utilisateur}{Suppression\+Utilisateur} Utilisateurs\+Armoire\+::dialogue\+Suppression\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_af77c416abcdd9953893754328bb1235c}\label{class_utilisateurs_armoire_af77c416abcdd9953893754328bb1235c}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!height@{height}}
+\index{height@{height}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily var Utilisateurs\+Armoire\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a4b8cc25772b0d16e2feaa676b6994832}\label{class_utilisateurs_armoire_a4b8cc25772b0d16e2feaa676b6994832}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!label\+Titre@{label\+Titre}}
+\index{label\+Titre@{label\+Titre}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{label\+Titre}{labelTitre}}
+{\footnotesize\ttfamily Text Utilisateurs\+Armoire\+::label\+Titre\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a7d84493172558e34459abd91e0413ea5}\label{class_utilisateurs_armoire_a7d84493172558e34459abd91e0413ea5}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!ligne\+Titre@{ligne\+Titre}}
+\index{ligne\+Titre@{ligne\+Titre}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{ligne\+Titre}{ligneTitre}}
+{\footnotesize\ttfamily Row Utilisateurs\+Armoire\+::ligne\+Titre\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}\label{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!m\+\_\+liste\+Groupe@{m\+\_\+liste\+Groupe}}
+\index{m\+\_\+liste\+Groupe@{m\+\_\+liste\+Groupe}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+liste\+Groupe}{m\_listeGroupe}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Utilisateurs\+Armoire\+::m\+\_\+liste\+Groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a5fd8e356a1fffd330f47935dfb843e6a}{get\+Liste\+Groupe()}, et \hyperlink{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}{lire\+Groupe()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}\label{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!m\+\_\+liste\+Profil@{m\+\_\+liste\+Profil}}
+\index{m\+\_\+liste\+Profil@{m\+\_\+liste\+Profil}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+liste\+Profil}{m\_listeProfil}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Utilisateurs\+Armoire\+::m\+\_\+liste\+Profil\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a153930c5840343585f2d0195405df382}{get\+Liste\+Profil()}, et \hyperlink{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}{lire\+Profil()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}\label{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}}
+\index{m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+p\+Base\+De\+Donnees}{m\_pBaseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Utilisateurs\+Armoire\+::m\+\_\+p\+Base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}{inserer()}, \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}, \hyperlink{class_utilisateurs_armoire_aeadd41da356116c6e393d832e2b819e9}{lire\+Groupe()}, \hyperlink{class_utilisateurs_armoire_a952931c38642273c5e959edb69706144}{lire\+Profil()}, \hyperlink{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}{modifier()}, \hyperlink{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}{supprimer()}, et \hyperlink{class_utilisateurs_armoire_a13efbad7862f1c6eff0301c659ec7360}{Utilisateurs\+Armoire()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}\label{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!m\+\_\+utilisateurs\+Armoire@{m\+\_\+utilisateurs\+Armoire}}
+\index{m\+\_\+utilisateurs\+Armoire@{m\+\_\+utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{m\+\_\+utilisateurs\+Armoire}{m\_utilisateursArmoire}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Utilisateurs\+Armoire\+::m\+\_\+utilisateurs\+Armoire\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateurs_armoire_a39e5692fe0b00097732bb7633ae5d1e5}{get\+Utilisateurs\+Armoire()}, et \hyperlink{class_utilisateurs_armoire_a10b2038874606c0afccf0f18c038dd0c}{lire()}.
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a2a416bb6bd13fb03a2c7cf6f71882a9d}\label{class_utilisateurs_armoire_a2a416bb6bd13fb03a2c7cf6f71882a9d}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!on\+Visible\+Changed@{on\+Visible\+Changed}}
+\index{on\+Visible\+Changed@{on\+Visible\+Changed}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{on\+Visible\+Changed}{onVisibleChanged}}
+{\footnotesize\ttfamily var Utilisateurs\+Armoire\+::on\+Visible\+Changed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_af5d61c0a59a9be3315c9bba2084d97f0}\label{class_utilisateurs_armoire_af5d61c0a59a9be3315c9bba2084d97f0}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!row@{row}}
+\index{row@{row}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{row}{row}}
+{\footnotesize\ttfamily Row Utilisateurs\+Armoire\+::row\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a9b3a4397aeaea4355fcab2c0e7fa3915}\label{class_utilisateurs_armoire_a9b3a4397aeaea4355fcab2c0e7fa3915}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!row\+Button@{row\+Button}}
+\index{row\+Button@{row\+Button}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{row\+Button}{rowButton}}
+{\footnotesize\ttfamily Row Utilisateurs\+Armoire\+::row\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_abece135e2fd9d684307d1a208bdeca13}\label{class_utilisateurs_armoire_abece135e2fd9d684307d1a208bdeca13}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!title@{title}}
+\index{title@{title}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily var Utilisateurs\+Armoire\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_ac303b231703ded320c6cdcda387bb5cc}\label{class_utilisateurs_armoire_ac303b231703ded320c6cdcda387bb5cc}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!vue\+Utilisateur\+Armoire@{vue\+Utilisateur\+Armoire}}
+\index{vue\+Utilisateur\+Armoire@{vue\+Utilisateur\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{vue\+Utilisateur\+Armoire}{vueUtilisateurArmoire}}
+{\footnotesize\ttfamily Table\+View Utilisateurs\+Armoire\+::vue\+Utilisateur\+Armoire\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_ad756dc2f8b42b46fa1e4dfaf362e9adc}\label{class_utilisateurs_armoire_ad756dc2f8b42b46fa1e4dfaf362e9adc}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!width@{width}}
+\index{width@{width}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily var Utilisateurs\+Armoire\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_utilisateurs_armoire_a3012f6f272b32aa9a9cf6cc05dc129f5}\label{class_utilisateurs_armoire_a3012f6f272b32aa9a9cf6cc05dc129f5}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Groupe@{liste\+Groupe}}
+\index{liste\+Groupe@{liste\+Groupe}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Groupe}{listeGroupe}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::liste\+Groupe\hspace{0.3cm}{\ttfamily [read]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a377e5cc73178d05cdad23d8d84ae28a4}\label{class_utilisateurs_armoire_a377e5cc73178d05cdad23d8d84ae28a4}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Profil@{liste\+Profil}}
+\index{liste\+Profil@{liste\+Profil}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Profil}{listeProfil}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::liste\+Profil\hspace{0.3cm}{\ttfamily [read]}}
+
+\mbox{\Hypertarget{class_utilisateurs_armoire_a8ba4ea6592f6588ab1cd0ddce7dc744d}\label{class_utilisateurs_armoire_a8ba4ea6592f6588ab1cd0ddce7dc744d}} 
+\index{Utilisateurs\+Armoire@{Utilisateurs\+Armoire}!liste\+Utilisateurs\+Armoire@{liste\+Utilisateurs\+Armoire}}
+\index{liste\+Utilisateurs\+Armoire@{liste\+Utilisateurs\+Armoire}!Utilisateurs\+Armoire@{Utilisateurs\+Armoire}}
+\paragraph{\texorpdfstring{liste\+Utilisateurs\+Armoire}{listeUtilisateursArmoire}}
+{\footnotesize\ttfamily Q\+Variant Utilisateurs\+Armoire\+::liste\+Utilisateurs\+Armoire\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{utilisateurs_armoire_8h}{utilisateurs\+Armoire.\+h}\item 
+\hyperlink{_utilisateurs_armoire_8qml}{Utilisateurs\+Armoire.\+qml}\item 
+\hyperlink{utilisateurs_armoire_8cpp}{utilisateurs\+Armoire.\+cpp}\end{DoxyCompactItemize}

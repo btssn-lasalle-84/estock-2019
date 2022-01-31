@@ -1,0 +1,277 @@
+\hypertarget{class_gestion_balances}{}\subsection{Référence de la classe Gestion\+Balances}
+\label{class_gestion_balances}\index{Gestion\+Balances@{Gestion\+Balances}}
+
+
+Déclaration de la classe \hyperlink{class_gestion_balances}{Gestion\+Balances}.  
+
+
+
+
+{\ttfamily \#include $<$Gestion\+Balances.\+h$>$}
+
+
+
+Graphe de collaboration de Gestion\+Balances\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_gestion_balances__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}{lire\+Port} ()
+\begin{DoxyCompactList}\small\item\em Réception des trames balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gestion_balances_a68f1e2d248971ff912f4ce5e2a24b6ef}{Gestion\+Balances} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_gestion_balances_a6cb93817424cba3ac1f1593f5948d2ee}{$\sim$\+Gestion\+Balances} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la calsse \hyperlink{class_gestion_balances}{Gestion\+Balances}. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}{se\+Connecter} ()
+\begin{DoxyCompactList}\small\item\em Ouvre et paramètre le port. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}{se\+Deconnecter} ()
+\begin{DoxyCompactList}\small\item\em Fermeture du port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}{parametrer\+Port} ()
+\begin{DoxyCompactList}\small\item\em Paramètrage du port. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}{ouvrir\+Port} ()
+\begin{DoxyCompactList}\small\item\em Ouverture du port. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}{fermer\+Port} ()
+\begin{DoxyCompactList}\small\item\em Fermeture du port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Serial\+Port $\ast$ \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}
+\item 
+Q\+Byte\+Array \hyperlink{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}{donnees}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hadrien Gimenez
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_gestion_balances_a68f1e2d248971ff912f4ce5e2a24b6ef}\label{class_gestion_balances_a68f1e2d248971ff912f4ce5e2a24b6ef}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!Gestion\+Balances@{Gestion\+Balances}}
+\index{Gestion\+Balances@{Gestion\+Balances}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{Gestion\+Balances()}{GestionBalances()}}
+{\footnotesize\ttfamily Gestion\+Balances\+::\+Gestion\+Balances (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{_gestion_balances_8h_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT}, \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}, et \hyperlink{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}{se\+Connecter()}.
+
+
+\begin{DoxyCode}
+00012                                                 : QObject(parent)
+00013 \{
+00014     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port} = \textcolor{keyword}{new} QSerialPort(\hyperlink{_gestion_balances_8h_a614217d263be1fb1a5f76e2ff7be19a2}{PORT}, \textcolor{keyword}{this});
+00015 
+00016     this->\hyperlink{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}{seConnecter}();
+00017 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_a6cb93817424cba3ac1f1593f5948d2ee}\label{class_gestion_balances_a6cb93817424cba3ac1f1593f5948d2ee}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!````~Gestion\+Balances@{$\sim$\+Gestion\+Balances}}
+\index{````~Gestion\+Balances@{$\sim$\+Gestion\+Balances}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{$\sim$\+Gestion\+Balances()}{~GestionBalances()}}
+{\footnotesize\ttfamily Gestion\+Balances\+::$\sim$\+Gestion\+Balances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}{se\+Deconnecter()}.
+
+
+\begin{DoxyCode}
+00026 \{
+00027     this->\hyperlink{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}{seDeconnecter}();
+00028 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}\label{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!fermer\+Port@{fermer\+Port}}
+\index{fermer\+Port@{fermer\+Port}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{fermer\+Port()}{fermerPort()}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::fermer\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}{se\+Deconnecter()}.
+
+
+\begin{DoxyCode}
+00087 \{
+00088     \textcolor{keywordflow}{if}(\hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->isOpen())
+00089         \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->close();
+00090     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"etat ouverture port"} << \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->isOpen();
+00091 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}\label{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!lire\+Port@{lire\+Port}}
+\index{lire\+Port@{lire\+Port}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{lire\+Port}{lirePort}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::lire\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}{donnees}, et \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}{ouvrir\+Port()}.
+
+
+\begin{DoxyCode}
+00067 \{
+00068     \textcolor{keywordflow}{if}(\hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->canReadLine())
+00069     \{
+00070         QByteArray \hyperlink{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}{donnees} = \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->readLine();
+00071         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}{donnees};
+00072         \textcolor{keywordflow}{if}(donnees.startsWith(\textcolor{stringliteral}{"$"}))
+00073         \{
+00074             qDebug() << Q\_FUNC\_INFO << \hyperlink{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}{donnees};
+00075             donnees.clear();
+00076         \}
+00077     \}
+00078 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}\label{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!ouvrir\+Port@{ouvrir\+Port}}
+\index{ouvrir\+Port@{ouvrir\+Port}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{ouvrir\+Port()}{ouvrirPort()}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::ouvrir\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}{lire\+Port()}, et \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}{se\+Connecter()}.
+
+
+\begin{DoxyCode}
+00051 \{
+00052     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->open(QIODevice::ReadOnly);
+00053     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"etat ouverture port"} << \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->isOpen();
+00054     \textcolor{keywordflow}{if}(\hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->isOpen())
+00055     \{
+00056         connect(\hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}, SIGNAL(readyRead()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}{lirePort}()));
+00057     \}
+00058 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}\label{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!parametrer\+Port@{parametrer\+Port}}
+\index{parametrer\+Port@{parametrer\+Port}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{parametrer\+Port()}{parametrerPort()}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::parametrer\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}{se\+Connecter()}.
+
+
+\begin{DoxyCode}
+00037 \{
+00038     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->setBaudRate(QSerialPort::Baud9600);
+00039     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->setDataBits(QSerialPort::Data8);
+00040     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->setParity(QSerialPort::NoParity);
+00041     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->setStopBits(QSerialPort::OneStop);
+00042     \hyperlink{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}{port}->setFlowControl(QSerialPort::NoFlowControl);
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}\label{class_gestion_balances_ac3bb603b39f9b89732da2dc576903924}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!se\+Connecter@{se\+Connecter}}
+\index{se\+Connecter@{se\+Connecter}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{se\+Connecter()}{seConnecter()}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::se\+Connecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}{ouvrir\+Port()}, et \hyperlink{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}{parametrer\+Port()}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a68f1e2d248971ff912f4ce5e2a24b6ef}{Gestion\+Balances()}.
+
+
+\begin{DoxyCode}
+00100 \{
+00101     this->\hyperlink{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}{ouvrirPort}();
+00102     this->\hyperlink{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}{parametrerPort}();
+00103 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}\label{class_gestion_balances_a25880f41779aa8fdeac7ae972b09ff36}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!se\+Deconnecter@{se\+Deconnecter}}
+\index{se\+Deconnecter@{se\+Deconnecter}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{se\+Deconnecter()}{seDeconnecter()}}
+{\footnotesize\ttfamily void Gestion\+Balances\+::se\+Deconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}{fermer\+Port()}.
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a6cb93817424cba3ac1f1593f5948d2ee}{$\sim$\+Gestion\+Balances()}.
+
+
+\begin{DoxyCode}
+00112 \{
+00113     this->\hyperlink{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}{fermerPort}();
+00114 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}\label{class_gestion_balances_acb44214ef5e441e89e0525f567079af3}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!donnees@{donnees}}
+\index{donnees@{donnees}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{donnees}{donnees}}
+{\footnotesize\ttfamily Q\+Byte\+Array Gestion\+Balances\+::donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}{lire\+Port()}.
+
+\mbox{\Hypertarget{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}\label{class_gestion_balances_a7e40205180eb65dab0b5cdebd628f794}} 
+\index{Gestion\+Balances@{Gestion\+Balances}!port@{port}}
+\index{port@{port}!Gestion\+Balances@{Gestion\+Balances}}
+\paragraph{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily Q\+Serial\+Port$\ast$ Gestion\+Balances\+::port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_gestion_balances_a4c59a33f55b0c97f0ea4fb63b7791c0c}{fermer\+Port()}, \hyperlink{class_gestion_balances_a68f1e2d248971ff912f4ce5e2a24b6ef}{Gestion\+Balances()}, \hyperlink{class_gestion_balances_a4f3f6a424fce484321d239fa9f7fa15f}{lire\+Port()}, \hyperlink{class_gestion_balances_a8d7031310e6b9530c0a9e47c142aaf39}{ouvrir\+Port()}, et \hyperlink{class_gestion_balances_aca48b0074aaef7b8d4d9da45c3d6a3a9}{parametrer\+Port()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_gestion_balances_8h}{Gestion\+Balances.\+h}\item 
+\hyperlink{_gestion_balances_8cpp}{Gestion\+Balances.\+cpp}\end{DoxyCompactItemize}

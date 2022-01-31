@@ -1,0 +1,639 @@
+\hypertarget{class_ihm_gestion_groupe}{}\subsection{Référence de la classe Ihm\+Gestion\+Groupe}
+\label{class_ihm_gestion_groupe}\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+
+
+La fenêtre de gestion des groupes.  
+
+
+
+
+{\ttfamily \#include $<$Ihm\+Gestion\+Groupe.\+h$>$}
+
+
+
+Graphe de collaboration de Ihm\+Gestion\+Groupe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ihm_gestion_groupe__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}{fermer} ()
+\begin{DoxyCompactList}\small\item\em Ferme la fenêtre. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe} (Q\+String nom\+Groupe)
+\begin{DoxyCompactList}\small\item\em Sélectionne un groupe dans la liste. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Ajouter un groupe. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Supprimer un groupe. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Modifier un groupe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la Gestion de groupe. \end{DoxyCompactList}\item 
+\hyperlink{class_ihm_gestion_groupe_aba32d8b8ea5b7d31232d41ae051ebcb7}{$\sim$\+Ihm\+Gestion\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre Gestion de \hyperlink{class_groupe}{Groupe}. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}{set\+Utilisateur} (\hyperlink{class_utilisateur}{Utilisateur} $\ast$\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_groupe_a813459240b9382aaa1f88593bcdea41b}{show\+Event} (Q\+Show\+Event $\ast$ev)
+\begin{DoxyCompactList}\small\item\em Recharge la liste des groupes à chaque fois que la fenêtre Gestion\+Groupe est affichée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_groupe_a7206d6ced32c6c5e8be7ee474195ca73}{initialiser\+Fenetre} ()
+\begin{DoxyCompactList}\small\item\em Initialise le mode plein écran. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Affiche la liste des groupes. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}{afficher\+Lister\+Utilisateurs\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Affiche la liste des utilisateur pour le groupe sélectionné \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gerer\+Actions} (bool etat)
+\begin{DoxyCompactList}\small\item\em Gère les état des boutons Ajout, Modification et Suppression. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}id\+Groupe du groupe sélectionné \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_ihm_gestion_groupe_ae214f51e88aeb029e6956eb833f7542c}{get\+Nom\+Utilisateur} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Ihm\+Gestion\+Groupe $\ast$ \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}
+\begin{DoxyCompactList}\small\item\em agrégation de la définition de la fenêtre UI \end{DoxyCompactList}\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+\hyperlink{class_utilisateur}{Utilisateur} $\ast$ \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}
+\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}
+\begin{DoxyCompactList}\small\item\em les groupes \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hadrien G\+I\+M\+E\+N\+EZ
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}\label{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{Ihm\+Gestion\+Groupe()}{IhmGestionGroupe()}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Groupe\+::\+Ihm\+Gestion\+Groupe (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Widget$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}{fermer()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_ihm_gestion_groupe_a7206d6ced32c6c5e8be7ee474195ca73}{initialiser\+Fenetre()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}.
+
+
+\begin{DoxyCode}
+00013                                                   :
+00014     QWidget(parent),
+00015     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}(\textcolor{keyword}{new} Ui::IhmGestionGroupe), \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}(\textcolor{keyword}{nullptr})
+00016 \{
+00017     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->setupUi(\textcolor{keyword}{this});
+00018     qDebug() << Q\_FUNC\_INFO;
+00019 
+00020     \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00021     \textcolor{keywordflow}{if}(!\hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00022         \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00023 
+00024     connect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonFermeture, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}{fermer}()));
+00025     connect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonAjout, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouterGroupe}()));
+00026     connect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonSuppression, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimerGroupe}()));
+00027     connect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonModification, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifierGroupe}()));
+00028 
+00029     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonAjout->setEnabled(\textcolor{keyword}{false});
+00030     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonModification->setEnabled(\textcolor{keyword}{false});
+00031     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonSuppression->setEnabled(\textcolor{keyword}{false});
+00032     QStringListModel *modele = \textcolor{keyword}{new} QStringListModel(\textcolor{keyword}{this});
+00033     modele->setStringList(QStringList\{\});
+00034     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->setModel(modele);
+00035 
+00036     \hyperlink{class_ihm_gestion_groupe_a7206d6ced32c6c5e8be7ee474195ca73}{initialiserFenetre}();
+00037 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_aba32d8b8ea5b7d31232d41ae051ebcb7}\label{class_ihm_gestion_groupe_aba32d8b8ea5b7d31232d41ae051ebcb7}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!````~Ihm\+Gestion\+Groupe@{$\sim$\+Ihm\+Gestion\+Groupe}}
+\index{````~Ihm\+Gestion\+Groupe@{$\sim$\+Ihm\+Gestion\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{$\sim$\+Ihm\+Gestion\+Groupe()}{~IhmGestionGroupe()}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Groupe\+::$\sim$\+Ihm\+Gestion\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}.
+
+
+\begin{DoxyCode}
+00046 \{
+00047     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00048     \textcolor{keyword}{delete} \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui};
+00049     qDebug() << Q\_FUNC\_INFO;
+00050 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}\label{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!afficher\+Lister\+Utilisateurs\+Groupe@{afficher\+Lister\+Utilisateurs\+Groupe}}
+\index{afficher\+Lister\+Utilisateurs\+Groupe@{afficher\+Lister\+Utilisateurs\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{afficher\+Lister\+Utilisateurs\+Groupe()}{afficherListerUtilisateursGroupe()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::afficher\+Lister\+Utilisateurs\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}.
+
+
+\begin{DoxyCode}
+00157 \{
+00158     QStringListModel *modele;
+00159     modele = \textcolor{keyword}{new} QStringListModel(\textcolor{keyword}{this});
+00160     modele->setStringList(\hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs});
+00161     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->setModel(modele);
+00162 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}\label{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!ajouter\+Groupe@{ajouter\+Groupe}}
+\index{ajouter\+Groupe@{ajouter\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{ajouter\+Groupe}{ajouterGroupe}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::ajouter\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}.
+
+
+\begin{DoxyCode}
+00221 \{
+00222     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur} != \textcolor{keyword}{nullptr})
+00223     \{
+00224         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Nom"} << \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() << \textcolor{stringliteral}{"Administrateur"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() << \textcolor{stringliteral}{"estGestionnaire"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}();
+00225         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00226         \{
+00227             QString nomGroupe = \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->text();
+00228             \textcolor{keywordflow}{if}(nomGroupe.isEmpty())
+00229                 \textcolor{keywordflow}{return};
+00230             QString requete = QString(\textcolor{stringliteral}{"INSERT INTO `Groupe` (`Nom`) VALUES('%1')"}).arg(nomGroupe);
+00231             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00232             \textcolor{keywordtype}{bool} retour = \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00233 
+00234             \textcolor{keywordflow}{if}(retour)
+00235             \{
+00236                 \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->clear();
+00237                 \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{listerGroupe}();
+00238             \}
+00239         \}
+00240     \}
+00241 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}\label{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!fermer@{fermer}}
+\index{fermer@{fermer}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{fermer}{fermer}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::fermer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}.
+
+
+\begin{DoxyCode}
+00106 \{
+00107     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->setText(\textcolor{stringliteral}{""});
+00108     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe->setCurrentIndex(0);
+00109     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonAjout->setEnabled(\textcolor{keyword}{false});
+00110     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonModification->setEnabled(\textcolor{keyword}{false});
+00111     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonSuppression->setEnabled(\textcolor{keyword}{false});
+00112     close();
+00113 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}\label{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!gerer\+Actions@{gerer\+Actions}}
+\index{gerer\+Actions@{gerer\+Actions}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{gerer\+Actions()}{gererActions()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::gerer\+Actions (\begin{DoxyParamCaption}\item[{bool}]{etat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em etat} & bool true (Modification et Suppression actifs et pas d\textquotesingle{}Ajout) sinon l\textquotesingle{}inverse \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a813459240b9382aaa1f88593bcdea41b}{show\+Event()}.
+
+
+\begin{DoxyCode}
+00172 \{
+00173     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonModification->setEnabled(etat);
+00174     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonSuppression->setEnabled(etat);
+00175     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->boutonAjout->setEnabled(!etat);
+00176 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}\label{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!get\+Id\+Groupe@{get\+Id\+Groupe}}
+\index{get\+Id\+Groupe@{get\+Id\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{get\+Id\+Groupe()}{getIdGroupe()}}
+{\footnotesize\ttfamily Q\+String Ihm\+Gestion\+Groupe\+::get\+Id\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String l\textquotesingle{}id\+Groupe 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}, et \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00316 \{
+00317     QString idGroupe = \textcolor{stringliteral}{""};
+00318     QString nomGroupe = \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe->currentText();
+00319     \textcolor{keywordflow}{if}(nomGroupe.isEmpty())
+00320         \textcolor{keywordflow}{return} idGroupe;
+00321 
+00322     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}.size();i++)
+00323     \{
+00324         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}.at(i).at(1) == nomGroupe)
+00325         \{
+00326             idGroupe = \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}.at(i).at(0);
+00327             \textcolor{keywordflow}{break};
+00328         \}
+00329     \}
+00330 
+00331     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"idGroupe"} << idGroupe;
+00332     \textcolor{keywordflow}{return} idGroupe;
+00333 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_ae214f51e88aeb029e6956eb833f7542c}\label{class_ihm_gestion_groupe_ae214f51e88aeb029e6956eb833f7542c}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!get\+Nom\+Utilisateur@{get\+Nom\+Utilisateur}}
+\index{get\+Nom\+Utilisateur@{get\+Nom\+Utilisateur}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{get\+Nom\+Utilisateur()}{getNomUtilisateur()}}
+{\footnotesize\ttfamily Q\+String Ihm\+Gestion\+Groupe\+::get\+Nom\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00336 \{
+00337     \textcolor{keywordflow}{return} QString(\textcolor{stringliteral}{""});
+00338 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a7206d6ced32c6c5e8be7ee474195ca73}\label{class_ihm_gestion_groupe_a7206d6ced32c6c5e8be7ee474195ca73}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!initialiser\+Fenetre@{initialiser\+Fenetre}}
+\index{initialiser\+Fenetre@{initialiser\+Fenetre}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{initialiser\+Fenetre()}{initialiserFenetre()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::initialiser\+Fenetre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{I\+H\+M\+\_\+\+C\+SS}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}.
+
+
+\begin{DoxyCode}
+00071 \{
+00072     setStyleSheet(\hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{IHM\_CSS});
+00073 
+00074 \textcolor{preprocessor}{    #ifndef DESKTOP}
+00075     \textcolor{keyword}{const} \textcolor{keywordtype}{int} w = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width();
+00076     \textcolor{keyword}{const} \textcolor{keywordtype}{int} h = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height();
+00077     resize(w, h);
+00078 \textcolor{preprocessor}{    #else}
+00079     \textcolor{comment}{// 800×480}
+00080     resize(800, 480);
+00081 \textcolor{preprocessor}{    #endif}
+00082     setWindowFlags(Qt::FramelessWindowHint | Qt::Dialog); \textcolor{comment}{// Ajouter Qt::WindowStaysOnTopHint}
+00083     \textcolor{comment}{//showMaximized();}
+00084     setWindowModality(Qt::WindowModal);
+00085 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}\label{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!lister\+Groupe@{lister\+Groupe}}
+\index{lister\+Groupe@{lister\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{lister\+Groupe()}{listerGroupe()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::lister\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a813459240b9382aaa1f88593bcdea41b}{show\+Event()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00185 \{
+00186     QString requete;
+00187 
+00188     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur} != \textcolor{keyword}{nullptr})
+00189     \{
+00190         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Nom"} << \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() << \textcolor{stringliteral}{"Administrateur"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() << \textcolor{stringliteral}{"estGestionnaire"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}();
+00191         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00192         \{
+00193             requete = \textcolor{stringliteral}{"SELECT * FROM Groupe"};
+00194             \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes}.clear();
+00195             \textcolor{keywordtype}{bool} retour = \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes});
+00196             \textcolor{keywordflow}{if}(retour)
+00197             \{
+00198                 qDebug() << Q\_FUNC\_INFO << \hyperlink{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}{groupes};
+00199                 disconnect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe, SIGNAL(currentIndexChanged(QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionnerGroupe}(QString)));
+00200                 \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()->rowCount() > 0)
+00201                     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()->removeRows(0, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()
+      ->rowCount());
+00202                 \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe->clear();
+00203                 \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe->addItem(\textcolor{stringliteral}{""});
+00204                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<groupes.size();i++)
+00205                 \{
+00206                     \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe->addItem(groupes.at(i).at(1));
+00207                 \}
+00208                 connect(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->cbListeGroupe, SIGNAL(currentIndexChanged(QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionnerGroupe}(QString)));
+00209             \}
+00210         \}
+00211     \}
+00212 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}\label{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!modifier\+Groupe@{modifier\+Groupe}}
+\index{modifier\+Groupe@{modifier\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{modifier\+Groupe}{modifierGroupe}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::modifier\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}.
+
+
+\begin{DoxyCode}
+00283 \{
+00284     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur} != \textcolor{keyword}{nullptr})
+00285     \{
+00286         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Nom"} << \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() << \textcolor{stringliteral}{"Administrateur"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() << \textcolor{stringliteral}{"estGestionnaire"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}();
+00287         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00288         \{
+00289             QString nomGroupe = \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->text();
+00290             \textcolor{keywordflow}{if}(nomGroupe.isEmpty())
+00291                 \textcolor{keywordflow}{return};
+00292             QString idGroupe = \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{getIdGroupe}();
+00293             \textcolor{keywordflow}{if}(idGroupe.isEmpty())
+00294                 \textcolor{keywordflow}{return};
+00295 
+00296             QString requete = QString(\textcolor{stringliteral}{"UPDATE `Groupe` SET `Nom`='%1' WHERE idGroupe='%2'"}).arg(nomGroupe).
+      arg(idGroupe);
+00297             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00298             \textcolor{keywordtype}{bool} retour = \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00299 
+00300             \textcolor{keywordflow}{if}(retour)
+00301             \{
+00302                 \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->clear();
+00303                 \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{listerGroupe}();
+00304             \}
+00305         \}
+00306     \}
+00307 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}\label{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!selectionner\+Groupe@{selectionner\+Groupe}}
+\index{selectionner\+Groupe@{selectionner\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{selectionner\+Groupe}{selectionnerGroupe}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::selectionner\+Groupe (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Groupe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Groupe} & Q\+String le nom du groupe sélectionné \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}{afficher\+Lister\+Utilisateurs\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gerer\+Actions()}, \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}.
+
+
+\begin{DoxyCode}
+00122 \{
+00123     \textcolor{keywordflow}{if}(!nomGroupe.isEmpty())
+00124     \{
+00125         \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->setText(nomGroupe);        
+00126         QVector<QStringList> donnees;
+00127         QString requete = \textcolor{stringliteral}{"SELECT Nom, Prenom FROM Utilisateur WHERE idGroupe='"} + 
+      \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{getIdGroupe}() + \textcolor{stringliteral}{"'"};
+00128         \textcolor{keywordtype}{bool} retour = \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donnees);
+00129         \textcolor{keywordflow}{if}(retour)
+00130         \{
+00131             qDebug() << Q\_FUNC\_INFO << donnees;
+00132             \hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs}.clear();
+00133             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < donnees.size(); i++)
+00134             \{
+00135                 \hyperlink{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}{utilisateurs} << (donnees.at(i).at(0) + \textcolor{stringliteral}{" "} + donnees.at(i).at(1));
+00136             \}
+00137             \hyperlink{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}{afficherListerUtilisateursGroupe}();
+00138             \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gererActions}(\textcolor{keyword}{true});
+00139         \}
+00140     \}
+00141     \textcolor{keywordflow}{else}
+00142     \{
+00143         \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->setText(\textcolor{stringliteral}{""});
+00144         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()->rowCount() > 0)
+00145             \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()->removeRows(0, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->listViewUtilisateurs->model()->
+      rowCount());
+00146         \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gererActions}(\textcolor{keyword}{false});
+00147     \}
+00148 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}\label{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!set\+Utilisateur@{set\+Utilisateur}}
+\index{set\+Utilisateur@{set\+Utilisateur}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{set\+Utilisateur()}{setUtilisateur()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::set\+Utilisateur (\begin{DoxyParamCaption}\item[{\hyperlink{class_utilisateur}{Utilisateur} $\ast$}]{utilisateur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{Ihm\+Gestion\+Armoire\+::gerer\+Groupe()}.
+
+
+\begin{DoxyCode}
+00060 \{
+00061     this->utilisateur = \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur};
+00062 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a813459240b9382aaa1f88593bcdea41b}\label{class_ihm_gestion_groupe_a813459240b9382aaa1f88593bcdea41b}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{show\+Event()}{showEvent()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gerer\+Actions()}, et \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}.
+
+
+\begin{DoxyCode}
+00094 \{
+00095     \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{listerGroupe}();
+00096     \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gererActions}(\textcolor{keyword}{false});
+00097 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}\label{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!supprimer\+Groupe@{supprimer\+Groupe}}
+\index{supprimer\+Groupe@{supprimer\+Groupe}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{supprimer\+Groupe}{supprimerGroupe}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Groupe\+::supprimer\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}, \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}, et \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}.
+
+
+\begin{DoxyCode}
+00251 \{
+00252     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur} != \textcolor{keyword}{nullptr})
+00253     \{
+00254         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Nom"} << \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() << \textcolor{stringliteral}{"Administrateur"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() << \textcolor{stringliteral}{"estGestionnaire"} << 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}();
+00255         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || 
+      \hyperlink{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00256         \{
+00257             QString nomGroupe = \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->text();
+00258             \textcolor{keywordflow}{if}(nomGroupe.isEmpty())
+00259                 \textcolor{keywordflow}{return};
+00260             QString idGroupe = \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{getIdGroupe}();
+00261             \textcolor{keywordflow}{if}(idGroupe.isEmpty())
+00262                 \textcolor{keywordflow}{return};
+00263             QString requete = QString(\textcolor{stringliteral}{"DELETE FROM `Groupe` WHERE idGroupe='%1'"}).arg(idGroupe);
+00264             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00265             \textcolor{keywordtype}{bool} retour = \hyperlink{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00266 
+00267             \textcolor{keywordflow}{if}(retour)
+00268             \{
+00269                 \hyperlink{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}{ui}->saisieNomGroupe->clear();
+00270                 \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{listerGroupe}();
+00271             \}
+00272         \}
+00273     \}
+00274 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}\label{class_ihm_gestion_groupe_a4f0049a7046abe7530d7f7eaed7ed2bc}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!bdd@{bdd}}
+\index{bdd@{bdd}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Ihm\+Gestion\+Groupe\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}\label{class_ihm_gestion_groupe_af2d05c88db3e19452e70727446635bc4}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!groupes@{groupes}}
+\index{groupes@{groupes}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{groupes}{groupes}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String\+List$>$ Ihm\+Gestion\+Groupe\+::groupes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}\label{class_ihm_gestion_groupe_a9785ad3dadc1d2cad8558ca8b682dffd}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!ui@{ui}}
+\index{ui@{ui}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Ihm\+Gestion\+Groupe$\ast$ Ihm\+Gestion\+Groupe\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}{afficher\+Lister\+Utilisateurs\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_af45013ab7614dbe037025efd6884907f}{fermer()}, \hyperlink{class_ihm_gestion_groupe_a9e6a325b8845fb3c22157b2b59436610}{gerer\+Actions()}, \hyperlink{class_ihm_gestion_groupe_a0f6dd8f645a5bf789521a25322004146}{get\+Id\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a27632f9cf5b66f4403c3534ee0e0ad18}{Ihm\+Gestion\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_aba32d8b8ea5b7d31232d41ae051ebcb7}{$\sim$\+Ihm\+Gestion\+Groupe()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}\label{class_ihm_gestion_groupe_a87b9d242561e8bf7765aa14a5e124db1}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!utilisateur@{utilisateur}}
+\index{utilisateur@{utilisateur}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{utilisateur}{utilisateur}}
+{\footnotesize\ttfamily \hyperlink{class_utilisateur}{Utilisateur}$\ast$ Ihm\+Gestion\+Groupe\+::utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a5e5b11cb395970f64b30427ccb2ecf4d}{ajouter\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a7afabe81c405b35e7cfd4e760eda8c84}{lister\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a810c186bf38dab776c7167c85671b268}{modifier\+Groupe()}, \hyperlink{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}{set\+Utilisateur()}, et \hyperlink{class_ihm_gestion_groupe_a08bdd132a37ac574b15d00e4dc959d7f}{supprimer\+Groupe()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}\label{class_ihm_gestion_groupe_a1f14e24cf672c5d0b6ae86084f758846}} 
+\index{Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}!utilisateurs@{utilisateurs}}
+\index{utilisateurs@{utilisateurs}!Ihm\+Gestion\+Groupe@{Ihm\+Gestion\+Groupe}}
+\paragraph{\texorpdfstring{utilisateurs}{utilisateurs}}
+{\footnotesize\ttfamily Q\+String\+List Ihm\+Gestion\+Groupe\+::utilisateurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_groupe_a491098bb1e69aa1c09b76c3459da067f}{afficher\+Lister\+Utilisateurs\+Groupe()}, et \hyperlink{class_ihm_gestion_groupe_a322f2c8584ae8e5be7f2075b73905beb}{selectionner\+Groupe()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ihm_gestion_groupe_8h}{Ihm\+Gestion\+Groupe.\+h}\item 
+\hyperlink{_ihm_gestion_groupe_8cpp}{Ihm\+Gestion\+Groupe.\+cpp}\end{DoxyCompactItemize}

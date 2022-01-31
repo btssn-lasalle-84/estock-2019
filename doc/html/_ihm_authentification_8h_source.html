@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de IhmAuthentification.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85fb4e6df1323402507b4f681cb9e3e5.html">ihm-estock</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IhmAuthentification.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ihm_authentification_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IHMAUTHENTIFICATION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IHMAUTHENTIFICATION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespace_ui.html">   18</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">class </span><a class="code" href="class_ihm_authentification.html">IhmAuthentification</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="class_authentification_badge.html">AuthentificationBadge</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_authentification_sans_badge.html">IhmAuthentificationSansBadge</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="class_utilisateur.html">Utilisateur</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ihm_authentification.html">IhmAuthentification</a> : <span class="keyword">public</span> QWidget</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_ihm_authentification.html">IhmAuthentification</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="class_ihm_authentification.html">IhmAuthentification</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#a2bab782e7f65474f2817c3916ded9d18">   49</a></span>&#160;    Ui::IhmAuthentification *<a class="code" href="class_ihm_authentification.html#a2bab782e7f65474f2817c3916ded9d18">ui</a>; </div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#ac257a02215ec8d5d31e5a1def0c0e86d">   50</a></span>&#160;    <a class="code" href="class_authentification_badge.html">AuthentificationBadge</a> *<a class="code" href="class_ihm_authentification.html#ac257a02215ec8d5d31e5a1def0c0e86d">authentificationBadge</a>;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#a9444198403beeaf7386488d56f8ad7f2">   51</a></span>&#160;    <a class="code" href="class_ihm_authentification_sans_badge.html">IhmAuthentificationSansBadge</a> *<a class="code" href="class_ihm_authentification.html#a9444198403beeaf7386488d56f8ad7f2">ihmAuthentificationSansBadge</a>;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#a6ce06a3dbea8b929c3ddffdba011c01f">   52</a></span>&#160;    <a class="code" href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a> *<a class="code" href="class_ihm_authentification.html#a6ce06a3dbea8b929c3ddffdba011c01f">ihmGestionArmoire</a>;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#ad08cee96c59182c27198907491f0c963">   53</a></span>&#160;    <a class="code" href="class_utilisateur.html">Utilisateur</a> *<a class="code" href="class_ihm_authentification.html#ad08cee96c59182c27198907491f0c963">utilisateur</a>;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#aba994da3a596cab04e35bfbca3e3b1a2">   54</a></span>&#160;    <a class="code" href="class_utilisateur.html">Utilisateur</a> *<a class="code" href="class_ihm_authentification.html#aba994da3a596cab04e35bfbca3e3b1a2">administateur</a>;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_ihm_authentification.html#ac87969204d55c2ab399498d4248172c0">   55</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *<a class="code" href="class_ihm_authentification.html#ac87969204d55c2ab399498d4248172c0">bdd</a>; </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> initialiserFenetre();    </div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> afficherAuthentificationNonValide();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> reinitialiserSaisieBadge();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> validerAcces();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> authentifierSansBadge();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> autoriserSansBadge(QString identifiant, QString motDePasse);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> effacerMessage();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> passerSansBadge(); <span class="comment">// mode développeur seulement</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // IHMAUTHENTIFICATION_H</span></div><div class="ttc" id="class_ihm_authentification_html"><div class="ttname"><a href="class_ihm_authentification.html">IhmAuthentification</a></div><div class="ttdoc">La fenêtre principale de l&amp;#39;application. </div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:40</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:18</div></div>
+<div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.h:25</div></div>
+<div class="ttc" id="class_ihm_authentification_html_ac87969204d55c2ab399498d4248172c0"><div class="ttname"><a href="class_ihm_authentification.html#ac87969204d55c2ab399498d4248172c0">IhmAuthentification::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdoc">agrégation de l&amp;#39;objet BaseDeDonnees </div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:55</div></div>
+<div class="ttc" id="class_authentification_badge_html"><div class="ttname"><a href="class_authentification_badge.html">AuthentificationBadge</a></div><div class="ttdef"><b>Definition:</b> AuthentificationBadge.h:9</div></div>
+<div class="ttc" id="class_ihm_authentification_html_a9444198403beeaf7386488d56f8ad7f2"><div class="ttname"><a href="class_ihm_authentification.html#a9444198403beeaf7386488d56f8ad7f2">IhmAuthentification::ihmAuthentificationSansBadge</a></div><div class="ttdeci">IhmAuthentificationSansBadge * ihmAuthentificationSansBadge</div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:51</div></div>
+<div class="ttc" id="class_ihm_authentification_html_a6ce06a3dbea8b929c3ddffdba011c01f"><div class="ttname"><a href="class_ihm_authentification.html#a6ce06a3dbea8b929c3ddffdba011c01f">IhmAuthentification::ihmGestionArmoire</a></div><div class="ttdeci">IhmGestionArmoire * ihmGestionArmoire</div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:52</div></div>
+<div class="ttc" id="class_ihm_gestion_armoire_html"><div class="ttname"><a href="class_ihm_gestion_armoire.html">IhmGestionArmoire</a></div><div class="ttdef"><b>Definition:</b> IhmGestionArmoire.h:21</div></div>
+<div class="ttc" id="class_ihm_authentification_sans_badge_html"><div class="ttname"><a href="class_ihm_authentification_sans_badge.html">IhmAuthentificationSansBadge</a></div><div class="ttdef"><b>Definition:</b> IhmAuthentificationSansBadge.h:12</div></div>
+<div class="ttc" id="class_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition:</b> utilisateur.h:10</div></div>
+<div class="ttc" id="class_ihm_authentification_html_ad08cee96c59182c27198907491f0c963"><div class="ttname"><a href="class_ihm_authentification.html#ad08cee96c59182c27198907491f0c963">IhmAuthentification::utilisateur</a></div><div class="ttdeci">Utilisateur * utilisateur</div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:53</div></div>
+<div class="ttc" id="class_ihm_authentification_html_ac257a02215ec8d5d31e5a1def0c0e86d"><div class="ttname"><a href="class_ihm_authentification.html#ac257a02215ec8d5d31e5a1def0c0e86d">IhmAuthentification::authentificationBadge</a></div><div class="ttdeci">AuthentificationBadge * authentificationBadge</div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:50</div></div>
+<div class="ttc" id="class_ihm_authentification_html_aba994da3a596cab04e35bfbca3e3b1a2"><div class="ttname"><a href="class_ihm_authentification.html#aba994da3a596cab04e35bfbca3e3b1a2">IhmAuthentification::administateur</a></div><div class="ttdeci">Utilisateur * administateur</div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:54</div></div>
+<div class="ttc" id="class_ihm_authentification_html_a2bab782e7f65474f2817c3916ded9d18"><div class="ttname"><a href="class_ihm_authentification.html#a2bab782e7f65474f2817c3916ded9d18">IhmAuthentification::ui</a></div><div class="ttdeci">Ui::IhmAuthentification * ui</div><div class="ttdoc">agrégation de la définition de la fenêtre UI </div><div class="ttdef"><b>Definition:</b> IhmAuthentification.h:49</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

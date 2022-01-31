@@ -1,0 +1,70 @@
+\hypertarget{_ihm_gestion_armoire_8h_source}{}\subsection{Ihm\+Gestion\+Armoire.\+h}
+\label{_ihm_gestion_armoire_8h_source}\index{Ihm\+Gestion\+Armoire.\+h@{Ihm\+Gestion\+Armoire.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef IHMGESTIONARMOIRE\_H}
+00002 \textcolor{preprocessor}{#define IHMGESTIONARMOIRE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QtWidgets>}
+00005 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00006}\hyperlink{_ihm_gestion_armoire_8h_a3b50ad4bb3a6d50ae49c854487628ce5}{00006} \textcolor{preprocessor}{#define NB\_CASIERS\_MAX  8}
+00007 
+00008 \textcolor{keyword}{namespace }\hyperlink{namespace_ui}{Ui} \{
+00009 \textcolor{keyword}{class }\hyperlink{class_ihm_gestion_armoire}{IhmGestionArmoire};
+00010 \}
+00011 
+00012 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00013 \textcolor{keyword}{class }\hyperlink{class_utilisateur}{Utilisateur};
+00014 \textcolor{keyword}{class }\hyperlink{class_gestion_balances}{GestionBalances};
+00015 \textcolor{keyword}{class }\hyperlink{class_ihm_gestion_groupe}{IhmGestionGroupe};
+00016 \textcolor{keyword}{class }\hyperlink{class_casier}{Casier};
+00017 \textcolor{keyword}{class }\hyperlink{class_article}{Article};
+00018 \textcolor{keyword}{class }\hyperlink{class_authentification_badge}{AuthentificationBadge};
+00019 \textcolor{keyword}{class }\hyperlink{class_ihm_authentification_sans_badge}{IhmAuthentificationSansBadge};
+00020 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00021}\hyperlink{class_ihm_gestion_armoire}{00021} \textcolor{keyword}{class }\hyperlink{class_ihm_gestion_armoire}{IhmGestionArmoire} : \textcolor{keyword}{public} QWidget
+00022 \{
+00023     Q\_OBJECT
+00024 
+00025 \textcolor{keyword}{public}:
+00026     \textcolor{keyword}{explicit} \hyperlink{class_ihm_gestion_armoire}{IhmGestionArmoire}(QWidget *parent = \textcolor{keyword}{nullptr});
+00027     ~\hyperlink{class_ihm_gestion_armoire}{IhmGestionArmoire}();
+00028 
+00029     \hyperlink{class_utilisateur}{Utilisateur} *getUtilisateur();
+00030     \hyperlink{class_casier}{Casier} *getCasier();
+00031     \textcolor{keywordtype}{void} setUtilisateur(\hyperlink{class_utilisateur}{Utilisateur} *utilisateur);
+00032 
+00033 \textcolor{keyword}{protected}:
+00034       \textcolor{keywordtype}{void} showEvent(QShowEvent *ev);
+00035 
+00036 \textcolor{keyword}{private}:
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00037}\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{00037}     Ui::IhmGestionArmoire *\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}; 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00038}\hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{00038}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}; 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00039}\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{00039}     \hyperlink{class_utilisateur}{Utilisateur} *\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur};
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00040}\hyperlink{class_ihm_gestion_armoire_a3186adbd003db3309c640ac414d39d2e}{00040}     \hyperlink{class_gestion_balances}{GestionBalances} *\hyperlink{class_ihm_gestion_armoire_a3186adbd003db3309c640ac414d39d2e}{gestionBalances};
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00041}\hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{00041}     \hyperlink{class_ihm_gestion_groupe}{IhmGestionGroupe} *\hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihmGestionGroupe}; 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00042}\hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{00042}     QVector<Casier *> \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}; 
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00043}\hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{00043}     QVector<QStringList> \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves};
+\Hypertarget{_ihm_gestion_armoire_8h_source_l00044}\hyperlink{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}{00044}     \hyperlink{class_article}{Article} *\hyperlink{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}{article};
+00045 
+00046     \textcolor{keywordtype}{void} initialiserFenetre();
+00047     \textcolor{keywordtype}{void} initialiserClavierVirtuel();
+00048     \textcolor{keywordtype}{void} supprimerClavierVirtuel();
+00049     \textcolor{keywordtype}{void} fermerClavierVirtuel();
+00050     \textcolor{keywordtype}{void} afficherCasiers();
+00051     QString lireAdresseIP();
+00052 
+00053 \textcolor{keyword}{public} slots:
+00054     \textcolor{keywordtype}{void} fermer();
+00055     \textcolor{keywordtype}{void} gererGroupe();
+00056     \textcolor{keywordtype}{void} selectionnerCasier(\textcolor{keywordtype}{int});
+00057     \textcolor{keywordtype}{void} rechercherArticle();
+00058     \textcolor{keywordtype}{void} effacerRechercheArticle();
+00059     \textcolor{keywordtype}{void} effacerLaListeArticle();
+00060     \textcolor{keywordtype}{void} effacerLaSelectionArticle();
+00061     \textcolor{keywordtype}{void} effacerMessageNumeroCasier();
+00062     \textcolor{keywordtype}{void} selectionnerArticle(\textcolor{keywordtype}{int} index);
+00063 \};
+00064 
+00065 \textcolor{preprocessor}{#endif // IHMGESTIONARMOIRE\_H}
+\end{DoxyCode}

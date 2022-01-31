@@ -1,0 +1,38 @@
+\hypertarget{groupe_8h_source}{}\subsection{groupe.\+h}
+\label{groupe_8h_source}\index{groupe.\+h@{groupe.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef GROUPE\_H}
+00002 \textcolor{preprocessor}{#define GROUPE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{groupe_8h_source_l00006}\hyperlink{class_groupe}{00006} \textcolor{keyword}{class }\hyperlink{class_groupe}{Groupe} : \textcolor{keyword}{public} QObject
+00007 \{
+00008     Q\_OBJECT
+00009     \textcolor{comment}{// Les propriétés}
+\Hypertarget{groupe_8h_source_l00010}\hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{00010}     Q\_PROPERTY(QString m\_nom READ \hyperlink{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}{getNom} WRITE \hyperlink{class_groupe_a44566810eab44cd98be317f4d803a45e}{setNom} NOTIFY nomChanged)
+\Hypertarget{groupe_8h_source_l00011}\hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{00011}     Q\_PROPERTY(QString m\_id READ \hyperlink{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}{getId} WRITE \hyperlink{class_groupe_a3cb79da346bcd56dee1c8305050fde60}{setId} NOTIFY idChanged)
+00012 
+00013 public:
+00014     explicit \hyperlink{class_groupe}{Groupe}(QString p\_id="", QString p\_nom="", QObject *parent = \textcolor{keywordtype}{nullptr});
+00015 
+00016     \textcolor{comment}{// Les accesseurs}
+00017     QString \hyperlink{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}{getNom}() const;
+00018     \textcolor{keywordtype}{void} \hyperlink{class_groupe_a44566810eab44cd98be317f4d803a45e}{setNom}(QString p\_nom);
+00019     QString \hyperlink{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}{getId}() const;
+00020     \textcolor{keywordtype}{void} \hyperlink{class_groupe_a3cb79da346bcd56dee1c8305050fde60}{setId}(QString p\_id);
+00021 
+00022 private:
+00023     QString m\_nom;
+00024     QString m\_id;
+00025 
+00026 signals:
+00027     \textcolor{keywordtype}{void} nomChanged();
+00028     \textcolor{keywordtype}{void} idChanged();
+00029 
+00030 public slots:
+00031 \};
+00032 
+00033 \textcolor{preprocessor}{#endif // GROUPE\_H}
+\end{DoxyCode}

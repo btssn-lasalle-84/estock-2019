@@ -1,0 +1,368 @@
+\hypertarget{class_authentification_badge}{}\subsection{Référence de la classe Authentification\+Badge}
+\label{class_authentification_badge}\index{Authentification\+Badge@{Authentification\+Badge}}
+
+
+{\ttfamily \#include $<$Authentification\+Badge.\+h$>$}
+
+
+
+Graphe de collaboration de Authentification\+Badge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_authentification_badge__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_authentification_badge_a6c27fe0dc2a4a20fec1e75da5b400146}{Authentification\+Badge} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_authentification_badge_a636b585e4c7f37ae77bf2fd66c0b01e1}{$\sim$\+Authentification\+Badge} ()
+\item 
+bool \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide} ()
+\item 
+bool \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise} ()
+\item 
+Q\+String \hyperlink{class_authentification_badge_ae8c755b184c20626d4362d5e4739dfe1}{get\+Id\+Utilisateur} () const
+\item 
+Q\+String \hyperlink{class_authentification_badge_a76f7b9a424aeec947813c6858ff945a3}{get\+Date\+Validite} () const
+\item 
+Q\+String \hyperlink{class_authentification_badge_a4bb0edf5a4483d9125bc53b1a7e24b7b}{get\+Identifiant\+Badge} () const
+\item 
+bool \hyperlink{class_authentification_badge_a77488a375465873bfe6ab62f53abea6d}{lire\+Badge} (Q\+String badge)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiant\+Badge}
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}U\+ID du badge \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{id\+Utilisateur}
+\item 
+Q\+String \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{date\+Validite}
+\item 
+bool \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide}
+\item 
+bool \hyperlink{class_authentification_badge_a79ea3c5d0df4f8f04863d3e218d8a6f0}{autorise}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_authentification_badge_a6c27fe0dc2a4a20fec1e75da5b400146}\label{class_authentification_badge_a6c27fe0dc2a4a20fec1e75da5b400146}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\index{Authentification\+Badge@{Authentification\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{Authentification\+Badge()}{AuthentificationBadge()}}
+{\footnotesize\ttfamily Authentification\+Badge\+::\+Authentification\+Badge (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}.
+
+
+\begin{DoxyCode}
+00004                                                             : QObject(parent), 
+      \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide}(\textcolor{keyword}{false}), \hyperlink{class_authentification_badge_a79ea3c5d0df4f8f04863d3e218d8a6f0}{autorise}(\textcolor{keyword}{false})
+00005 \{
+00006     qDebug() << Q\_FUNC\_INFO;
+00007     \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00008     \textcolor{keywordflow}{if}(!\hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00009         \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_a636b585e4c7f37ae77bf2fd66c0b01e1}\label{class_authentification_badge_a636b585e4c7f37ae77bf2fd66c0b01e1}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!````~Authentification\+Badge@{$\sim$\+Authentification\+Badge}}
+\index{````~Authentification\+Badge@{$\sim$\+Authentification\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{$\sim$\+Authentification\+Badge()}{~AuthentificationBadge()}}
+{\footnotesize\ttfamily Authentification\+Badge\+::$\sim$\+Authentification\+Badge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00015     qDebug() << Q\_FUNC\_INFO;
+00016 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}\label{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!est\+Autorise@{est\+Autorise}}
+\index{est\+Autorise@{est\+Autorise}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{est\+Autorise()}{estAutorise()}}
+{\footnotesize\ttfamily bool Authentification\+Badge\+::est\+Autorise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}, \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{date\+Validite}, \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide()}, \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiant\+Badge}, \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{id\+Utilisateur}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_ad62f646310fff597d3bf50af2c3d5d0c}{Ihm\+Authentification\+::valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00107 \{
+00108     \textcolor{keywordflow}{if}(!\hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide})
+00109         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00110     QString dateMaintenant = QDateTime::currentDateTime().toString(\textcolor{stringliteral}{"yyyy-MM-dd"});
+00111     QString requete = \textcolor{stringliteral}{"SELECT idUtilisateur, DateValidite FROM Utilisateur WHERE Badge='"} + 
+      \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiantBadge} + \textcolor{stringliteral}{"'"};
+00112     QStringList donneesUtilisateur;
+00113     \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{idUtilisateur}.clear();
+00114     \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{dateValidite}.clear();
+00115     \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesUtilisateur);
+00116     \textcolor{keywordflow}{if}(\hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide})
+00117     \{
+00118         \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{idUtilisateur} = donneesUtilisateur.at(0);
+00119         \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{dateValidite} = donneesUtilisateur.at(1);
+00120         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} << \textcolor{stringliteral}{"idUtilisateur"} << 
+      \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{idUtilisateur} << \textcolor{stringliteral}{"dateValidite"} << \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{dateValidite};
+00121     \}
+00122     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide};
+00123     \textcolor{keywordflow}{return} (valide && \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{estValide}());
+00124 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}\label{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!est\+Valide@{est\+Valide}}
+\index{est\+Valide@{est\+Valide}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{est\+Valide()}{estValide()}}
+{\footnotesize\ttfamily bool Authentification\+Badge\+::est\+Valide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}, \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{date\+Validite}, \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiant\+Badge}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide}.
+
+
+
+Référencé par \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}.
+
+
+\begin{DoxyCode}
+00096 \{    
+00097     QString dateMaintenant = QDateTime::currentDateTime().toString(\textcolor{stringliteral}{"yyyy-MM-dd"});
+00098     QString requete = \textcolor{stringliteral}{"SELECT DateValidite FROM Utilisateur WHERE Badge='"} + 
+      \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiantBadge} + \textcolor{stringliteral}{"' AND DateValidite>='"} + dateMaintenant + \textcolor{stringliteral}{"'"};
+00099     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00100     QString retour;
+00101     \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \hyperlink{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, retour);
+00102     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} << \textcolor{stringliteral}{"dateValidite"} << 
+      \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{dateValidite};
+00103     \textcolor{keywordflow}{return} \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide};
+00104 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_a76f7b9a424aeec947813c6858ff945a3}\label{class_authentification_badge_a76f7b9a424aeec947813c6858ff945a3}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!get\+Date\+Validite@{get\+Date\+Validite}}
+\index{get\+Date\+Validite@{get\+Date\+Validite}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{get\+Date\+Validite()}{getDateValidite()}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::get\+Date\+Validite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{date\+Validite}.
+
+
+\begin{DoxyCode}
+00132 \{
+00133     \textcolor{keywordflow}{return} \hyperlink{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}{dateValidite};
+00134 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_a4bb0edf5a4483d9125bc53b1a7e24b7b}\label{class_authentification_badge_a4bb0edf5a4483d9125bc53b1a7e24b7b}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!get\+Identifiant\+Badge@{get\+Identifiant\+Badge}}
+\index{get\+Identifiant\+Badge@{get\+Identifiant\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{get\+Identifiant\+Badge()}{getIdentifiantBadge()}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::get\+Identifiant\+Badge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiant\+Badge}.
+
+
+\begin{DoxyCode}
+00137 \{
+00138     \textcolor{keywordflow}{return} \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiantBadge};
+00139 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_ae8c755b184c20626d4362d5e4739dfe1}\label{class_authentification_badge_ae8c755b184c20626d4362d5e4739dfe1}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!get\+Id\+Utilisateur@{get\+Id\+Utilisateur}}
+\index{get\+Id\+Utilisateur@{get\+Id\+Utilisateur}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{get\+Id\+Utilisateur()}{getIdUtilisateur()}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::get\+Id\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{id\+Utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_ad62f646310fff597d3bf50af2c3d5d0c}{Ihm\+Authentification\+::valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00127 \{
+00128     \textcolor{keywordflow}{return} \hyperlink{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}{idUtilisateur};
+00129 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_authentification_badge_a77488a375465873bfe6ab62f53abea6d}\label{class_authentification_badge_a77488a375465873bfe6ab62f53abea6d}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!lire\+Badge@{lire\+Badge}}
+\index{lire\+Badge@{lire\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{lire\+Badge()}{lireBadge()}}
+{\footnotesize\ttfamily bool Authentification\+Badge\+::lire\+Badge (\begin{DoxyParamCaption}\item[{Q\+String}]{badge }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiant\+Badge}, et \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_ad62f646310fff597d3bf50af2c3d5d0c}{Ihm\+Authentification\+::valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00019 \{
+00020     \textcolor{comment}{//badge = "RFIDMàBDD'èCD"; // test}
+00021     \textcolor{keywordflow}{if}(badge.isEmpty())
+00022         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00023 
+00024     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"badge"} << badge;
+00025 
+00026     QString messageNettoye;
+00027 
+00028     \textcolor{keywordflow}{if}(!badge.isEmpty())
+00029     \{
+00030         \textcolor{comment}{// les informations lues proviennent d'un clavier US en QWERTY}
+00031         \textcolor{comment}{// remplacement caractères QWERTY}
+00032         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"Q"}), \textcolor{stringliteral}{"A"});
+00033         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"W"}), \textcolor{stringliteral}{"Z"});
+00034         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"q"}), \textcolor{stringliteral}{"q"});
+00035         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"w"}), \textcolor{stringliteral}{"z"});
+00036         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"M"}), \textcolor{stringliteral}{":"});
+00037         \textcolor{comment}{// remplacement caractères US}
+00038         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"à"}), \textcolor{stringliteral}{"0"});
+00039         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"&"}), \textcolor{stringliteral}{"1"});
+00040         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"é"}), \textcolor{stringliteral}{"2"});
+00041         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"\(\backslash\)""}), \textcolor{stringliteral}{"3"});
+00042         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"'"}), \textcolor{stringliteral}{"4"});
+00043         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"("}), \textcolor{stringliteral}{"5"});
+00044         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"-"}), \textcolor{stringliteral}{"6"});
+00045         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"è"}), \textcolor{stringliteral}{"7"});
+00046         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"\_"}), \textcolor{stringliteral}{"8"});
+00047         messageNettoye = badge.replace(QString::fromUtf8(\textcolor{stringliteral}{"ç"}), \textcolor{stringliteral}{"9"});
+00048         \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << messageNettoye;}
+00049 
+00050         \textcolor{comment}{// les informations du badge doivent commencer par "RFID:"}
+00051         \textcolor{keywordflow}{if}(messageNettoye.startsWith(\textcolor{stringliteral}{"RFID:"}))
+00052         \{
+00053             QStringList champs = messageNettoye.split(\textcolor{stringliteral}{":"});
+00054             \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << champs;}
+00055 
+00056             \textcolor{keywordflow}{if}(champs.count() == 2 && champs.at(0) == \textcolor{stringliteral}{"RFID"})
+00057             \{
+00058                 \textcolor{comment}{// récupération de l'UID du badge}
+00059                 QString UID = champs.at(1);
+00060 
+00061                 \textcolor{comment}{// vérification de l'UID du badge (Un UID est une valeur hexadécimale valide)}
+00062                 \textcolor{keywordtype}{bool} ok;
+00063                 qulonglong uid = UID.toULongLong(&ok, 16);
+00064                 \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << UID << uid << ok;}
+00065                 \textcolor{keywordflow}{if}(ok)
+00066                 \{
+00067                     \textcolor{comment}{//labelUID->setText("UID : 0x" + UID + "\(\backslash\)nUID : " + QString::number(uid));}
+00068                     \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiantBadge} = UID;
+00069                     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"identifiantBadge"} << 
+      \hyperlink{class_authentification_badge_a7120366168cbe21efd991a978922eb20}{identifiantBadge};
+00070                     \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \textcolor{keyword}{true};
+00071                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00072                 \}
+00073                 \textcolor{keywordflow}{else}
+00074                 \{
+00075                     \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \textcolor{keyword}{false};
+00076                 \}
+00077             \}
+00078             \textcolor{keywordflow}{else}
+00079             \{
+00080                 \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \textcolor{keyword}{false};
+00081             \}
+00082         \}
+00083         \textcolor{keywordflow}{else}
+00084         \{
+00085             \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \textcolor{keyword}{false};
+00086         \}
+00087     \}
+00088     \textcolor{keywordflow}{else}
+00089     \{
+00090         \hyperlink{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}{valide} = \textcolor{keyword}{false};
+00091     \}
+00092     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00093 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_authentification_badge_a79ea3c5d0df4f8f04863d3e218d8a6f0}\label{class_authentification_badge_a79ea3c5d0df4f8f04863d3e218d8a6f0}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!autorise@{autorise}}
+\index{autorise@{autorise}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{autorise}{autorise}}
+{\footnotesize\ttfamily bool Authentification\+Badge\+::autorise\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}\label{class_authentification_badge_a0b9c724c5bc25bf1f87443d7e6833398}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!bdd@{bdd}}
+\index{bdd@{bdd}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Authentification\+Badge\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_authentification_badge_a6c27fe0dc2a4a20fec1e75da5b400146}{Authentification\+Badge()}, \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}, et \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide()}.
+
+\mbox{\Hypertarget{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}\label{class_authentification_badge_a3ff41c56490c3cfd0322949be2338605}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!date\+Validite@{date\+Validite}}
+\index{date\+Validite@{date\+Validite}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{date\+Validite}{dateValidite}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::date\+Validite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}, \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide()}, et \hyperlink{class_authentification_badge_a76f7b9a424aeec947813c6858ff945a3}{get\+Date\+Validite()}.
+
+\mbox{\Hypertarget{class_authentification_badge_a7120366168cbe21efd991a978922eb20}\label{class_authentification_badge_a7120366168cbe21efd991a978922eb20}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!identifiant\+Badge@{identifiant\+Badge}}
+\index{identifiant\+Badge@{identifiant\+Badge}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{identifiant\+Badge}{identifiantBadge}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::identifiant\+Badge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}, \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide()}, \hyperlink{class_authentification_badge_a4bb0edf5a4483d9125bc53b1a7e24b7b}{get\+Identifiant\+Badge()}, et \hyperlink{class_authentification_badge_a77488a375465873bfe6ab62f53abea6d}{lire\+Badge()}.
+
+\mbox{\Hypertarget{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}\label{class_authentification_badge_ab26f8f696e807cbffd2c50cbad465b89}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!id\+Utilisateur@{id\+Utilisateur}}
+\index{id\+Utilisateur@{id\+Utilisateur}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{id\+Utilisateur}{idUtilisateur}}
+{\footnotesize\ttfamily Q\+String Authentification\+Badge\+::id\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}, et \hyperlink{class_authentification_badge_ae8c755b184c20626d4362d5e4739dfe1}{get\+Id\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}\label{class_authentification_badge_a9d0df9da3663b065a3a6a7a1f37a0a69}} 
+\index{Authentification\+Badge@{Authentification\+Badge}!valide@{valide}}
+\index{valide@{valide}!Authentification\+Badge@{Authentification\+Badge}}
+\paragraph{\texorpdfstring{valide}{valide}}
+{\footnotesize\ttfamily bool Authentification\+Badge\+::valide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_authentification_badge_aceb9c5a09dddbff73cd02973913c79c1}{est\+Autorise()}, \hyperlink{class_authentification_badge_af320bf9cdbb285c48cd323e0ec3ef529}{est\+Valide()}, et \hyperlink{class_authentification_badge_a77488a375465873bfe6ab62f53abea6d}{lire\+Badge()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_authentification_badge_8h}{Authentification\+Badge.\+h}\item 
+\hyperlink{_authentification_badge_8cpp}{Authentification\+Badge.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{terminalmobile_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{terminalmobile_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal terminal\+Mobile.  
+
+
+{\ttfamily \#include $<$Q\+Gui\+Application$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Application\+Engine$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Context$>$}\newline
+{\ttfamily \#include \char`\"{}base\+De\+Donnees.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilisateur\+Terminal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouvements.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilisateurs\+Armoire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilisateur\+Armoire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}armoires.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}casiers.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{terminalmobile_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application
+
+\begin{DoxyAuthor}{Auteur}
+Robin Gauthier
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{terminalmobile_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{terminalmobile_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{terminalmobile/main.\+cpp@{terminalmobile/main.\+cpp}!main@{main}}
+\index{main@{main}!terminalmobile/main.\+cpp@{terminalmobile/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{Base\+De\+Donnees\+::ouvrir()}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     QCoreApplication::setApplicationName(\textcolor{stringliteral}{"e-stock mobile"});
+00033     QCoreApplication::setAttribute(Qt::AA\_EnableHighDpiScaling);
+00034 
+00035     QGuiApplication app(argc, argv);
+00036 
+00037     QQmlApplicationEngine engine;
+00038 
+00039     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *g\_pBddTerminal = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"
+      QSQLITE"});
+00040     g\_pBddTerminal->\hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(\textcolor{stringliteral}{"estock.sqlite"});
+00041     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pBddTerminal"}, g\_pBddTerminal);
+00042 
+00043     \hyperlink{class_armoires}{Armoires} *g\_pArmoires = \textcolor{keyword}{new} \hyperlink{class_armoires}{Armoires};
+00044     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pArmoires"}, g\_pArmoires);
+00045 
+00046     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *g\_pBddArmoire = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"
+      QMYSQL"});
+00047     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pBddArmoire"}, g\_pBddArmoire);
+00048 
+00049     \hyperlink{class_utilisateur_terminal}{UtilisateurTerminal} *g\_pUtilisateurTerminal = \textcolor{keyword}{new} 
+      \hyperlink{class_utilisateur_terminal}{UtilisateurTerminal};
+00050     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pUtilisateurTerminal"}, g\_pUtilisateurTerminal);
+00051 
+00052     \hyperlink{class_mouvements}{Mouvements} *g\_pMouvements = \textcolor{keyword}{new} \hyperlink{class_mouvements}{Mouvements};
+00053     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pMouvements"}, g\_pMouvements);
+00054 
+00055     \hyperlink{class_utilisateurs_armoire}{UtilisateursArmoire} *g\_pUtilisateursArmoire = \textcolor{keyword}{new} 
+      \hyperlink{class_utilisateurs_armoire}{UtilisateursArmoire};
+00056     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pUtilisateursArmoire"}, g\_pUtilisateursArmoire);
+00057 
+00058     \hyperlink{class_casiers}{Casiers} *g\_pCasiers = \textcolor{keyword}{new} \hyperlink{class_casiers}{Casiers};
+00059     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"g\_pCasiers"}, g\_pCasiers);
+00060 
+00061     engine.load(QUrl(QStringLiteral(\textcolor{stringliteral}{"qrc:/IHMPrincipale.qml"})));
+00062     \textcolor{keywordflow}{if} (engine.rootObjects().isEmpty())
+00063         \textcolor{keywordflow}{return} -1;
+00064 
+00065     \textcolor{keywordtype}{int} resultat = app.exec();
+00066 
+00067     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00068     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QSQLITE"});
+00069 
+00070     \textcolor{keywordflow}{return} resultat;
+00071 \}
+\end{DoxyCode}

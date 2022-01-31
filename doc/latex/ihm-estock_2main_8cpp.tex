@@ -1,0 +1,55 @@
+\hypertarget{ihm-estock_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{ihm-estock_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal e-\/stock.  
+
+
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include \char`\"{}Ihm\+Authentification.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ihm-estock_2main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application
+
+\begin{DoxyAuthor}{Auteur}
+Thomas M\+A\+C\+H\+ON, Hadrien G\+I\+M\+E\+N\+EZ et Nathan W\+A\+G\+I\+N\+A\+I\+RE
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{ihm-estock_2main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{ihm-estock_2main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{ihm-\/estock/main.\+cpp@{ihm-\/estock/main.\+cpp}!main@{main}}
+\index{main@{main}!ihm-\/estock/main.\+cpp@{ihm-\/estock/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00023 \{
+00024     QApplication a(argc, argv);
+00025 
+00026     \hyperlink{class_ihm_authentification}{IhmAuthentification} ihmAuthentification;
+00027     ihmAuthentification.show();
+00028 
+00029     \textcolor{keywordflow}{return} a.exec();
+00030 \}
+\end{DoxyCode}

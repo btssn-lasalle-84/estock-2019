@@ -1,0 +1,166 @@
+\hypertarget{class_groupe}{}\subsection{Référence de la classe Groupe}
+\label{class_groupe}\index{Groupe@{Groupe}}
+
+
+{\ttfamily \#include $<$groupe.\+h$>$}
+
+
+
+Graphe de collaboration de Groupe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_groupe__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_groupe_aa4c95ee9ca6f073e7b9e75dbd0e41b61}{nom\+Changed} ()
+\item 
+void \hyperlink{class_groupe_a8d2126449b6ea1be95bd6b34bf0b28f4}{id\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_groupe_a8b907f38aebe5113d19052ee7c4ec935}{Groupe} (Q\+String p\+\_\+id=\char`\"{}\char`\"{}, Q\+String p\+\_\+nom=\char`\"{}\char`\"{}, Q\+Object $\ast$parent=nullptr)
+\item 
+Q\+String \hyperlink{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}{get\+Nom} () const
+\item 
+void \hyperlink{class_groupe_a44566810eab44cd98be317f4d803a45e}{set\+Nom} (Q\+String p\+\_\+nom)
+\item 
+Q\+String \hyperlink{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}{get\+Id} () const
+\item 
+void \hyperlink{class_groupe_a3cb79da346bcd56dee1c8305050fde60}{set\+Id} (Q\+String p\+\_\+id)
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\+\_\+nom}
+\item 
+Q\+String \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_groupe_a8b907f38aebe5113d19052ee7c4ec935}\label{class_groupe_a8b907f38aebe5113d19052ee7c4ec935}} 
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\index{Groupe@{Groupe}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{Groupe()}{Groupe()}}
+{\footnotesize\ttfamily Groupe\+::\+Groupe (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+id = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{p\+\_\+nom = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}
+00003                                                            : QObject(parent), 
+      \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\_nom}(p\_nom), \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\_id}(p\_id)
+00004 \{
+00005 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}\label{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}} 
+\index{Groupe@{Groupe}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily Q\+String Groupe\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\+\_\+id}.
+
+
+\begin{DoxyCode}
+00018 \{
+00019     \textcolor{keywordflow}{return} \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\_id};
+00020 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}\label{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}} 
+\index{Groupe@{Groupe}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Groupe\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00008 \{
+00009     \textcolor{keywordflow}{return} \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\_nom};
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_groupe_a8d2126449b6ea1be95bd6b34bf0b28f4}\label{class_groupe_a8d2126449b6ea1be95bd6b34bf0b28f4}} 
+\index{Groupe@{Groupe}!id\+Changed@{id\+Changed}}
+\index{id\+Changed@{id\+Changed}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{id\+Changed}{idChanged}}
+{\footnotesize\ttfamily void Groupe\+::id\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_groupe_aa4c95ee9ca6f073e7b9e75dbd0e41b61}\label{class_groupe_aa4c95ee9ca6f073e7b9e75dbd0e41b61}} 
+\index{Groupe@{Groupe}!nom\+Changed@{nom\+Changed}}
+\index{nom\+Changed@{nom\+Changed}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{nom\+Changed}{nomChanged}}
+{\footnotesize\ttfamily void Groupe\+::nom\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_groupe_a3cb79da346bcd56dee1c8305050fde60}\label{class_groupe_a3cb79da346bcd56dee1c8305050fde60}} 
+\index{Groupe@{Groupe}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void Groupe\+::set\+Id (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\+\_\+id}.
+
+
+\begin{DoxyCode}
+00023 \{
+00024     \hyperlink{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}{m\_id} = p\_id;
+00025 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_groupe_a44566810eab44cd98be317f4d803a45e}\label{class_groupe_a44566810eab44cd98be317f4d803a45e}} 
+\index{Groupe@{Groupe}!set\+Nom@{set\+Nom}}
+\index{set\+Nom@{set\+Nom}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{set\+Nom()}{setNom()}}
+{\footnotesize\ttfamily void Groupe\+::set\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+nom }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \hyperlink{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}{m\_nom} = p\_nom;
+00015 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}\label{class_groupe_ae837f3752cea27d8ab7678d4d1e4a764}} 
+\index{Groupe@{Groupe}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{m\+\_\+id}{m\_id}}
+{\footnotesize\ttfamily Q\+String Groupe\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+Référencé par \hyperlink{class_groupe_aadab27e8d3f4a050a7bc4ae23c95efa7}{get\+Id()}, et \hyperlink{class_groupe_a3cb79da346bcd56dee1c8305050fde60}{set\+Id()}.
+
+\mbox{\Hypertarget{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}\label{class_groupe_ad76b271599f46c8a350f8afa3bc884c5}} 
+\index{Groupe@{Groupe}!m\+\_\+nom@{m\+\_\+nom}}
+\index{m\+\_\+nom@{m\+\_\+nom}!Groupe@{Groupe}}
+\paragraph{\texorpdfstring{m\+\_\+nom}{m\_nom}}
+{\footnotesize\ttfamily Q\+String Groupe\+::m\+\_\+nom\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+Référencé par \hyperlink{class_groupe_a88bf0b7a0e69d549fa3fdb1b01c0de2c}{get\+Nom()}, et \hyperlink{class_groupe_a44566810eab44cd98be317f4d803a45e}{set\+Nom()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{groupe_8h}{groupe.\+h}\item 
+\hyperlink{groupe_8cpp}{groupe.\+cpp}\end{DoxyCompactItemize}

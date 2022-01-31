@@ -1,0 +1,39 @@
+\hypertarget{armoire_8h_source}{}\subsection{armoire.\+h}
+\label{armoire_8h_source}\index{armoire.\+h@{armoire.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ARMOIRE\_H}
+00002 \textcolor{preprocessor}{#define ARMOIRE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{armoire_8h_source_l00006}\hyperlink{class_armoire}{00006} \textcolor{keyword}{class }\hyperlink{class_armoire}{Armoire} : \textcolor{keyword}{public} QObject
+00007 \{
+00008     Q\_OBJECT
+00009     \textcolor{comment}{// Les propriétés}
+\Hypertarget{armoire_8h_source_l00010}\hyperlink{class_armoire_a6d5fc6a37737b4822dc89191a79f6b7b}{00010}     Q\_PROPERTY(QString m\_nom READ \hyperlink{class_armoire_a0045e45e0c9a465af765667344ce8bee}{getNom} WRITE \hyperlink{class_armoire_ab05030741c5930bb73a8fef5b378ed37}{setNom} NOTIFY nomChanged)
+\Hypertarget{armoire_8h_source_l00011}\hyperlink{class_armoire_ae92e8c48f53e69b871e7f70d9af19ffa}{00011}     Q\_PROPERTY(QString m\_adresseIP READ \hyperlink{class_armoire_a5196fec5f44f63216ddce5fbc512c919}{getAdresseIP} WRITE 
+      \hyperlink{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}{setAdresseIP} NOTIFY adresseIPChanged)
+00012 
+00013 public:
+00014     explicit \hyperlink{class_armoire}{Armoire}(QString p\_nom="", QString p\_adresseIP="", QObject *parent = \textcolor{keywordtype}{nullptr});
+00015     \textcolor{keywordtype}{void} \hyperlink{class_armoire_a4b35e93cee5c78739ba543162e4dbfaa}{setArmoire}(QStringList p\_armoire);
+00016     \textcolor{comment}{// Les accesseurs}
+00017     QString \hyperlink{class_armoire_a0045e45e0c9a465af765667344ce8bee}{getNom}() const;
+00018     \textcolor{keywordtype}{void} \hyperlink{class_armoire_ab05030741c5930bb73a8fef5b378ed37}{setNom}(QString p\_nom);
+00019     QString \hyperlink{class_armoire_a5196fec5f44f63216ddce5fbc512c919}{getAdresseIP}() const;
+00020     \textcolor{keywordtype}{void} \hyperlink{class_armoire_a0be45a8a0574139b955cc1f1b51a40d6}{setAdresseIP}(QString p\_adresseIP);
+00021 
+00022 private:
+00023     QString m\_nom;
+00024     QString m\_adresseIP;
+00025 
+00026 signals:
+00027     \textcolor{keywordtype}{void} nomChanged();
+00028     \textcolor{keywordtype}{void} adresseIPChanged();
+00029 
+00030 public slots:
+00031 \};
+00032 
+00033 \textcolor{preprocessor}{#endif // ARMOIRE\_H}
+\end{DoxyCode}

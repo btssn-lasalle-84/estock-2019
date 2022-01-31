@@ -1,0 +1,178 @@
+\hypertarget{class_stock_armoire}{}\subsection{Référence de la classe Stock\+Armoire}
+\label{class_stock_armoire}\index{Stock\+Armoire@{Stock\+Armoire}}
+
+
+page de la gestion de l\textquotesingle{}\hyperlink{class_armoire}{Armoire}  
+
+
+
+
+Graphe de collaboration de Stock\+Armoire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_stock_armoire__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_stock_armoire_aa8bfe83269e3ba0bb8328257ff80b7fb}{afficher\+Casiers} (nb\+Casiers)
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_stock_armoire_aae2efdb9b3a81d6c6ec816ba51e27c8d}{utilisateur}
+\item 
+string \hyperlink{class_stock_armoire_a9bed53c469e3e7e9e870fce7ab2d1e84}{armoire}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{class_stock_armoire_a9d25f76d65f156f53ad3bc738e15b6a9}{width}
+\begin{DoxyCompactList}\small\item\em Conteneur des casiers. \end{DoxyCompactList}\item 
+var \hyperlink{class_stock_armoire_a8b31a1368d50c62656ffde269a2d880d}{height}
+\item 
+var \hyperlink{class_stock_armoire_a09dd833b012f0340be7bcf7135f785dd}{title}
+\item 
+var \hyperlink{class_stock_armoire_a0c6223c4c36b665251b364eef75b960b}{on\+Visible\+Changed}
+\item 
+Rectangle \hyperlink{class_stock_armoire_abbd46dd29fe165da0570e6ab052076a6}{conteneur\+Casiers}
+\item 
+Column \hyperlink{class_stock_armoire_a86c24dd5c6a43d0398faeb150018822b}{colonne\+Casier1}
+\begin{DoxyCompactList}\small\item\em Colonne contenant les 4 casiers impairs. \end{DoxyCompactList}\item 
+Repeater \hyperlink{class_stock_armoire_ac90ab49066943f1970216f1b3e89e43a}{colonne\+Casiers\+Gauche}
+\item 
+Column \hyperlink{class_stock_armoire_ab3d122226f114b5191f48b9be3c5747a}{colonne\+Casier2}
+\begin{DoxyCompactList}\small\item\em Colonne contenant les 4 derniers casiers pairs. \end{DoxyCompactList}\item 
+Repeater \hyperlink{class_stock_armoire_a14f331f1a570ab77bba3e00cfc91ec55}{colonne\+Casiers\+Droite}
+\item 
+Column \hyperlink{class_stock_armoire_a247918120576111457dab1e5170fdeb3}{colonne\+Boutons}
+\begin{DoxyCompactList}\small\item\em Colonne contenant le bouton bouton\+Quitter\+Stock\+Armoire. \end{DoxyCompactList}\item 
+Text \hyperlink{class_stock_armoire_a9c5de07e9aa235e8eb02e50b7e2d6652}{label\+Utilisateur}
+\item 
+Button \hyperlink{class_stock_armoire_a4788426231673b7572c984b88401b0bb}{bouton\+Quitter\+Stock\+Armoire}
+\begin{DoxyCompactList}\small\item\em bouton pour quitter la page \hyperlink{class_stock_armoire}{Stock\+Armoire} ( bouton retour et non annuler pour l\textquotesingle{}instant ) \end{DoxyCompactList}\item 
+\hyperlink{class_gestion_casier}{Gestion\+Casier} \hyperlink{class_stock_armoire_a72088d31becde73ccc8cc73d05ab93df}{dialogue\+Gestion\+Casier}
+\begin{DoxyCompactList}\small\item\em boîte de dialogue permettant de gérer un casier \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+La page de gestion d\textquotesingle{}une armoire.
+
+\begin{DoxyAuthor}{Auteur}
+Robin Gauthier
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_stock_armoire_aa8bfe83269e3ba0bb8328257ff80b7fb}\label{class_stock_armoire_aa8bfe83269e3ba0bb8328257ff80b7fb}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!afficher\+Casiers@{afficher\+Casiers}}
+\index{afficher\+Casiers@{afficher\+Casiers}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{afficher\+Casiers()}{afficherCasiers()}}
+{\footnotesize\ttfamily void Stock\+Armoire\+::afficher\+Casiers (\begin{DoxyParamCaption}\item[{nb\+Casiers}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_stock_armoire_a4788426231673b7572c984b88401b0bb}\label{class_stock_armoire_a4788426231673b7572c984b88401b0bb}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!bouton\+Quitter\+Stock\+Armoire@{bouton\+Quitter\+Stock\+Armoire}}
+\index{bouton\+Quitter\+Stock\+Armoire@{bouton\+Quitter\+Stock\+Armoire}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{bouton\+Quitter\+Stock\+Armoire}{boutonQuitterStockArmoire}}
+{\footnotesize\ttfamily Button Stock\+Armoire\+::bouton\+Quitter\+Stock\+Armoire\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a247918120576111457dab1e5170fdeb3}\label{class_stock_armoire_a247918120576111457dab1e5170fdeb3}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!colonne\+Boutons@{colonne\+Boutons}}
+\index{colonne\+Boutons@{colonne\+Boutons}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{colonne\+Boutons}{colonneBoutons}}
+{\footnotesize\ttfamily Column Stock\+Armoire\+::colonne\+Boutons\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a86c24dd5c6a43d0398faeb150018822b}\label{class_stock_armoire_a86c24dd5c6a43d0398faeb150018822b}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!colonne\+Casier1@{colonne\+Casier1}}
+\index{colonne\+Casier1@{colonne\+Casier1}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{colonne\+Casier1}{colonneCasier1}}
+{\footnotesize\ttfamily Column Stock\+Armoire\+::colonne\+Casier1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_ab3d122226f114b5191f48b9be3c5747a}\label{class_stock_armoire_ab3d122226f114b5191f48b9be3c5747a}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!colonne\+Casier2@{colonne\+Casier2}}
+\index{colonne\+Casier2@{colonne\+Casier2}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{colonne\+Casier2}{colonneCasier2}}
+{\footnotesize\ttfamily Column Stock\+Armoire\+::colonne\+Casier2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a14f331f1a570ab77bba3e00cfc91ec55}\label{class_stock_armoire_a14f331f1a570ab77bba3e00cfc91ec55}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!colonne\+Casiers\+Droite@{colonne\+Casiers\+Droite}}
+\index{colonne\+Casiers\+Droite@{colonne\+Casiers\+Droite}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{colonne\+Casiers\+Droite}{colonneCasiersDroite}}
+{\footnotesize\ttfamily Repeater Stock\+Armoire\+::colonne\+Casiers\+Droite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_ac90ab49066943f1970216f1b3e89e43a}\label{class_stock_armoire_ac90ab49066943f1970216f1b3e89e43a}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!colonne\+Casiers\+Gauche@{colonne\+Casiers\+Gauche}}
+\index{colonne\+Casiers\+Gauche@{colonne\+Casiers\+Gauche}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{colonne\+Casiers\+Gauche}{colonneCasiersGauche}}
+{\footnotesize\ttfamily Repeater Stock\+Armoire\+::colonne\+Casiers\+Gauche\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_abbd46dd29fe165da0570e6ab052076a6}\label{class_stock_armoire_abbd46dd29fe165da0570e6ab052076a6}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!conteneur\+Casiers@{conteneur\+Casiers}}
+\index{conteneur\+Casiers@{conteneur\+Casiers}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{conteneur\+Casiers}{conteneurCasiers}}
+{\footnotesize\ttfamily Rectangle Stock\+Armoire\+::conteneur\+Casiers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a72088d31becde73ccc8cc73d05ab93df}\label{class_stock_armoire_a72088d31becde73ccc8cc73d05ab93df}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!dialogue\+Gestion\+Casier@{dialogue\+Gestion\+Casier}}
+\index{dialogue\+Gestion\+Casier@{dialogue\+Gestion\+Casier}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{dialogue\+Gestion\+Casier}{dialogueGestionCasier}}
+{\footnotesize\ttfamily \hyperlink{class_gestion_casier}{Gestion\+Casier} Stock\+Armoire\+::dialogue\+Gestion\+Casier\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a8b31a1368d50c62656ffde269a2d880d}\label{class_stock_armoire_a8b31a1368d50c62656ffde269a2d880d}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!height@{height}}
+\index{height@{height}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily var Stock\+Armoire\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a9c5de07e9aa235e8eb02e50b7e2d6652}\label{class_stock_armoire_a9c5de07e9aa235e8eb02e50b7e2d6652}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!label\+Utilisateur@{label\+Utilisateur}}
+\index{label\+Utilisateur@{label\+Utilisateur}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{label\+Utilisateur}{labelUtilisateur}}
+{\footnotesize\ttfamily Text Stock\+Armoire\+::label\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a0c6223c4c36b665251b364eef75b960b}\label{class_stock_armoire_a0c6223c4c36b665251b364eef75b960b}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!on\+Visible\+Changed@{on\+Visible\+Changed}}
+\index{on\+Visible\+Changed@{on\+Visible\+Changed}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{on\+Visible\+Changed}{onVisibleChanged}}
+{\footnotesize\ttfamily var Stock\+Armoire\+::on\+Visible\+Changed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a09dd833b012f0340be7bcf7135f785dd}\label{class_stock_armoire_a09dd833b012f0340be7bcf7135f785dd}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!title@{title}}
+\index{title@{title}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily var Stock\+Armoire\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stock_armoire_a9d25f76d65f156f53ad3bc738e15b6a9}\label{class_stock_armoire_a9d25f76d65f156f53ad3bc738e15b6a9}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!width@{width}}
+\index{width@{width}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily var Stock\+Armoire\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_stock_armoire_a9bed53c469e3e7e9e870fce7ab2d1e84}\label{class_stock_armoire_a9bed53c469e3e7e9e870fce7ab2d1e84}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!armoire@{armoire}}
+\index{armoire@{armoire}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{armoire}{armoire}}
+{\footnotesize\ttfamily string Stock\+Armoire\+::armoire}
+
+\mbox{\Hypertarget{class_stock_armoire_aae2efdb9b3a81d6c6ec816ba51e27c8d}\label{class_stock_armoire_aae2efdb9b3a81d6c6ec816ba51e27c8d}} 
+\index{Stock\+Armoire@{Stock\+Armoire}!utilisateur@{utilisateur}}
+\index{utilisateur@{utilisateur}!Stock\+Armoire@{Stock\+Armoire}}
+\paragraph{\texorpdfstring{utilisateur}{utilisateur}}
+{\footnotesize\ttfamily string Stock\+Armoire\+::utilisateur}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_stock_armoire_8qml}{Stock\+Armoire.\+qml}\end{DoxyCompactItemize}

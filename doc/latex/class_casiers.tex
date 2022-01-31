@@ -1,0 +1,310 @@
+\hypertarget{class_casiers}{}\subsection{Référence de la classe Casiers}
+\label{class_casiers}\index{Casiers@{Casiers}}
+
+
+{\ttfamily \#include $<$casiers.\+h$>$}
+
+
+
+Graphe de collaboration de Casiers\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_casiers__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_casiers_a53ff5feefb50f5010943c94916be060f}{actualiser} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_casiers_a25d7a8e09435cb7ee0b9f9e27e52b177}{liste\+Casiers\+Changed} ()
+\item 
+void \hyperlink{class_casiers_a73cd8be3085cb73651b4dea4d22a667b}{nb\+Casiers\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_casiers_ae9620f81e704a989f37b5b86e779e3df}{Casiers} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_casiers_a12018a7daf2c2ce7652ccedbefc545cc}{$\sim$\+Casiers} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire} (Q\+String adresse\+I\+P\+Armoire, bool debug=true)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_casiers_ad9a69a4e68885d87318188102f57fdd6}{arreter\+Rafraichissement} ()
+\item 
+Q\+String \hyperlink{class_casiers_affa8551c477b3cdfe15cd19964d8a391}{get\+Nb\+Casiers} ()
+\item 
+Q\+Variant \hyperlink{class_casiers_a3c23157572d06e973860c4d9f9589b1e}{get\+Casiers} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\+\_\+nb\+Casiers}
+\item 
+Q\+Variant \hyperlink{class_casiers_a936c4711e83f6577852a72909731fd89}{liste\+Casiers}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\+\_\+p\+Base\+De\+Donnees}
+\item 
+Q\+String \hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\+\_\+adresse\+I\+P\+Armoire}
+\item 
+Q\+Timer $\ast$ \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\+\_\+timer}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_casiers_ae9620f81e704a989f37b5b86e779e3df}\label{class_casiers_ae9620f81e704a989f37b5b86e779e3df}} 
+\index{Casiers@{Casiers}!Casiers@{Casiers}}
+\index{Casiers@{Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{Casiers()}{Casiers()}}
+{\footnotesize\ttfamily Casiers\+::\+Casiers (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_casiers_a53ff5feefb50f5010943c94916be060f}{actualiser()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\+\_\+p\+Base\+De\+Donnees}, et \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\+\_\+timer}.
+
+
+\begin{DoxyCode}
+00005                                 : QObject(parent)
+00006 \{
+00007     \hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\_pBaseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00008     \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this});
+00009     connect(\hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_casiers_a53ff5feefb50f5010943c94916be060f}{actualiser}()));
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_a12018a7daf2c2ce7652ccedbefc545cc}\label{class_casiers_a12018a7daf2c2ce7652ccedbefc545cc}} 
+\index{Casiers@{Casiers}!````~Casiers@{$\sim$\+Casiers}}
+\index{````~Casiers@{$\sim$\+Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{$\sim$\+Casiers()}{~Casiers()}}
+{\footnotesize\ttfamily Casiers\+::$\sim$\+Casiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\+\_\+timer}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \textcolor{keywordflow}{if}(\hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->isActive())
+00015        \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->stop();
+00016     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QMYSQL"});    
+00017 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_casiers_a53ff5feefb50f5010943c94916be060f}\label{class_casiers_a53ff5feefb50f5010943c94916be060f}} 
+\index{Casiers@{Casiers}!actualiser@{actualiser}}
+\index{actualiser@{actualiser}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{actualiser}{actualiser}}
+{\footnotesize\ttfamily void Casiers\+::actualiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}, et \hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\+\_\+adresse\+I\+P\+Armoire}.
+
+
+
+Référencé par \hyperlink{class_casiers_ae9620f81e704a989f37b5b86e779e3df}{Casiers()}.
+
+
+\begin{DoxyCode}
+00070 \{
+00071     \textcolor{keywordflow}{if}(!\hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\_adresseIPArmoire}.isEmpty())
+00072         \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire}(\hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\_adresseIPArmoire}, \textcolor{keyword}{false});
+00073 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_ad9a69a4e68885d87318188102f57fdd6}\label{class_casiers_ad9a69a4e68885d87318188102f57fdd6}} 
+\index{Casiers@{Casiers}!arreter\+Rafraichissement@{arreter\+Rafraichissement}}
+\index{arreter\+Rafraichissement@{arreter\+Rafraichissement}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{arreter\+Rafraichissement()}{arreterRafraichissement()}}
+{\footnotesize\ttfamily void Casiers\+::arreter\+Rafraichissement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\+\_\+timer}.
+
+
+\begin{DoxyCode}
+00020 \{
+00021     \textcolor{keywordflow}{if}(\hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->isActive())
+00022        \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->stop();
+00023 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_a3c23157572d06e973860c4d9f9589b1e}\label{class_casiers_a3c23157572d06e973860c4d9f9589b1e}} 
+\index{Casiers@{Casiers}!get\+Casiers@{get\+Casiers}}
+\index{get\+Casiers@{get\+Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{get\+Casiers()}{getCasiers()}}
+{\footnotesize\ttfamily Q\+Variant Casiers\+::get\+Casiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers});
+00033 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_affa8551c477b3cdfe15cd19964d8a391}\label{class_casiers_affa8551c477b3cdfe15cd19964d8a391}} 
+\index{Casiers@{Casiers}!get\+Nb\+Casiers@{get\+Nb\+Casiers}}
+\index{get\+Nb\+Casiers@{get\+Nb\+Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{get\+Nb\+Casiers()}{getNbCasiers()}}
+{\footnotesize\ttfamily Q\+String Casiers\+::get\+Nb\+Casiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\+\_\+nb\+Casiers}.
+
+
+\begin{DoxyCode}
+00026 \{
+00027     \textcolor{keywordflow}{return} \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\_nbCasiers};
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}\label{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}} 
+\index{Casiers@{Casiers}!lire@{lire}}
+\index{lire@{lire}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{lire()}{lire()}}
+{\footnotesize\ttfamily Q\+String Casiers\+::lire (\begin{DoxyParamCaption}\item[{Q\+String}]{adresse\+I\+P\+Armoire,  }\item[{bool}]{debug = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers}, \hyperlink{class_casiers_a25d7a8e09435cb7ee0b9f9e27e52b177}{liste\+Casiers\+Changed()}, \hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\+\_\+adresse\+I\+P\+Armoire}, \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\+\_\+nb\+Casiers}, \hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\+\_\+p\+Base\+De\+Donnees}, \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\+\_\+timer}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_casiers_a53ff5feefb50f5010943c94916be060f}{actualiser()}.
+
+
+\begin{DoxyCode}
+00036 \{
+00037     this->\hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{m\_adresseIPArmoire} = adresseIPArmoire;
+00038     QString requeteNbCasiers = \textcolor{stringliteral}{"SELECT Armoire.nbCasiers FROM Armoire WHERE Armoire.AdresseIP = '"} + 
+      adresseIPArmoire + \textcolor{stringliteral}{"'"};
+00039     \hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteNbCasiers,
+      \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\_nbCasiers});
+00040 
+00041     QString requeteStockCasier = \textcolor{stringliteral}{"SELECT Stock.NumeroCasier, Article.Nom, Stock.Quantite, Stock.Disponible
+       FROM Stock INNER JOIN Article ON Stock.idArticle = Article.idArticle ORDER BY Stock.NumeroCasier ASC"};
+00042     QVector<QStringList> enregistrementsCasiers;
+00043 
+00044     \hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers}.clear();
+00045     \textcolor{keywordflow}{if} (\hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteStockCasier,enregistrementsCasiers))
+00046     \{
+00047         QStringList champsCasier;
+00048 
+00049         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < enregistrementsCasiers.size(); i++)
+00050         \{
+00051             champsCasier = enregistrementsCasiers.at(i);
+00052             \textcolor{keywordflow}{if}(debug)
+00053                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"champsCasier"} << champsCasier;
+00054 
+00055             \hyperlink{class_casier}{Casier} *pCasier = \textcolor{keyword}{new} \hyperlink{class_casier}{Casier}(champsCasier.at(0).toInt(), champsCasier.at(1), 
+      champsCasier.at(2).toInt(), champsCasier.at(3).toInt());
+00056             \hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{casiers}.append(pCasier);
+00057         \}
+00058         emit \hyperlink{class_casiers_a25d7a8e09435cb7ee0b9f9e27e52b177}{listeCasiersChanged}();
+00059 
+00060         \textcolor{keywordflow}{return} \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\_nbCasiers};
+00061     \}
+00062 
+00063     \textcolor{keywordflow}{if}(!\hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->isActive())
+00064         \hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{m\_timer}->start(500);
+00065 
+00066     \textcolor{keywordflow}{return} \hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{m\_nbCasiers};
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_casiers_a25d7a8e09435cb7ee0b9f9e27e52b177}\label{class_casiers_a25d7a8e09435cb7ee0b9f9e27e52b177}} 
+\index{Casiers@{Casiers}!liste\+Casiers\+Changed@{liste\+Casiers\+Changed}}
+\index{liste\+Casiers\+Changed@{liste\+Casiers\+Changed}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{liste\+Casiers\+Changed}{listeCasiersChanged}}
+{\footnotesize\ttfamily void Casiers\+::liste\+Casiers\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}.
+
+\mbox{\Hypertarget{class_casiers_a73cd8be3085cb73651b4dea4d22a667b}\label{class_casiers_a73cd8be3085cb73651b4dea4d22a667b}} 
+\index{Casiers@{Casiers}!nb\+Casiers\+Changed@{nb\+Casiers\+Changed}}
+\index{nb\+Casiers\+Changed@{nb\+Casiers\+Changed}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{nb\+Casiers\+Changed}{nbCasiersChanged}}
+{\footnotesize\ttfamily void Casiers\+::nb\+Casiers\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}\label{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}} 
+\index{Casiers@{Casiers}!casiers@{casiers}}
+\index{casiers@{casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{casiers}{casiers}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Casiers\+::casiers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_casiers_a3c23157572d06e973860c4d9f9589b1e}{get\+Casiers()}, et \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}.
+
+\mbox{\Hypertarget{class_casiers_af745ce1cdce8dce725444e19437e0155}\label{class_casiers_af745ce1cdce8dce725444e19437e0155}} 
+\index{Casiers@{Casiers}!m\+\_\+adresse\+I\+P\+Armoire@{m\+\_\+adresse\+I\+P\+Armoire}}
+\index{m\+\_\+adresse\+I\+P\+Armoire@{m\+\_\+adresse\+I\+P\+Armoire}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{m\+\_\+adresse\+I\+P\+Armoire}{m\_adresseIPArmoire}}
+{\footnotesize\ttfamily Q\+String Casiers\+::m\+\_\+adresse\+I\+P\+Armoire\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_casiers_a53ff5feefb50f5010943c94916be060f}{actualiser()}, et \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}.
+
+\mbox{\Hypertarget{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}\label{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}} 
+\index{Casiers@{Casiers}!m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}}
+\index{m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{m\+\_\+p\+Base\+De\+Donnees}{m\_pBaseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Casiers\+::m\+\_\+p\+Base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_casiers_ae9620f81e704a989f37b5b86e779e3df}{Casiers()}, et \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}.
+
+\mbox{\Hypertarget{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}\label{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}} 
+\index{Casiers@{Casiers}!m\+\_\+timer@{m\+\_\+timer}}
+\index{m\+\_\+timer@{m\+\_\+timer}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{m\+\_\+timer}{m\_timer}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Casiers\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_casiers_ad9a69a4e68885d87318188102f57fdd6}{arreter\+Rafraichissement()}, \hyperlink{class_casiers_ae9620f81e704a989f37b5b86e779e3df}{Casiers()}, \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}, et \hyperlink{class_casiers_a12018a7daf2c2ce7652ccedbefc545cc}{$\sim$\+Casiers()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_casiers_a936c4711e83f6577852a72909731fd89}\label{class_casiers_a936c4711e83f6577852a72909731fd89}} 
+\index{Casiers@{Casiers}!liste\+Casiers@{liste\+Casiers}}
+\index{liste\+Casiers@{liste\+Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{liste\+Casiers}{listeCasiers}}
+{\footnotesize\ttfamily Q\+Variant Casiers\+::liste\+Casiers\hspace{0.3cm}{\ttfamily [read]}}
+
+\mbox{\Hypertarget{class_casiers_a7c4b1df1f2e320c22489234fee991f18}\label{class_casiers_a7c4b1df1f2e320c22489234fee991f18}} 
+\index{Casiers@{Casiers}!m\+\_\+nb\+Casiers@{m\+\_\+nb\+Casiers}}
+\index{m\+\_\+nb\+Casiers@{m\+\_\+nb\+Casiers}!Casiers@{Casiers}}
+\paragraph{\texorpdfstring{m\+\_\+nb\+Casiers}{m\_nbCasiers}}
+{\footnotesize\ttfamily Q\+String Casiers\+::m\+\_\+nb\+Casiers\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_casiers_affa8551c477b3cdfe15cd19964d8a391}{get\+Nb\+Casiers()}, et \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{casiers_8h}{casiers.\+h}\item 
+\hyperlink{casiers_8cpp}{casiers.\+cpp}\end{DoxyCompactItemize}

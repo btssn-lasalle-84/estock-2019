@@ -1,0 +1,742 @@
+\hypertarget{class_ihm_gestion_armoire}{}\subsection{Référence de la classe Ihm\+Gestion\+Armoire}
+\label{class_ihm_gestion_armoire}\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+
+
+{\ttfamily \#include $<$Ihm\+Gestion\+Armoire.\+h$>$}
+
+
+
+Graphe de collaboration de Ihm\+Gestion\+Armoire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ihm_gestion_armoire__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer} ()
+\begin{DoxyCompactList}\small\item\em ferme l\textquotesingle{}\hyperlink{class_ihm_gestion_armoire}{Ihm\+Gestion\+Armoire} et supprime l\textquotesingle{}utilisateur crée \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{gerer\+Groupe} ()
+\begin{DoxyCompactList}\small\item\em Identifiaction du status de l\textquotesingle{}utilisateur gestionnaire ou administrateur. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}{selectionner\+Casier} (int)
+\begin{DoxyCompactList}\small\item\em Permet de savoir quel casier a était sélectionner. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article} ()
+\begin{DoxyCompactList}\small\item\em Requete permettant la recherche d\textquotesingle{}article dans les casiers. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}{effacer\+Recherche\+Article} ()
+\item 
+void \hyperlink{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}{effacer\+La\+Liste\+Article} ()
+\item 
+void \hyperlink{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}{effacer\+La\+Selection\+Article} ()
+\item 
+void \hyperlink{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}{effacer\+Message\+Numero\+Casier} ()
+\item 
+void \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article} (int index)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire} (Q\+Widget $\ast$parent=nullptr)
+\item 
+\hyperlink{class_ihm_gestion_armoire_a6d854653399972a013f79edfe32b04cb}{$\sim$\+Ihm\+Gestion\+Armoire} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre gestion armoire. \end{DoxyCompactList}\item 
+\hyperlink{class_utilisateur}{Utilisateur} $\ast$ \hyperlink{class_ihm_gestion_armoire_a024905507f9700b2afa794d7c357546f}{get\+Utilisateur} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}association utilisateur. \end{DoxyCompactList}\item 
+\hyperlink{class_casier}{Casier} $\ast$ \hyperlink{class_ihm_gestion_armoire_a347e1dc419cb74e5046dc95b5ffbf09e}{get\+Casier} ()
+\item 
+void \hyperlink{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}{set\+Utilisateur} (\hyperlink{class_utilisateur}{Utilisateur} $\ast$\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur})
+\begin{DoxyCompactList}\small\item\em Crée l\textquotesingle{}association utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{show\+Event} (Q\+Show\+Event $\ast$ev)
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}exécute à chaque fois que la fenêtre \hyperlink{class_ihm_gestion_armoire}{Ihm\+Gestion\+Armoire} est affichée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}{initialiser\+Fenetre} ()
+\begin{DoxyCompactList}\small\item\em Initialise le mode plein écran. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a189ab3f034720597eedf3930631e6dd1}{initialiser\+Clavier\+Virtuel} ()
+\begin{DoxyCompactList}\small\item\em Initialise le clavier virtuel. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_ac82ab8c9ad48f26ab928b7a72e4dcee0}{supprimer\+Clavier\+Virtuel} ()
+\begin{DoxyCompactList}\small\item\em Supprime le clavier virtuel. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a527e704e792dd5634b3c0a738a922429}{fermer\+Clavier\+Virtuel} ()
+\begin{DoxyCompactList}\small\item\em ferme le clavier virtuel \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers} ()
+\item 
+Q\+String \hyperlink{class_ihm_gestion_armoire_a68b7ba5bc7f7475b35162b13d3b3db13}{lire\+Adresse\+IP} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Ihm\+Gestion\+Armoire $\ast$ \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}
+\begin{DoxyCompactList}\small\item\em agrégation de la définition de la fenêtre UI \end{DoxyCompactList}\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+\hyperlink{class_utilisateur}{Utilisateur} $\ast$ \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}
+\item 
+\hyperlink{class_gestion_balances}{Gestion\+Balances} $\ast$ \hyperlink{class_ihm_gestion_armoire_a3186adbd003db3309c640ac414d39d2e}{gestion\+Balances}
+\item 
+\hyperlink{class_ihm_gestion_groupe}{Ihm\+Gestion\+Groupe} $\ast$ \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihm\+Gestion\+Groupe}
+\begin{DoxyCompactList}\small\item\em la fenêtre de gestion des groupes \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_casier}{Casier} $\ast$ $>$ \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}
+\begin{DoxyCompactList}\small\item\em les casier de l\textquotesingle{}armoire \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articles\+Trouves}
+\item 
+\hyperlink{class_article}{Article} $\ast$ \hyperlink{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}{article}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}\label{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{Ihm\+Gestion\+Armoire()}{IhmGestionArmoire()}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Armoire\+::\+Ihm\+Gestion\+Armoire (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}, \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer()}, \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{gerer\+Groupe()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihm\+Gestion\+Groupe}, \hyperlink{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}{initialiser\+Fenetre()}, \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}, \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article()}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+\begin{DoxyCode}
+00031                                                     : QWidget(parent), \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}(\textcolor{keyword}{new} Ui::IhmGestionArmoire), 
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}(\textcolor{keyword}{nullptr})\textcolor{comment}{//, casiers(NB\_CASIERS\_MAX, nullptr)}
+00032 \{
+00033     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->setupUi(\textcolor{keyword}{this});    
+00034     qDebug() << Q\_FUNC\_INFO;
+00035 
+00036     \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00037     \textcolor{keywordflow}{if}(!\hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00038         \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00039 
+00040     \textcolor{comment}{// crée les casiers}
+00041     \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficherCasiers}();
+00042 
+00043     \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihmGestionGroupe} = \textcolor{keyword}{new} \hyperlink{class_ihm_gestion_groupe}{IhmGestionGroupe}(\textcolor{keyword}{this});
+00044     \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihmGestionGroupe}->hide();
+00045 
+00046     \textcolor{comment}{// Temporaire}
+00047     \textcolor{comment}{//gestionBalances = new GestionBalances;}
+00048 
+00049     connect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->boutonFermeture, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer}()));
+00050     \textcolor{comment}{//connect(ui->lineEditRechercheArticle, SIGNAL(editingFinished()), this, SLOT(rechercherArticle()));}
+00051     connect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->boutonRechercheArticle, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercherArticle}()));
+00052     connect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles, SIGNAL(currentIndexChanged(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionnerArticle}(\textcolor{keywordtype}{int})));
+00053     \textcolor{comment}{// pour administrateur}
+00054     connect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->boutonGestionGroupe, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{gererGroupe}()));    
+00055 
+00056     \hyperlink{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}{initialiserFenetre}();
+00057 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a6d854653399972a013f79edfe32b04cb}\label{class_ihm_gestion_armoire_a6d854653399972a013f79edfe32b04cb}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!````~Ihm\+Gestion\+Armoire@{$\sim$\+Ihm\+Gestion\+Armoire}}
+\index{````~Ihm\+Gestion\+Armoire@{$\sim$\+Ihm\+Gestion\+Armoire}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{$\sim$\+Ihm\+Gestion\+Armoire()}{~IhmGestionArmoire()}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Armoire\+::$\sim$\+Ihm\+Gestion\+Armoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+\begin{DoxyCode}
+00066 \{
+00067     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00068     \textcolor{keyword}{delete} \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui};
+00069     qDebug() << Q\_FUNC\_INFO;
+00070 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}\label{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!afficher\+Casiers@{afficher\+Casiers}}
+\index{afficher\+Casiers@{afficher\+Casiers}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{afficher\+Casiers()}{afficherCasiers()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::afficher\+Casiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}, \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}, \hyperlink{class_ihm_gestion_armoire_a68b7ba5bc7f7475b35162b13d3b3db13}{lire\+Adresse\+I\+P()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}{selectionner\+Casier()}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+
+\begin{DoxyCode}
+00326 \{
+00327     QString nbCasiers;
+00328     QString adresseIP = \hyperlink{class_ihm_gestion_armoire_a68b7ba5bc7f7475b35162b13d3b3db13}{lireAdresseIP}();
+00329     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"adresseIP"} << adresseIP;
+00330     \textcolor{keywordflow}{if}(!adresseIP.isEmpty())
+00331     \{
+00332         QString requeteNbCasiers = \textcolor{stringliteral}{"SELECT Armoire.nbCasiers FROM Armoire WHERE Armoire.AdresseIP = '"} + 
+      adresseIP + \textcolor{stringliteral}{"'"};
+00333         \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteNbCasiers, nbCasiers);
+00334         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbCasiers"} << nbCasiers;
+00335         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < nbCasiers.toInt(); i++)
+00336         \{
+00337             \hyperlink{class_casier}{Casier}* casier = \textcolor{keyword}{new} \hyperlink{class_casier}{Casier}(i+1, \textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{this}); \textcolor{comment}{// autorisé et présent}
+00338             \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}.push\_back(casier);
+00339             connect(casier, SIGNAL(clicked(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}{selectionnerCasier}(\textcolor{keywordtype}{int})));
+00340             \textcolor{comment}{// pair/impair -> droite/gauche ?}
+00341             \textcolor{keywordflow}{if}((i+1)%2)
+00342             \{
+00343                 \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->gridLayoutArmoire->addWidget(casier, i/2, 0, 1, 1);
+00344             \}
+00345             \textcolor{keywordflow}{else}
+00346             \{
+00347                 \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->gridLayoutArmoire->addWidget(casier, i/2, 1, 1, 1);
+00348             \}
+00349         \}
+00350     \}
+00351 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}\label{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!effacer\+La\+Liste\+Article@{effacer\+La\+Liste\+Article}}
+\index{effacer\+La\+Liste\+Article@{effacer\+La\+Liste\+Article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{effacer\+La\+Liste\+Article}{effacerLaListeArticle}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::effacer\+La\+Liste\+Article (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer()}.
+
+
+\begin{DoxyCode}
+00311 \{
+00312     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles->clear();
+00313 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}\label{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!effacer\+La\+Selection\+Article@{effacer\+La\+Selection\+Article}}
+\index{effacer\+La\+Selection\+Article@{effacer\+La\+Selection\+Article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{effacer\+La\+Selection\+Article}{effacerLaSelectionArticle}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::effacer\+La\+Selection\+Article (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer()}.
+
+
+\begin{DoxyCode}
+00316 \{
+00317     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageArticle->setText(\textcolor{stringliteral}{""});
+00318 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}\label{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!effacer\+Message\+Numero\+Casier@{effacer\+Message\+Numero\+Casier}}
+\index{effacer\+Message\+Numero\+Casier@{effacer\+Message\+Numero\+Casier}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{effacer\+Message\+Numero\+Casier}{effacerMessageNumeroCasier}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::effacer\+Message\+Numero\+Casier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer()}.
+
+
+\begin{DoxyCode}
+00321 \{
+00322     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageNumeroCasier->setText(\textcolor{stringliteral}{""});
+00323 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}\label{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!effacer\+Recherche\+Article@{effacer\+Recherche\+Article}}
+\index{effacer\+Recherche\+Article@{effacer\+Recherche\+Article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{effacer\+Recherche\+Article}{effacerRechercheArticle}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::effacer\+Recherche\+Article (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}.
+
+
+\begin{DoxyCode}
+00280 \{
+00281     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->lineEditRechercheArticle->setText(\textcolor{stringliteral}{""});
+00282 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}\label{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!fermer@{fermer}}
+\index{fermer@{fermer}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{fermer}{fermer}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::fermer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}{effacer\+La\+Liste\+Article()}, \hyperlink{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}{effacer\+La\+Selection\+Article()}, \hyperlink{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}{effacer\+Message\+Numero\+Casier()}, et \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+
+\begin{DoxyCode}
+00195 \{
+00196     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur} != \textcolor{keyword}{nullptr})
+00197     \{
+00198         \textcolor{keyword}{delete} \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur};
+00199         \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur} = \textcolor{keyword}{nullptr};
+00200     \}
+00201     close();
+00202     \hyperlink{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}{effacerLaListeArticle}();
+00203     \hyperlink{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}{effacerLaSelectionArticle}();
+00204     \hyperlink{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}{effacerMessageNumeroCasier}();
+00205 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a527e704e792dd5634b3c0a738a922429}\label{class_ihm_gestion_armoire_a527e704e792dd5634b3c0a738a922429}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!fermer\+Clavier\+Virtuel@{fermer\+Clavier\+Virtuel}}
+\index{fermer\+Clavier\+Virtuel@{fermer\+Clavier\+Virtuel}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{fermer\+Clavier\+Virtuel()}{fermerClavierVirtuel()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::fermer\+Clavier\+Virtuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_ac82ab8c9ad48f26ab928b7a72e4dcee0}{supprimer\+Clavier\+Virtuel()}.
+
+
+\begin{DoxyCode}
+00183 \{
+00184     \hyperlink{class_ihm_gestion_armoire_ac82ab8c9ad48f26ab928b7a72e4dcee0}{supprimerClavierVirtuel}();
+00185     close();
+00186 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}\label{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!gerer\+Groupe@{gerer\+Groupe}}
+\index{gerer\+Groupe@{gerer\+Groupe}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{gerer\+Groupe}{gererGroupe}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::gerer\+Groupe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihm\+Gestion\+Groupe}, \hyperlink{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}{Ihm\+Gestion\+Groupe\+::set\+Utilisateur()}, et \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+
+\begin{DoxyCode}
+00215 \{
+00216     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Nom"} << \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() << \textcolor{stringliteral}{"Administrateur"} << 
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() << \textcolor{stringliteral}{"estGestionnaire"} << 
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}();
+00217     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || 
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00218     \{
+00219         \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihmGestionGroupe}->\hyperlink{class_ihm_gestion_groupe_a88bbe8b5652781d4a80a50ed6bf9d329}{setUtilisateur}(
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur});
+00220         \hyperlink{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}{ihmGestionGroupe}->show();
+00221     \}
+00222 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a347e1dc419cb74e5046dc95b5ffbf09e}\label{class_ihm_gestion_armoire_a347e1dc419cb74e5046dc95b5ffbf09e}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!get\+Casier@{get\+Casier}}
+\index{get\+Casier@{get\+Casier}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{get\+Casier()}{getCasier()}}
+{\footnotesize\ttfamily \hyperlink{class_casier}{Casier}$\ast$ Ihm\+Gestion\+Armoire\+::get\+Casier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a024905507f9700b2afa794d7c357546f}\label{class_ihm_gestion_armoire_a024905507f9700b2afa794d7c357546f}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!get\+Utilisateur@{get\+Utilisateur}}
+\index{get\+Utilisateur@{get\+Utilisateur}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{get\+Utilisateur()}{getUtilisateur()}}
+{\footnotesize\ttfamily \hyperlink{class_utilisateur}{Utilisateur} $\ast$ Ihm\+Gestion\+Armoire\+::get\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Utilisateur$\ast$ 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}.
+
+
+\begin{DoxyCode}
+00080 \{
+00081     \textcolor{keywordflow}{return} \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur};
+00082 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a189ab3f034720597eedf3930631e6dd1}\label{class_ihm_gestion_armoire_a189ab3f034720597eedf3930631e6dd1}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!initialiser\+Clavier\+Virtuel@{initialiser\+Clavier\+Virtuel}}
+\index{initialiser\+Clavier\+Virtuel@{initialiser\+Clavier\+Virtuel}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{initialiser\+Clavier\+Virtuel()}{initialiserClavierVirtuel()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::initialiser\+Clavier\+Virtuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{show\+Event()}.
+
+
+\begin{DoxyCode}
+00153 \{
+00154     QProcess processus;
+00155     QString programme = \textcolor{stringliteral}{"/usr/bin/florence"};
+00156     QStringList arguments;
+00157     arguments << \textcolor{stringliteral}{"--use-config=/usr/share/doc/florence/examples/florence.conf"};
+00158     processus.startDetached(programme, arguments);
+00159 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}\label{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!initialiser\+Fenetre@{initialiser\+Fenetre}}
+\index{initialiser\+Fenetre@{initialiser\+Fenetre}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{initialiser\+Fenetre()}{initialiserFenetre()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::initialiser\+Fenetre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{I\+H\+M\+\_\+\+C\+SS}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+
+\begin{DoxyCode}
+00129 \{
+00130     setStyleSheet(\hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{IHM\_CSS});
+00131 
+00132 \textcolor{preprocessor}{    #ifndef DESKTOP}
+00133     \textcolor{keyword}{const} \textcolor{keywordtype}{int} w = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width();
+00134     \textcolor{keyword}{const} \textcolor{keywordtype}{int} h = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height();
+00135     resize(w, h);
+00136 \textcolor{preprocessor}{    #else}
+00137     \textcolor{comment}{// 800×480}
+00138     resize(800, 480);
+00139 \textcolor{preprocessor}{    #endif}
+00140     setWindowFlags(Qt::FramelessWindowHint | Qt::Dialog); \textcolor{comment}{// Ajouter Qt::WindowStaysOnTopHint}
+00141     \textcolor{comment}{//showMaximized();}
+00142     setWindowModality(Qt::WindowModal);
+00143     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->lineEditRechercheArticle->setFocus();
+00144 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a68b7ba5bc7f7475b35162b13d3b3db13}\label{class_ihm_gestion_armoire_a68b7ba5bc7f7475b35162b13d3b3db13}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!lire\+Adresse\+IP@{lire\+Adresse\+IP}}
+\index{lire\+Adresse\+IP@{lire\+Adresse\+IP}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{lire\+Adresse\+I\+P()}{lireAdresseIP()}}
+{\footnotesize\ttfamily Q\+String Ihm\+Gestion\+Armoire\+::lire\+Adresse\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}.
+
+
+\begin{DoxyCode}
+00354 \{
+00355     \textcolor{comment}{//QNetworkInterface interface = QNetworkInterface::interfaceFromName("wlan0");}
+00356     \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << interface.hardwareAddress();}
+00357     QList<QHostAddress> adresses = QNetworkInterface::allAddresses();
+00358     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; adresses.size(); i++)
+00359     \{
+00360         \textcolor{keywordflow}{if}(adresses.at(i).isInSubnet(QHostAddress::parseSubnet(\textcolor{stringliteral}{"192.168.52.0/24"})))
+00361             \textcolor{keywordflow}{return} adresses.at(i).toString();
+00362     \}
+00363 
+00364     \textcolor{keywordflow}{return} QString(\textcolor{stringliteral}{""});
+00365 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}\label{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!rechercher\+Article@{rechercher\+Article}}
+\index{rechercher\+Article@{rechercher\+Article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{rechercher\+Article}{rechercherArticle}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Armoire\+::rechercher\+Article (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Affiche l\textquotesingle{}article selectionner. 
+
+Références \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articles\+Trouves}, \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}, \hyperlink{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}{effacer\+Recherche\+Article()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article()}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+
+\begin{DoxyCode}
+00250 \{
+00251     QString mot = \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->lineEditRechercheArticle->text();
+00252     qDebug() << Q\_FUNC\_INFO << mot;
+00253     \textcolor{comment}{/*if(mot.isEmpty())}
+00254 \textcolor{comment}{        return;*/}
+00255     QString requete = \textcolor{stringliteral}{"SELECT Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite,
+       Stock.Disponible, Article.Designation FROM Stock INNER JOIN Article ON Stock.idArticle = Article.idArticle WHERE
+       Article.Nom LIKE '%"} + mot + \textcolor{stringliteral}{"%' OR Article.Code LIKE '%"} + mot + \textcolor{stringliteral}{"%' OR Article.Designation LIKE '%"} + mot + \textcolor{stringliteral}{"%'
+       ORDER BY Stock.NumeroCasier ASC"};
+00256     \textcolor{comment}{//QString requete = "SELECT * FROM Article WHERE Nom LIKE '%" + mot + "%' OR Code LIKE '%" + mot + "%'
+       OR Designation LIKE '%" + mot + "%'";}
+00257     qDebug() << Q\_FUNC\_INFO << requete;
+00258     disconnect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles, SIGNAL(currentIndexChanged(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionnerArticle}(\textcolor{keywordtype}{int})));
+00259     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles->clear();
+00260     \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}.clear();
+00261     \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves});
+00262     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"articlesTrouves"} << \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}.size() << 
+      \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves};
+00263 
+00264     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles->addItem(\textcolor{stringliteral}{"Sélectionner un article"});
+00265     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}.size() ; i++)
+00266     \{
+00267         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles->addItem(\hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}[i].at(2));
+00268     \}
+00269     connect(\hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->comboBoxListeArticles, SIGNAL(currentIndexChanged(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionnerArticle}(\textcolor{keywordtype}{int})));
+00270 
+00271     \textcolor{comment}{/*if(articlesTrouves.size() > 0)}
+00272 \textcolor{comment}{    \{}
+00273 \textcolor{comment}{        selectionnerArticle(1);}
+00274 \textcolor{comment}{        ui->labelMessageNumeroCasier->setText("L'article se trouve\(\backslash\)ndans le casier numéro : " +
+       articlesTrouves[0].at(0));}
+00275 \textcolor{comment}{    \}*/}
+00276     \hyperlink{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}{effacerRechercheArticle}();
+00277 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}\label{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!selectionner\+Article@{selectionner\+Article}}
+\index{selectionner\+Article@{selectionner\+Article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{selectionner\+Article}{selectionnerArticle}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::selectionner\+Article (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}{article}, \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articles\+Trouves}, et \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}, et \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}.
+
+
+\begin{DoxyCode}
+00291 \{
+00292     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}.size() == 0 || index < 0)
+00293         \textcolor{keywordflow}{return};
+00294     \textcolor{keywordflow}{if}(index > 0)
+00295     \{
+00296         \textcolor{comment}{//Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite, Stock.Disponible,
+       Article.Designation}
+00297         QString \hyperlink{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}{article} = \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}[index-1].at(5);
+00298         QString qte = QString::fromUtf8(\textcolor{stringliteral}{"Quantité : "}) + \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}[index-1].at(3);
+00299         QString dispo = QString::fromUtf8(\textcolor{stringliteral}{"Disponible : "}) + \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}[index-1].at(4);
+00300         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageArticle->setText(article + \textcolor{stringliteral}{"\(\backslash\)n"} + qte + \textcolor{stringliteral}{"\(\backslash\)n"} + dispo);
+00301         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageNumeroCasier->setText(\textcolor{stringliteral}{"Casier "} + \hyperlink{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}{articlesTrouves}[index-1].at(0));
+00302     \}
+00303     \textcolor{keywordflow}{else}
+00304     \{
+00305         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageArticle->setText(\textcolor{stringliteral}{""});
+00306         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelMessageNumeroCasier->setText(\textcolor{stringliteral}{""});
+00307     \}
+00308 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}\label{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!selectionner\+Casier@{selectionner\+Casier}}
+\index{selectionner\+Casier@{selectionner\+Casier}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{selectionner\+Casier}{selectionnerCasier}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::selectionner\+Casier (\begin{DoxyParamCaption}\item[{int}]{numero\+Casier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Casier} & int \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}, \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}.
+
+
+\begin{DoxyCode}
+00233 \{
+00234     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroCasier"} << numeroCasier;
+00235     QString requete = \textcolor{stringliteral}{"SELECT Stock.NumeroCasier, Article.idType, Article.Nom, Stock.Quantite,
+       Stock.Disponible, Article.Designation FROM Stock INNER JOIN Article ON Stock.idArticle = Article.idArticle WHERE
+       Stock.NumeroCasier='"} + QString::number(numeroCasier) + \textcolor{stringliteral}{"'"};
+00236     qDebug() << Q\_FUNC\_INFO << requete;
+00237     QStringList articleCasier;
+00238     \hyperlink{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, articleCasier);
+00239     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"articleCasier"} << articleCasier;
+00240     \hyperlink{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}{casiers}[numeroCasier-1]->actionner();
+00241 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}\label{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!set\+Utilisateur@{set\+Utilisateur}}
+\index{set\+Utilisateur@{set\+Utilisateur}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{set\+Utilisateur()}{setUtilisateur()}}
+{\footnotesize\ttfamily Ihm\+Gestion\+Armoire\+::set\+Utilisateur (\begin{DoxyParamCaption}\item[{\hyperlink{class_utilisateur}{Utilisateur} $\ast$}]{utilisateur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em utilisateur} & Utilisateur$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{Utilisateur\+::est\+Administrateur()}, \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{Utilisateur\+::est\+Gestionnaire()}, \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}, et \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_add8f8e7a0fbf70cef9399ba9f7db7b7e}{Ihm\+Authentification\+::autoriser\+Sans\+Badge()}, \hyperlink{class_ihm_authentification_a6a67fe1c8e354a9ad123d8c53c16c6c4}{Ihm\+Authentification\+::passer\+Sans\+Badge()}, et \hyperlink{class_ihm_authentification_ad62f646310fff597d3bf50af2c3d5d0c}{Ihm\+Authentification\+::valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00092 \{
+00093     this->utilisateur = \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur};
+00094     \textcolor{keywordflow}{if}(utilisateur->\hyperlink{class_utilisateur_a2c4ede0ec936ebd64d73df1e1dde3a5d}{estAdministrateur}() || utilisateur->
+      \hyperlink{class_utilisateur_a3c86ddd77b243fd3f12ad2e85ff06759}{estGestionnaire}())
+00095         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->boutonGestionGroupe->setEnabled(\textcolor{keyword}{true});
+00096     \textcolor{keywordflow}{else}
+00097         \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->boutonGestionGroupe->setEnabled(\textcolor{keyword}{false});
+00098 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}\label{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{show\+Event()}{showEvent()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Références \hyperlink{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}{Utilisateur\+::get\+Groupe()}, \hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{Utilisateur\+::get\+Nom()}, \hyperlink{class_utilisateur_ac4483808ad54888c66a4235133d135d5}{Utilisateur\+::get\+Prenom()}, \hyperlink{class_ihm_gestion_armoire_a189ab3f034720597eedf3930631e6dd1}{initialiser\+Clavier\+Virtuel()}, \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}, et \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}.
+
+
+\begin{DoxyCode}
+00107 \{
+00108     QString informationsUtilisateur;
+00109     QString informationsGroupe;
+00110     \textcolor{comment}{// Affiche des informations sur l'utilisateur qui a accès à l'armoire}
+00111     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur} != \textcolor{keyword}{nullptr})
+00112     \{
+00113         informationsUtilisateur = \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_adfffec2519ba338497de55b61e7bc420}{getNom}() + \textcolor{stringliteral}{" "} + 
+      \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_ac4483808ad54888c66a4235133d135d5}{getPrenom}();
+00114         informationsGroupe = \hyperlink{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}{utilisateur}->\hyperlink{class_utilisateur_a9922d48c4d295c9357ad8102399322ec}{getGroupe}();
+00115     \}
+00116     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelUtilisateur->setText(informationsUtilisateur);
+00117     \hyperlink{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}{ui}->labelGroupe->setText(informationsGroupe);
+00118 
+00119     \hyperlink{class_ihm_gestion_armoire_a189ab3f034720597eedf3930631e6dd1}{initialiserClavierVirtuel}();
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_ac82ab8c9ad48f26ab928b7a72e4dcee0}\label{class_ihm_gestion_armoire_ac82ab8c9ad48f26ab928b7a72e4dcee0}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!supprimer\+Clavier\+Virtuel@{supprimer\+Clavier\+Virtuel}}
+\index{supprimer\+Clavier\+Virtuel@{supprimer\+Clavier\+Virtuel}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{supprimer\+Clavier\+Virtuel()}{supprimerClavierVirtuel()}}
+{\footnotesize\ttfamily void Ihm\+Gestion\+Armoire\+::supprimer\+Clavier\+Virtuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a527e704e792dd5634b3c0a738a922429}{fermer\+Clavier\+Virtuel()}.
+
+
+\begin{DoxyCode}
+00168 \{
+00169     QProcess processus;
+00170     QString programme = \textcolor{stringliteral}{"killall"}; \textcolor{comment}{// le nom du programme}
+00171     QStringList arguments; \textcolor{comment}{// arguments du programme}
+00172     arguments << \textcolor{stringliteral}{"florence"};
+00173     processus.startDetached(programme, arguments);
+00174 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}\label{class_ihm_gestion_armoire_a0a3af042f7a9d5a6bac634e2b053828d}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!article@{article}}
+\index{article@{article}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{article}{article}}
+{\footnotesize\ttfamily \hyperlink{class_article}{Article}$\ast$ Ihm\+Gestion\+Armoire\+::article\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}\label{class_ihm_gestion_armoire_a21821dc4f15d87125efb933991eb4385}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!articles\+Trouves@{articles\+Trouves}}
+\index{articles\+Trouves@{articles\+Trouves}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{articles\+Trouves}{articlesTrouves}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String\+List$>$ Ihm\+Gestion\+Armoire\+::articles\+Trouves\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}, et \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}\label{class_ihm_gestion_armoire_ad0d3a89bbcfa9f0e50ff5c50ec64d707}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!bdd@{bdd}}
+\index{bdd@{bdd}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Ihm\+Gestion\+Armoire\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}, \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}, \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}, et \hyperlink{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}{selectionner\+Casier()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}\label{class_ihm_gestion_armoire_acd01a783a46b27a1b8d1535f5ce16212}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!casiers@{casiers}}
+\index{casiers@{casiers}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{casiers}{casiers}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_casier}{Casier} $\ast$$>$ Ihm\+Gestion\+Armoire\+::casiers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}, et \hyperlink{class_ihm_gestion_armoire_ac2e2365408fcbf66c0e75bb828b40162}{selectionner\+Casier()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a3186adbd003db3309c640ac414d39d2e}\label{class_ihm_gestion_armoire_a3186adbd003db3309c640ac414d39d2e}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!gestion\+Balances@{gestion\+Balances}}
+\index{gestion\+Balances@{gestion\+Balances}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{gestion\+Balances}{gestionBalances}}
+{\footnotesize\ttfamily \hyperlink{class_gestion_balances}{Gestion\+Balances}$\ast$ Ihm\+Gestion\+Armoire\+::gestion\+Balances\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}\label{class_ihm_gestion_armoire_af590a9a2a114e7ee791db540f87c01ef}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!ihm\+Gestion\+Groupe@{ihm\+Gestion\+Groupe}}
+\index{ihm\+Gestion\+Groupe@{ihm\+Gestion\+Groupe}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{ihm\+Gestion\+Groupe}{ihmGestionGroupe}}
+{\footnotesize\ttfamily \hyperlink{class_ihm_gestion_groupe}{Ihm\+Gestion\+Groupe}$\ast$ Ihm\+Gestion\+Armoire\+::ihm\+Gestion\+Groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{gerer\+Groupe()}, et \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}\label{class_ihm_gestion_armoire_a793a2816dc21b3161566138d2af5a8b9}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!ui@{ui}}
+\index{ui@{ui}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Ihm\+Gestion\+Armoire$\ast$ Ihm\+Gestion\+Armoire\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a04201173bd9ac135227ac56a6c22a999}{afficher\+Casiers()}, \hyperlink{class_ihm_gestion_armoire_a65cf47ddfe3942435b5f3bf40578d96a}{effacer\+La\+Liste\+Article()}, \hyperlink{class_ihm_gestion_armoire_aa432c67c648097bbec288694077d83e6}{effacer\+La\+Selection\+Article()}, \hyperlink{class_ihm_gestion_armoire_a38dab807125ddb3baecf9345906e3c4b}{effacer\+Message\+Numero\+Casier()}, \hyperlink{class_ihm_gestion_armoire_a71c12ea50f463c14c835b02d3db22025}{effacer\+Recherche\+Article()}, \hyperlink{class_ihm_gestion_armoire_a7aa5e1514dd5d1b5648a2f6dd36970f9}{Ihm\+Gestion\+Armoire()}, \hyperlink{class_ihm_gestion_armoire_a3bd9b576cab980cae3dc591f412309fc}{initialiser\+Fenetre()}, \hyperlink{class_ihm_gestion_armoire_a594f25b58b70700e19e3e7f567325c40}{rechercher\+Article()}, \hyperlink{class_ihm_gestion_armoire_a28970b692994ad7201c03decd42ec0e5}{selectionner\+Article()}, \hyperlink{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}{set\+Utilisateur()}, \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{show\+Event()}, et \hyperlink{class_ihm_gestion_armoire_a6d854653399972a013f79edfe32b04cb}{$\sim$\+Ihm\+Gestion\+Armoire()}.
+
+\mbox{\Hypertarget{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}\label{class_ihm_gestion_armoire_aa14adf3863cf09947411fc33e413076c}} 
+\index{Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}!utilisateur@{utilisateur}}
+\index{utilisateur@{utilisateur}!Ihm\+Gestion\+Armoire@{Ihm\+Gestion\+Armoire}}
+\paragraph{\texorpdfstring{utilisateur}{utilisateur}}
+{\footnotesize\ttfamily \hyperlink{class_utilisateur}{Utilisateur}$\ast$ Ihm\+Gestion\+Armoire\+::utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_gestion_armoire_a7fef1d21e4dcce9c4550d33b15e8dc29}{fermer()}, \hyperlink{class_ihm_gestion_armoire_a4cd664c766e29593d3fedf2baea6a330}{gerer\+Groupe()}, \hyperlink{class_ihm_gestion_armoire_a024905507f9700b2afa794d7c357546f}{get\+Utilisateur()}, \hyperlink{class_ihm_gestion_armoire_af63a0c4424edd90a3c45506dde527b4e}{set\+Utilisateur()}, et \hyperlink{class_ihm_gestion_armoire_ad0f3d63f9b93fc902de40a9a546f709c}{show\+Event()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ihm_gestion_armoire_8h}{Ihm\+Gestion\+Armoire.\+h}\item 
+\hyperlink{_ihm_gestion_armoire_8cpp}{Ihm\+Gestion\+Armoire.\+cpp}\item 
+\hyperlink{_ihm_gestion_groupe_8cpp}{Ihm\+Gestion\+Groupe.\+cpp}\end{DoxyCompactItemize}

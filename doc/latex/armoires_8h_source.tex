@@ -1,0 +1,37 @@
+\hypertarget{armoires_8h_source}{}\subsection{armoires.\+h}
+\label{armoires_8h_source}\index{armoires.\+h@{armoires.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ARMOIRES\_H}
+00002 \textcolor{preprocessor}{#define ARMOIRES\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QVariant>}
+00006 
+00007 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00008 
+\Hypertarget{armoires_8h_source_l00009}\hyperlink{class_armoires}{00009} \textcolor{keyword}{class }\hyperlink{class_armoires}{Armoires} : \textcolor{keyword}{public} QObject
+00010 \{
+00011     Q\_OBJECT
+\Hypertarget{armoires_8h_source_l00012}\hyperlink{class_armoires_aa17b53e9003fe2285d7e9e0ad6999137}{00012}     Q\_PROPERTY(QVariant \hyperlink{class_armoires_aa17b53e9003fe2285d7e9e0ad6999137}{listeArmoires} READ \hyperlink{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}{getArmoires} NOTIFY 
+      \hyperlink{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}{listeArmoiresChanged})
+00013 \textcolor{keyword}{public}:
+00014     \textcolor{keyword}{explicit} \hyperlink{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}{Armoires}(QObject *parent = \textcolor{keyword}{nullptr});
+00015     \hyperlink{class_armoires_ae486320e819485eb011bb952aced3de2}{~Armoires}();
+00016     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire}();
+00017     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_armoires_a0aa944d8f94667783ea95424e1915aba}{inserer}(QString p\_nom, QString p\_adresseIP);
+00018     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}{supprimer}(QString p\_nom, QString p\_adresseIP);
+00019     QVariant \hyperlink{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}{getArmoires}();
+00020 
+00021 \textcolor{keyword}{private}:
+\Hypertarget{armoires_8h_source_l00022}\hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{00022}     QList<QObject*> \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\_armoires};
+\Hypertarget{armoires_8h_source_l00023}\hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{00023}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\_pBaseDeDonnees};
+00024 
+00025 signals:
+00026     \textcolor{keywordtype}{void} \hyperlink{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}{listeArmoiresChanged}();
+00027 
+00028 \textcolor{keyword}{public} slots:
+00029 \};
+00030 
+00031 \textcolor{preprocessor}{#endif // ARMOIRES\_H}
+\end{DoxyCode}

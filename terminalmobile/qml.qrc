@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>IHMPrincipale.qml</file>
+        <file>AjoutArmoire.qml</file>
+        <file>Casier.qml</file>
+        <file>MouvementsArmoire.qml</file>
+        <file>logo.png</file>
+        <file>MenuArmoire.qml</file>
+        <file>StockArmoire.qml</file>
+        <file>UtilisateursArmoire.qml</file>
+        <file>Bouton.qml</file>
+        <file>GestionCasier.qml</file>
+        <file>AjoutUtilisateur.qml</file>
+        <file>ModificationUtilisateur.qml</file>
+        <file>SuppressionUtilisateur.qml</file>
+    </qresource>
+</RCC>

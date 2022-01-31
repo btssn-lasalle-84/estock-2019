@@ -1,0 +1,55 @@
+\hypertarget{utilisateur_terminal_8h_source}{}\subsection{utilisateur\+Terminal.\+h}
+\label{utilisateur_terminal_8h_source}\index{utilisateur\+Terminal.\+h@{utilisateur\+Terminal.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef UTILISATEUR\_TERMINAL\_H}
+00002 \textcolor{preprocessor}{#define UTILISATEUR\_TERMINAL\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+00006 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00007 
+\Hypertarget{utilisateur_terminal_8h_source_l00008}\hyperlink{class_utilisateur_terminal}{00008} \textcolor{keyword}{class }\hyperlink{class_utilisateur_terminal}{UtilisateurTerminal} : \textcolor{keyword}{public} QObject
+00009 \{
+00010     Q\_OBJECT
+\Hypertarget{utilisateur_terminal_8h_source_l00011}\hyperlink{class_utilisateur_terminal_a92c24246effeafa1a9ea0923f13c20e8}{00011}     Q\_PROPERTY(QString \hyperlink{class_utilisateur_terminal_a92c24246effeafa1a9ea0923f13c20e8}{Nom} MEMBER m\_nom NOTIFY utilisateurUpdated)
+\Hypertarget{utilisateur_terminal_8h_source_l00012}\hyperlink{class_utilisateur_terminal_a42d3d48105b486ce0fd89bcef40f8573}{00012}     Q\_PROPERTY(QString \hyperlink{class_utilisateur_terminal_a42d3d48105b486ce0fd89bcef40f8573}{Prenom} MEMBER m\_prenom NOTIFY utilisateurUpdated)
+00013 
+00014 public:
+00015     \hyperlink{class_utilisateur_terminal}{UtilisateurTerminal}(QObject *p\_parent = \textcolor{keywordtype}{nullptr});
+00016     ~\hyperlink{class_utilisateur_terminal}{UtilisateurTerminal}();
+00017 
+00018     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lireUtilisateur}(QString p\_identifiant, QString p\_password, \textcolor{keywordtype}{bool} 
+      p\_doForceLogin);
+00019     Q\_INVOKABLE \textcolor{keywordtype}{bool} reinitialiser();
+00020     Q\_INVOKABLE \textcolor{keywordtype}{bool} estExistant();
+00021     Q\_INVOKABLE \textcolor{keywordtype}{bool} estAutorise();
+00022 
+00023     QString \hyperlink{class_utilisateur_terminal_a6432e5c3b9a732ef9312f67718648bf1}{getNom}() const;
+00024     QString \hyperlink{class_utilisateur_terminal_ac38fe2414a0dcb53d0f283f231dcba01}{getPrenom}() const;
+00025 
+00026 private:
+\Hypertarget{utilisateur_terminal_8h_source_l00027}\hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{00027}     QString m\_idProfil;
+\Hypertarget{utilisateur_terminal_8h_source_l00028}\hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{00028}     QString m\_idGroupe;
+\Hypertarget{utilisateur_terminal_8h_source_l00029}\hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{00029}     QString m\_identifiant;
+\Hypertarget{utilisateur_terminal_8h_source_l00030}\hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{00030}     QString m\_nom;
+\Hypertarget{utilisateur_terminal_8h_source_l00031}\hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{00031}     QString m\_prenom;
+\Hypertarget{utilisateur_terminal_8h_source_l00032}\hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{00032}     QString m\_dateValidite;
+\Hypertarget{utilisateur_terminal_8h_source_l00033}\hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{00033}     QString m\_badge;
+\Hypertarget{utilisateur_terminal_8h_source_l00034}\hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{00034}     QString m\_idUtilisateur;
+00035 
+\Hypertarget{utilisateur_terminal_8h_source_l00036}\hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{00036}     QString m\_profil; \textcolor{comment}{// TODO}
+\Hypertarget{utilisateur_terminal_8h_source_l00037}\hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{00037}     QString m\_groupe; \textcolor{comment}{// TODO}
+00038 
+\Hypertarget{utilisateur_terminal_8h_source_l00039}\hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{00039}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *m\_pBaseDeDonnees;
+\Hypertarget{utilisateur_terminal_8h_source_l00040}\hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{00040}     \textcolor{keywordtype}{bool} m\_estExistant;
+\Hypertarget{utilisateur_terminal_8h_source_l00041}\hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{00041}     \textcolor{keywordtype}{bool} m\_estAutorise;
+00042 
+00043 signals:
+00044     \textcolor{keywordtype}{void} utilisateurUpdated();
+00045 
+00046 public slots:
+00047 \};
+00048 
+00049 \textcolor{preprocessor}{#endif // UTILISATEUR\_TERMINAL\_H}
+\end{DoxyCode}

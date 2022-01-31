@@ -1,0 +1,31 @@
+\hypertarget{administrateur_8h_source}{}\subsection{administrateur.\+h}
+\label{administrateur_8h_source}\index{administrateur.\+h@{administrateur.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ADMINISTATEUR\_H}
+00002 \textcolor{preprocessor}{#define ADMINISTATEUR\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QString>}
+00006 
+\Hypertarget{administrateur_8h_source_l00007}\hyperlink{class_administrateur}{00007} \textcolor{keyword}{class }\hyperlink{class_administrateur}{Administrateur} : \textcolor{keyword}{public} QObject
+00008 \{
+00009     Q\_OBJECT
+00010 
+00011 \textcolor{keyword}{private}:
+\Hypertarget{administrateur_8h_source_l00012}\hyperlink{class_administrateur_add094b9c6e352f62dda4802da530eeef}{00012}     \textcolor{keywordtype}{char} \hyperlink{class_administrateur_add094b9c6e352f62dda4802da530eeef}{nom};
+\Hypertarget{administrateur_8h_source_l00013}\hyperlink{class_administrateur_a1cb0671f334a62649e3fc147cc8c97e8}{00013}     \textcolor{keywordtype}{char} \hyperlink{class_administrateur_a1cb0671f334a62649e3fc147cc8c97e8}{prenom};
+\Hypertarget{administrateur_8h_source_l00014}\hyperlink{class_administrateur_ad9b23ebebd0fd973c359962c8bb1520b}{00014}     QString \hyperlink{class_administrateur_ad9b23ebebd0fd973c359962c8bb1520b}{identifiantConnextion};
+\Hypertarget{administrateur_8h_source_l00015}\hyperlink{class_administrateur_aa731eeb89dc7a33a2558ccb77738d333}{00015}     QString \hyperlink{class_administrateur_aa731eeb89dc7a33a2558ccb77738d333}{motDePasse};
+\Hypertarget{administrateur_8h_source_l00016}\hyperlink{class_administrateur_a9f5f51517d16717ea744fe39ff34e1db}{00016}     QString \hyperlink{class_administrateur_a9f5f51517d16717ea744fe39ff34e1db}{mail};
+00017 
+00018 \textcolor{keyword}{public}:
+00019     \hyperlink{class_administrateur_a6c8a0ea7ae7d606f0c7ae9f6487759d9}{Administrateur}();
+00020     \hyperlink{class_administrateur_af11ee7b63aabe45c5c2aa0532db1c7db}{~Administrateur}();
+00021     \textcolor{keywordtype}{char} \hyperlink{class_administrateur_a52d72cdd1bb1be507894c301ad56bc41}{getNom}();
+00022     \textcolor{keywordtype}{char} \hyperlink{class_administrateur_a05a90b3a0185837ac81da4b8411f82bb}{getPrenom}();
+00023     \textcolor{keywordtype}{void} \hyperlink{class_administrateur_a7af923f28608df559c8d1768e5be036a}{setNom}();
+00024     \textcolor{keywordtype}{void} \hyperlink{class_administrateur_a9dd74a2ca87a1ab7618ebfbe50562731}{setPrenom}();
+00025 \};
+00026 \textcolor{preprocessor}{#endif // ADMINISTATEUR\_H}
+\end{DoxyCode}

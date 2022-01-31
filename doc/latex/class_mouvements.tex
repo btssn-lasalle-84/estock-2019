@@ -1,0 +1,188 @@
+\hypertarget{class_mouvements}{}\subsection{Référence de la classe Mouvements}
+\label{class_mouvements}\index{Mouvements@{Mouvements}}
+
+
+{\ttfamily \#include $<$mouvements.\+h$>$}
+
+
+
+Graphe de collaboration de Mouvements\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_mouvements__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mouvements_af7abb930cc252388d03b74b144b83084}{liste\+Mouvements\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mouvements_a42a511c836761016e503d66850da0b35}{Mouvements} (Q\+Object $\ast$p\+\_\+parent=nullptr)
+\item 
+\hyperlink{class_mouvements_a89683efbe6894fe23d05c0a7bd6e5d23}{$\sim$\+Mouvements} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}{lire} ()
+\item 
+Q\+Variant \hyperlink{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}{get\+Mouvements} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_mouvements_a8f00148228ead33e98cc8e3a6ad9e806}{liste\+Mouvements}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\+\_\+mouvements}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\+\_\+p\+Base\+De\+Donnees}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_mouvements_a42a511c836761016e503d66850da0b35}\label{class_mouvements_a42a511c836761016e503d66850da0b35}} 
+\index{Mouvements@{Mouvements}!Mouvements@{Mouvements}}
+\index{Mouvements@{Mouvements}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{Mouvements()}{Mouvements()}}
+{\footnotesize\ttfamily Mouvements\+::\+Mouvements (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{p\+\_\+parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00005                                         : QObject(p\_parent)
+00006 \{
+00007     \hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\_pBaseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00008 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mouvements_a89683efbe6894fe23d05c0a7bd6e5d23}\label{class_mouvements_a89683efbe6894fe23d05c0a7bd6e5d23}} 
+\index{Mouvements@{Mouvements}!````~Mouvements@{$\sim$\+Mouvements}}
+\index{````~Mouvements@{$\sim$\+Mouvements}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{$\sim$\+Mouvements()}{~Mouvements()}}
+{\footnotesize\ttfamily Mouvements\+::$\sim$\+Mouvements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00011 \{
+00012     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00013 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}\label{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}} 
+\index{Mouvements@{Mouvements}!get\+Mouvements@{get\+Mouvements}}
+\index{get\+Mouvements@{get\+Mouvements}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{get\+Mouvements()}{getMouvements()}}
+{\footnotesize\ttfamily Q\+Variant Mouvements\+::get\+Mouvements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\+\_\+mouvements}.
+
+
+\begin{DoxyCode}
+00041 \{
+00042     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\_mouvements});
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}\label{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}} 
+\index{Mouvements@{Mouvements}!lire@{lire}}
+\index{lire@{lire}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{lire()}{lire()}}
+{\footnotesize\ttfamily bool Mouvements\+::lire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_mouvements_af7abb930cc252388d03b74b144b83084}{liste\+Mouvements\+Changed()}, \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\+\_\+mouvements}, \hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\+\_\+p\+Base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00016 \{
+00017     QString requete = \textcolor{stringliteral}{"SELECT Stock.numeroCasier, Mouvement.Horodatage, Utilisateur.Nom, Action.Nom,
+       Article.Nom, Mouvement.Quantite FROM Mouvement INNER JOIN Stock ON Mouvement.idStock = Stock.idStock INNER JOIN
+       Utilisateur ON Mouvement.idUtilisateur = Utilisateur.idUtilisateur INNER JOIN Action ON Mouvement.idAction =
+       Action.idAction INNER JOIN Article ON Mouvement.idStock = Stock.idStock AND Stock.idArticle =
+       Article.idArticle"};
+00018     QVector<QStringList> donneesMouvements;
+00019 
+00020     \textcolor{keywordflow}{if} (\hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesMouvements))
+00021     \{
+00022         QStringList donneesMouvement;
+00023         \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\_mouvements}.clear();
+00024 
+00025         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < donneesMouvements.size(); i++)
+00026         \{
+00027             donneesMouvement = donneesMouvements.at(i);
+00028             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesMouvement"} << donneesMouvement;
+00029             \hyperlink{class_mouvement}{Mouvement} *pMouvement = \textcolor{keyword}{new} \hyperlink{class_mouvement}{Mouvement}(donneesMouvement.at(0), 
+      QDateTime::fromString(donneesMouvement.at(1), \textcolor{stringliteral}{"yyyy-MM-ddTHH:mm:ss"}).toString(\textcolor{stringliteral}{"dd/MM/yyyy HH:mm"}), donneesMouvement.at(2), 
+      donneesMouvement.at(3), donneesMouvement.at(4), donneesMouvement.at(5));
+00030             \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\_mouvements}.append(pMouvement);
+00031         \}
+00032         emit \hyperlink{class_mouvements_af7abb930cc252388d03b74b144b83084}{listeMouvementsChanged}();
+00033 
+00034         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00035     \}
+00036 
+00037     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00038 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mouvements_af7abb930cc252388d03b74b144b83084}\label{class_mouvements_af7abb930cc252388d03b74b144b83084}} 
+\index{Mouvements@{Mouvements}!liste\+Mouvements\+Changed@{liste\+Mouvements\+Changed}}
+\index{liste\+Mouvements\+Changed@{liste\+Mouvements\+Changed}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{liste\+Mouvements\+Changed}{listeMouvementsChanged}}
+{\footnotesize\ttfamily void Mouvements\+::liste\+Mouvements\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}{lire()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}\label{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}} 
+\index{Mouvements@{Mouvements}!m\+\_\+mouvements@{m\+\_\+mouvements}}
+\index{m\+\_\+mouvements@{m\+\_\+mouvements}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{m\+\_\+mouvements}{m\_mouvements}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Mouvements\+::m\+\_\+mouvements\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}{get\+Mouvements()}, et \hyperlink{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}{lire()}.
+
+\mbox{\Hypertarget{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}\label{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}} 
+\index{Mouvements@{Mouvements}!m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}}
+\index{m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{m\+\_\+p\+Base\+De\+Donnees}{m\_pBaseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Mouvements\+::m\+\_\+p\+Base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}{lire()}, et \hyperlink{class_mouvements_a42a511c836761016e503d66850da0b35}{Mouvements()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_mouvements_a8f00148228ead33e98cc8e3a6ad9e806}\label{class_mouvements_a8f00148228ead33e98cc8e3a6ad9e806}} 
+\index{Mouvements@{Mouvements}!liste\+Mouvements@{liste\+Mouvements}}
+\index{liste\+Mouvements@{liste\+Mouvements}!Mouvements@{Mouvements}}
+\paragraph{\texorpdfstring{liste\+Mouvements}{listeMouvements}}
+{\footnotesize\ttfamily Q\+Variant Mouvements\+::liste\+Mouvements\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mouvements_8h}{mouvements.\+h}\item 
+\hyperlink{mouvements_8cpp}{mouvements.\+cpp}\end{DoxyCompactItemize}

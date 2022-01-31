@@ -1,0 +1,53 @@
+\hypertarget{utilisateurs_armoire_8h_source}{}\subsection{utilisateurs\+Armoire.\+h}
+\label{utilisateurs_armoire_8h_source}\index{utilisateurs\+Armoire.\+h@{utilisateurs\+Armoire.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef UTILISATEURS\_ARMOIRE\_H}
+00002 \textcolor{preprocessor}{#define UTILISATEURS\_ARMOIRE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QVariant>}
+00006 
+00007 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00008 
+\Hypertarget{utilisateurs_armoire_8h_source_l00009}\hyperlink{class_utilisateurs_armoire}{00009} \textcolor{keyword}{class }\hyperlink{class_utilisateurs_armoire}{UtilisateursArmoire} : \textcolor{keyword}{public} QObject
+00010 \{
+00011     Q\_OBJECT
+\Hypertarget{utilisateurs_armoire_8h_source_l00012}\hyperlink{class_utilisateurs_armoire_a8ba4ea6592f6588ab1cd0ddce7dc744d}{00012}     Q\_PROPERTY(QVariant \hyperlink{class_utilisateurs_armoire_a8ba4ea6592f6588ab1cd0ddce7dc744d}{listeUtilisateursArmoire} READ getUtilisateursArmoire NOTIFY
+       listeUtilisateursArmoireChanged)
+\Hypertarget{utilisateurs_armoire_8h_source_l00013}\hyperlink{class_utilisateurs_armoire_a377e5cc73178d05cdad23d8d84ae28a4}{00013}     Q\_PROPERTY(QVariant \hyperlink{class_utilisateurs_armoire_a377e5cc73178d05cdad23d8d84ae28a4}{listeProfil} READ getListeProfil NOTIFY listeProfilChanged)
+\Hypertarget{utilisateurs_armoire_8h_source_l00014}\hyperlink{class_utilisateurs_armoire_a3012f6f272b32aa9a9cf6cc05dc129f5}{00014}     Q\_PROPERTY(QVariant \hyperlink{class_utilisateurs_armoire_a3012f6f272b32aa9a9cf6cc05dc129f5}{listeGroupe} READ getListeGroupe NOTIFY listeGroupeChanged)
+00015 
+00016 public:
+00017     explicit \hyperlink{class_utilisateurs_armoire}{UtilisateursArmoire}(QObject *p\_parent = \textcolor{keywordtype}{nullptr});
+00018     ~\hyperlink{class_utilisateurs_armoire}{UtilisateursArmoire}();
+00019     Q\_INVOKABLE \textcolor{keywordtype}{bool} lire();
+00020     Q\_INVOKABLE \textcolor{keywordtype}{bool} lireProfil();
+00021     Q\_INVOKABLE \textcolor{keywordtype}{bool} lireGroupe();
+00022     \textcolor{comment}{//Q\_INVOKABLE bool lireUtilisateurs();}
+00023     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_utilisateurs_armoire_a773bfde7c49dac8fa2c8a1c9a43592c0}{inserer}(QString p\_idProfil, QString p\_idGroupe, QString p\_nom, QString p\_prenom
+      , QString p\_dateDeValidite, QString p\_identifiant, QString p\_badge);
+00024     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_utilisateurs_armoire_affd91d7591d57b8dafc098f09b9319aa}{modifier}(QString p\_idProfil, QString p\_idGroupe, QString p\_nom, QString 
+      p\_prenom, QString p\_dateDeValidite, QString p\_identifiant, QString p\_badge, QString p\_idUtilisateur);
+00025     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_utilisateurs_armoire_a035d7ca496ddaaf83467934fbd694883}{supprimer}(QString m\_nomProfil, QString m\_nomGroupe, QString m\_nom, QString 
+      m\_prenom, QString m\_dateDeValidite, QString m\_identifiant, QString m\_badge, QString p\_idUtilisateur);
+00026     QVariant getUtilisateursArmoire();
+00027     QVariant getListeProfil();
+00028     QVariant getListeGroupe();
+00029 
+00030 private:
+\Hypertarget{utilisateurs_armoire_8h_source_l00031}\hyperlink{class_utilisateurs_armoire_aade1e94417c9729b9e8cadaf19e3227d}{00031}     QList<QObject*> m\_utilisateursArmoire;
+\Hypertarget{utilisateurs_armoire_8h_source_l00032}\hyperlink{class_utilisateurs_armoire_a0687ace99585d71b2636feaf2163b905}{00032}     QList<QObject*> m\_listeProfil;
+\Hypertarget{utilisateurs_armoire_8h_source_l00033}\hyperlink{class_utilisateurs_armoire_a85558a0f373c06315c3c5f2e4e9e660c}{00033}     QList<QObject*> m\_listeGroupe;
+\Hypertarget{utilisateurs_armoire_8h_source_l00034}\hyperlink{class_utilisateurs_armoire_ac43b4894f5036117d044ad2d22b09318}{00034}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *m\_pBaseDeDonnees;
+00035 
+00036 signals:
+00037     \textcolor{keywordtype}{void} listeUtilisateursArmoireChanged();
+00038     \textcolor{keywordtype}{void} listeProfilChanged();
+00039     \textcolor{keywordtype}{void} listeGroupeChanged();
+00040 
+00041 public slots:
+00042 \};
+00043 
+00044 \textcolor{preprocessor}{#endif // UTILISATEURS\_ARMOIRE\_H}
+\end{DoxyCode}

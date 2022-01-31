@@ -1,0 +1,44 @@
+\hypertarget{casiers_8h_source}{}\subsection{casiers.\+h}
+\label{casiers_8h_source}\index{casiers.\+h@{casiers.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CASIERS\_H}
+00002 \textcolor{preprocessor}{#define CASIERS\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QTimer>}
+00006 \textcolor{preprocessor}{#include <QVariant>}
+00007 
+00008 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00009 
+\Hypertarget{casiers_8h_source_l00010}\hyperlink{class_casiers}{00010} \textcolor{keyword}{class }\hyperlink{class_casiers}{Casiers} : \textcolor{keyword}{public} QObject
+00011 \{
+00012     Q\_OBJECT
+\Hypertarget{casiers_8h_source_l00013}\hyperlink{class_casiers_a7c4b1df1f2e320c22489234fee991f18}{00013}     Q\_PROPERTY(QString m\_nbCasiers READ getNbCasiers NOTIFY nbCasiersChanged)
+\Hypertarget{casiers_8h_source_l00014}\hyperlink{class_casiers_a936c4711e83f6577852a72909731fd89}{00014}     Q\_PROPERTY(QVariant \hyperlink{class_casiers_a936c4711e83f6577852a72909731fd89}{listeCasiers} READ getCasiers NOTIFY listeCasiersChanged)
+00015 
+00016 public:
+00017     explicit \hyperlink{class_casiers}{Casiers}(QObject *parent = \textcolor{keywordtype}{nullptr});
+00018     ~\hyperlink{class_casiers}{Casiers}();
+00019     Q\_INVOKABLE QString \hyperlink{class_casiers_a7b1d58f40217ef13a5dd0d966df38c9a}{lire}(QString adresseIPArmoire, \textcolor{keywordtype}{bool} debug=true);
+00020     Q\_INVOKABLE \textcolor{keywordtype}{void} arreterRafraichissement();
+00021     QString getNbCasiers();
+00022     QVariant getCasiers();
+00023 
+00024 private:    
+\Hypertarget{casiers_8h_source_l00025}\hyperlink{class_casiers_ad8fba25144a82ba49b2cd2490dcf975b}{00025}     QList<QObject*> casiers;
+\Hypertarget{casiers_8h_source_l00026}\hyperlink{class_casiers_ae6ac6b09a5cffe28291fc9b3289ff011}{00026}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *m\_pBaseDeDonnees;
+00027     QString m\_nbCasiers;
+\Hypertarget{casiers_8h_source_l00028}\hyperlink{class_casiers_af745ce1cdce8dce725444e19437e0155}{00028}     QString m\_adresseIPArmoire;
+\Hypertarget{casiers_8h_source_l00029}\hyperlink{class_casiers_a2e2ee8b7f70d1c22acca56257d257ae6}{00029}     QTimer *m\_timer;
+00030     
+00031 signals:
+00032     \textcolor{keywordtype}{void} listeCasiersChanged();
+00033     \textcolor{keywordtype}{void} nbCasiersChanged();
+00034 
+00035 public slots:
+00036     \textcolor{keywordtype}{void} actualiser();
+00037 \};
+00038 
+00039 \textcolor{preprocessor}{#endif // CASIERS\_H}
+\end{DoxyCode}

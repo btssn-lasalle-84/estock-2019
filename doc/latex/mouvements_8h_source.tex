@@ -1,0 +1,36 @@
+\hypertarget{mouvements_8h_source}{}\subsection{mouvements.\+h}
+\label{mouvements_8h_source}\index{mouvements.\+h@{mouvements.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MOUVEMENTS\_H}
+00002 \textcolor{preprocessor}{#define MOUVEMENTS\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QVariant>}
+00006 
+00007 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00008 
+\Hypertarget{mouvements_8h_source_l00009}\hyperlink{class_mouvements}{00009} \textcolor{keyword}{class }\hyperlink{class_mouvements}{Mouvements} : \textcolor{keyword}{public} QObject
+00010 \{
+00011     Q\_OBJECT
+\Hypertarget{mouvements_8h_source_l00012}\hyperlink{class_mouvements_a8f00148228ead33e98cc8e3a6ad9e806}{00012}     Q\_PROPERTY(QVariant \hyperlink{class_mouvements_a8f00148228ead33e98cc8e3a6ad9e806}{listeMouvements} READ \hyperlink{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}{getMouvements} NOTIFY 
+      \hyperlink{class_mouvements_af7abb930cc252388d03b74b144b83084}{listeMouvementsChanged})
+00013 
+00014 \textcolor{keyword}{public}:
+00015     \textcolor{keyword}{explicit} \hyperlink{class_mouvements_a42a511c836761016e503d66850da0b35}{Mouvements}(QObject *p\_parent = \textcolor{keyword}{nullptr});
+00016     \hyperlink{class_mouvements_a89683efbe6894fe23d05c0a7bd6e5d23}{~Mouvements}();
+00017     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_mouvements_a1d8306c0672efe509e71d2bdbd60208b}{lire}();
+00018     QVariant \hyperlink{class_mouvements_a3ab449208a00af567cc5f638d12b98ef}{getMouvements}();
+00019 
+00020 \textcolor{keyword}{private}:
+\Hypertarget{mouvements_8h_source_l00021}\hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{00021}     QList<QObject*> \hyperlink{class_mouvements_a5de7bbf3118ba8257e270011f2edf152}{m\_mouvements};
+\Hypertarget{mouvements_8h_source_l00022}\hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{00022}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_mouvements_a8cb8047917f2e94adf9798c40b618d31}{m\_pBaseDeDonnees};
+00023 
+00024 signals:
+00025     \textcolor{keywordtype}{void} \hyperlink{class_mouvements_af7abb930cc252388d03b74b144b83084}{listeMouvementsChanged}();
+00026 
+00027 \textcolor{keyword}{public} slots:
+00028 \};
+00029 
+00030 \textcolor{preprocessor}{#endif // MOUVEMENTS\_H}
+\end{DoxyCode}

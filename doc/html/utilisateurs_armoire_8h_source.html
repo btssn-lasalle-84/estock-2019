@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet e-stock:  Fichier source de utilisateursArmoire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-estock.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet e-stock
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8a9a0d6c88e3926224aeb01e6621f931.html">terminalmobile</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">utilisateursArmoire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utilisateurs_armoire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UTILISATEURS_ARMOIRE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define UTILISATEURS_ARMOIRE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_utilisateurs_armoire.html">UtilisateursArmoire</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#a8ba4ea6592f6588ab1cd0ddce7dc744d">   12</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_utilisateurs_armoire.html#a8ba4ea6592f6588ab1cd0ddce7dc744d">listeUtilisateursArmoire</a> READ getUtilisateursArmoire NOTIFY listeUtilisateursArmoireChanged)</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#a377e5cc73178d05cdad23d8d84ae28a4">   13</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_utilisateurs_armoire.html#a377e5cc73178d05cdad23d8d84ae28a4">listeProfil</a> READ getListeProfil NOTIFY listeProfilChanged)</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#a3012f6f272b32aa9a9cf6cc05dc129f5">   14</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_utilisateurs_armoire.html#a3012f6f272b32aa9a9cf6cc05dc129f5">listeGroupe</a> READ getListeGroupe NOTIFY listeGroupeChanged)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;public:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    explicit <a class="code" href="class_utilisateurs_armoire.html">UtilisateursArmoire</a>(QObject *p_parent = <span class="keywordtype">nullptr</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="class_utilisateurs_armoire.html">UtilisateursArmoire</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> lire();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> lireProfil();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> lireGroupe();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//Q_INVOKABLE bool lireUtilisateurs();</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_utilisateurs_armoire.html#a773bfde7c49dac8fa2c8a1c9a43592c0">inserer</a>(QString p_idProfil, QString p_idGroupe, QString p_nom, QString p_prenom, QString p_dateDeValidite, QString p_identifiant, QString p_badge);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_utilisateurs_armoire.html#affd91d7591d57b8dafc098f09b9319aa">modifier</a>(QString p_idProfil, QString p_idGroupe, QString p_nom, QString p_prenom, QString p_dateDeValidite, QString p_identifiant, QString p_badge, QString p_idUtilisateur);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_utilisateurs_armoire.html#a035d7ca496ddaaf83467934fbd694883">supprimer</a>(QString m_nomProfil, QString m_nomGroupe, QString m_nom, QString m_prenom, QString m_dateDeValidite, QString m_identifiant, QString m_badge, QString p_idUtilisateur);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QVariant getUtilisateursArmoire();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QVariant getListeProfil();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QVariant getListeGroupe();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;private:</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#aade1e94417c9729b9e8cadaf19e3227d">   31</a></span>&#160;    QList&lt;QObject*&gt; m_utilisateursArmoire;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#a0687ace99585d71b2636feaf2163b905">   32</a></span>&#160;    QList&lt;QObject*&gt; m_listeProfil;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#a85558a0f373c06315c3c5f2e4e9e660c">   33</a></span>&#160;    QList&lt;QObject*&gt; m_listeGroupe;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_utilisateurs_armoire.html#ac43b4894f5036117d044ad2d22b09318">   34</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *m_pBaseDeDonnees;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;signals:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> listeUtilisateursArmoireChanged();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> listeProfilChanged();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> listeGroupeChanged();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;public slots:</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // UTILISATEURS_ARMOIRE_H</span></div><div class="ttc" id="class_utilisateurs_armoire_html_affd91d7591d57b8dafc098f09b9319aa"><div class="ttname"><a href="class_utilisateurs_armoire.html#affd91d7591d57b8dafc098f09b9319aa">UtilisateursArmoire::modifier</a></div><div class="ttdeci">Q_INVOKABLE bool modifier(QString p_idProfil, QString p_idGroupe, QString p_nom, QString p_prenom, QString p_dateDeValidite, QString p_identifiant, QString p_badge, QString p_idUtilisateur)</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.cpp:138</div></div>
+<div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdef"><b>Definition:</b> ihm-estock/baseDeDonnees.h:25</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html"><div class="ttname"><a href="class_utilisateurs_armoire.html">UtilisateursArmoire</a></div><div class="ttdoc">page des utilisateurs </div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.h:9</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html_a773bfde7c49dac8fa2c8a1c9a43592c0"><div class="ttname"><a href="class_utilisateurs_armoire.html#a773bfde7c49dac8fa2c8a1c9a43592c0">UtilisateursArmoire::inserer</a></div><div class="ttdeci">Q_INVOKABLE bool inserer(QString p_idProfil, QString p_idGroupe, QString p_nom, QString p_prenom, QString p_dateDeValidite, QString p_identifiant, QString p_badge)</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.cpp:123</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html_a3012f6f272b32aa9a9cf6cc05dc129f5"><div class="ttname"><a href="class_utilisateurs_armoire.html#a3012f6f272b32aa9a9cf6cc05dc129f5">UtilisateursArmoire::listeGroupe</a></div><div class="ttdeci">QVariant listeGroupe</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.h:14</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html_a377e5cc73178d05cdad23d8d84ae28a4"><div class="ttname"><a href="class_utilisateurs_armoire.html#a377e5cc73178d05cdad23d8d84ae28a4">UtilisateursArmoire::listeProfil</a></div><div class="ttdeci">QVariant listeProfil</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.h:13</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html_a8ba4ea6592f6588ab1cd0ddce7dc744d"><div class="ttname"><a href="class_utilisateurs_armoire.html#a8ba4ea6592f6588ab1cd0ddce7dc744d">UtilisateursArmoire::listeUtilisateursArmoire</a></div><div class="ttdeci">QVariant listeUtilisateursArmoire</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.h:12</div></div>
+<div class="ttc" id="class_utilisateurs_armoire_html_a035d7ca496ddaaf83467934fbd694883"><div class="ttname"><a href="class_utilisateurs_armoire.html#a035d7ca496ddaaf83467934fbd694883">UtilisateursArmoire::supprimer</a></div><div class="ttdeci">Q_INVOKABLE bool supprimer(QString m_nomProfil, QString m_nomGroupe, QString m_nom, QString m_prenom, QString m_dateDeValidite, QString m_identifiant, QString m_badge, QString p_idUtilisateur)</div><div class="ttdef"><b>Definition:</b> utilisateursArmoire.cpp:153</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:58:50 pour Projet e-stock par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

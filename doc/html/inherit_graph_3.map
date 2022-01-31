@@ -1,0 +1,7 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_ihm_authentification.html" title="La fenêtre principale de l&#39;application. " alt="" coords="160,5,295,32"/>
+<area shape="rect" id="node3" href="$class_ihm_authentification_sans_badge.html" title="IhmAuthentificationSansBadge" alt="" coords="127,56,328,83"/>
+<area shape="rect" id="node4" href="$class_ihm_gestion_armoire.html" title="IhmGestionArmoire" alt="" coords="160,107,295,133"/>
+<area shape="rect" id="node5" href="$class_ihm_gestion_balances.html" title="IhmGestionBalances" alt="" coords="156,157,299,184"/>
+<area shape="rect" id="node6" href="$class_ihm_gestion_groupe.html" title="La fenêtre de gestion des groupes. " alt="" coords="162,208,293,235"/>
+</map>

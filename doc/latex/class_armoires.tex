@@ -1,0 +1,241 @@
+\hypertarget{class_armoires}{}\subsection{Référence de la classe Armoires}
+\label{class_armoires}\index{Armoires@{Armoires}}
+
+
+{\ttfamily \#include $<$armoires.\+h$>$}
+
+
+
+Graphe de collaboration de Armoires\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_armoires__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}{liste\+Armoires\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}{Armoires} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_armoires_ae486320e819485eb011bb952aced3de2}{$\sim$\+Armoires} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_armoires_a0aa944d8f94667783ea95424e1915aba}{inserer} (Q\+String p\+\_\+nom, Q\+String p\+\_\+adresse\+IP)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}{supprimer} (Q\+String p\+\_\+nom, Q\+String p\+\_\+adresse\+IP)
+\item 
+Q\+Variant \hyperlink{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}{get\+Armoires} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_armoires_aa17b53e9003fe2285d7e9e0ad6999137}{liste\+Armoires}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\+\_\+armoires}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\+\_\+p\+Base\+De\+Donnees}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}\label{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}} 
+\index{Armoires@{Armoires}!Armoires@{Armoires}}
+\index{Armoires@{Armoires}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{Armoires()}{Armoires()}}
+{\footnotesize\ttfamily Armoires\+::\+Armoires (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}, et \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00005                                     : QObject(p\_parent)
+00006 \{
+00007     \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\_pBaseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QSQLITE"});    
+00008     \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire}();
+00009 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoires_ae486320e819485eb011bb952aced3de2}\label{class_armoires_ae486320e819485eb011bb952aced3de2}} 
+\index{Armoires@{Armoires}!````~Armoires@{$\sim$\+Armoires}}
+\index{````~Armoires@{$\sim$\+Armoires}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{$\sim$\+Armoires()}{~Armoires()}}
+{\footnotesize\ttfamily Armoires\+::$\sim$\+Armoires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00012 \{
+00013     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QSQLITE"});
+00014 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}\label{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}} 
+\index{Armoires@{Armoires}!get\+Armoires@{get\+Armoires}}
+\index{get\+Armoires@{get\+Armoires}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{get\+Armoires()}{getArmoires()}}
+{\footnotesize\ttfamily Q\+Variant Armoires\+::get\+Armoires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\+\_\+armoires}.
+
+
+\begin{DoxyCode}
+00069 \{
+00070     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\_armoires});
+00071 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoires_a0aa944d8f94667783ea95424e1915aba}\label{class_armoires_a0aa944d8f94667783ea95424e1915aba}} 
+\index{Armoires@{Armoires}!inserer@{inserer}}
+\index{inserer@{inserer}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{inserer()}{inserer()}}
+{\footnotesize\ttfamily bool Armoires\+::inserer (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+nom,  }\item[{Q\+String}]{p\+\_\+adresse\+IP }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}, et \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"p\_nom"} << p\_nom << \textcolor{stringliteral}{"p\_adresseIP"} << p\_adresseIP;
+00041     \textcolor{comment}{//requête INSERT}
+00042     QString requeteAjoutArmoire = \textcolor{stringliteral}{"INSERT INTO Armoire (Nom, AdresseIP) VALUES ('"} + p\_nom + \textcolor{stringliteral}{"','"} + 
+      p\_adresseIP + \textcolor{stringliteral}{"')"};
+00043     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requeteAjoutArmoire"} << requeteAjoutArmoire;
+00044     \textcolor{keywordflow}{if} (\hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requeteAjoutArmoire))
+00045     \{
+00046         \textcolor{comment}{// relire la liste}
+00047         \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire}();
+00048         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00049     \}
+00050     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00051 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}\label{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}} 
+\index{Armoires@{Armoires}!lire@{lire}}
+\index{lire@{lire}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{lire()}{lire()}}
+{\footnotesize\ttfamily bool Armoires\+::lire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}{liste\+Armoires\+Changed()}, \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\+\_\+armoires}, \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\+\_\+p\+Base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}{Armoires()}, \hyperlink{class_armoires_a0aa944d8f94667783ea95424e1915aba}{inserer()}, et \hyperlink{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}{supprimer()}.
+
+
+\begin{DoxyCode}
+00017 \{
+00018     QString requete = \textcolor{stringliteral}{"SELECT Nom, AdresseIP FROM Armoire"};
+00019     QVector<QStringList> donneesArmoires;
+00020 
+00021     \textcolor{keywordflow}{if} (\hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesArmoires))
+00022     \{
+00023         QStringList donneesArmoire;
+00024         \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\_armoires}.clear();
+00025         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < donneesArmoires.size(); i++)
+00026         \{
+00027             donneesArmoire = donneesArmoires.at(i);
+00028             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesArmoire"} << donneesArmoire;
+00029             \hyperlink{class_armoire}{Armoire} *pArmoire = \textcolor{keyword}{new} \hyperlink{class_armoire}{Armoire}(donneesArmoire.at(0), donneesArmoire.at(1));
+00030             \hyperlink{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}{m\_armoires}.append(pArmoire);
+00031         \}
+00032         emit \hyperlink{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}{listeArmoiresChanged}();
+00033         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00034     \}
+00035     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00036 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}\label{class_armoires_a5d1b239d24b608ce8f41677d0fbe3507}} 
+\index{Armoires@{Armoires}!liste\+Armoires\+Changed@{liste\+Armoires\+Changed}}
+\index{liste\+Armoires\+Changed@{liste\+Armoires\+Changed}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{liste\+Armoires\+Changed}{listeArmoiresChanged}}
+{\footnotesize\ttfamily void Armoires\+::liste\+Armoires\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}.
+
+\mbox{\Hypertarget{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}\label{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}} 
+\index{Armoires@{Armoires}!supprimer@{supprimer}}
+\index{supprimer@{supprimer}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{supprimer()}{supprimer()}}
+{\footnotesize\ttfamily bool Armoires\+::supprimer (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+nom,  }\item[{Q\+String}]{p\+\_\+adresse\+IP }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}, et \hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00054 \{
+00055     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"p\_nom"} << p\_nom << \textcolor{stringliteral}{"p\_adresseIP"} << p\_adresseIP;
+00056     \textcolor{comment}{// Faire requête DELETE}
+00057     QString requeteSuppressionArmoire = \textcolor{stringliteral}{"DELETE FROM Armoire WHERE Nom = '"} + p\_nom + \textcolor{stringliteral}{"'"};
+00058     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requeteSuppressionArmoire"} << requeteSuppressionArmoire;
+00059     \textcolor{keywordflow}{if} (\hyperlink{class_armoires_a096a57892eaad473fefc2a20fe4965bd}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requeteSuppressionArmoire))
+00060     \{
+00061         \textcolor{comment}{// relire la liste}
+00062         \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire}();
+00063         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00064     \}
+00065     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00066 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}\label{class_armoires_a13bc03c96ba9e069bc377f6ea10472ba}} 
+\index{Armoires@{Armoires}!m\+\_\+armoires@{m\+\_\+armoires}}
+\index{m\+\_\+armoires@{m\+\_\+armoires}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{m\+\_\+armoires}{m\_armoires}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Armoires\+::m\+\_\+armoires\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_armoires_a4ad204a0768f9aa9cfb400a362ae7b07}{get\+Armoires()}, et \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}.
+
+\mbox{\Hypertarget{class_armoires_a096a57892eaad473fefc2a20fe4965bd}\label{class_armoires_a096a57892eaad473fefc2a20fe4965bd}} 
+\index{Armoires@{Armoires}!m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}}
+\index{m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{m\+\_\+p\+Base\+De\+Donnees}{m\_pBaseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Armoires\+::m\+\_\+p\+Base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_armoires_a0783981e55af5badbcb4b8eb5a52a0eb}{Armoires()}, \hyperlink{class_armoires_a0aa944d8f94667783ea95424e1915aba}{inserer()}, \hyperlink{class_armoires_a2b64b3df08cf848d06b4ffb6a49ae858}{lire()}, et \hyperlink{class_armoires_aa8cb545cec5ebf4603dff93e87662cc9}{supprimer()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_armoires_aa17b53e9003fe2285d7e9e0ad6999137}\label{class_armoires_aa17b53e9003fe2285d7e9e0ad6999137}} 
+\index{Armoires@{Armoires}!liste\+Armoires@{liste\+Armoires}}
+\index{liste\+Armoires@{liste\+Armoires}!Armoires@{Armoires}}
+\paragraph{\texorpdfstring{liste\+Armoires}{listeArmoires}}
+{\footnotesize\ttfamily Q\+Variant Armoires\+::liste\+Armoires\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{armoires_8h}{armoires.\+h}\item 
+\hyperlink{armoires_8cpp}{armoires.\+cpp}\end{DoxyCompactItemize}

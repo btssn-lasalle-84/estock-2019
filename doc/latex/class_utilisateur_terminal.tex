@@ -1,0 +1,477 @@
+\hypertarget{class_utilisateur_terminal}{}\subsection{Référence de la classe Utilisateur\+Terminal}
+\label{class_utilisateur_terminal}\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+
+
+{\ttfamily \#include $<$utilisateur\+Terminal.\+h$>$}
+
+
+
+Graphe de collaboration de Utilisateur\+Terminal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_utilisateur_terminal__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}{utilisateur\+Updated} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}{Utilisateur\+Terminal} (Q\+Object $\ast$p\+\_\+parent=nullptr)
+\item 
+\hyperlink{class_utilisateur_terminal_a4042df79027924a5dd0181756687b89b}{$\sim$\+Utilisateur\+Terminal} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur} (Q\+String p\+\_\+identifiant, Q\+String p\+\_\+password, bool p\+\_\+do\+Force\+Login)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateur_terminal_aa80e532db6a898bf1aa433ffb34f2389}{est\+Existant} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_utilisateur_terminal_a6cd16c268f5ab545fc2b62f1e29a9917}{est\+Autorise} ()
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a6432e5c3b9a732ef9312f67718648bf1}{get\+Nom} () const
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_ac38fe2414a0dcb53d0f283f231dcba01}{get\+Prenom} () const
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a92c24246effeafa1a9ea0923f13c20e8}{Nom}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a42d3d48105b486ce0fd89bcef40f8573}{Prenom}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{m\+\_\+id\+Profil}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{m\+\_\+id\+Groupe}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{m\+\_\+identifiant}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\+\_\+nom}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\+\_\+prenom}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{m\+\_\+date\+Validite}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{m\+\_\+badge}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\+\_\+id\+Utilisateur}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{m\+\_\+profil}
+\item 
+Q\+String \hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{m\+\_\+groupe}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\+\_\+p\+Base\+De\+Donnees}
+\item 
+bool \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\+\_\+est\+Existant}
+\item 
+bool \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\+\_\+est\+Autorise}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}\label{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{Utilisateur\+Terminal()}{UtilisateurTerminal()}}
+{\footnotesize\ttfamily Utilisateur\+Terminal\+::\+Utilisateur\+Terminal (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{p\+\_\+parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\+\_\+est\+Autorise}, \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\+\_\+est\+Existant}, et \hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\+\_\+p\+Base\+De\+Donnees}.
+
+
+\begin{DoxyCode}
+00005                                                           : QObject(p\_parent)
+00006 \{
+00007     \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\_estExistant} = \textcolor{keyword}{false};
+00008     \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{false};
+00009     \hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\_pBaseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_a4042df79027924a5dd0181756687b89b}\label{class_utilisateur_terminal_a4042df79027924a5dd0181756687b89b}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!````~Utilisateur\+Terminal@{$\sim$\+Utilisateur\+Terminal}}
+\index{````~Utilisateur\+Terminal@{$\sim$\+Utilisateur\+Terminal}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{$\sim$\+Utilisateur\+Terminal()}{~UtilisateurTerminal()}}
+{\footnotesize\ttfamily Utilisateur\+Terminal\+::$\sim$\+Utilisateur\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}(\textcolor{stringliteral}{"QMYSQL"});
+00015 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_utilisateur_terminal_a6cd16c268f5ab545fc2b62f1e29a9917}\label{class_utilisateur_terminal_a6cd16c268f5ab545fc2b62f1e29a9917}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!est\+Autorise@{est\+Autorise}}
+\index{est\+Autorise@{est\+Autorise}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{est\+Autorise()}{estAutorise()}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::est\+Autorise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\+\_\+est\+Autorise}.
+
+
+\begin{DoxyCode}
+00128 \{
+00129     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise};
+00130 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_aa80e532db6a898bf1aa433ffb34f2389}\label{class_utilisateur_terminal_aa80e532db6a898bf1aa433ffb34f2389}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!est\+Existant@{est\+Existant}}
+\index{est\+Existant@{est\+Existant}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{est\+Existant()}{estExistant()}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::est\+Existant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\+\_\+est\+Existant}.
+
+
+\begin{DoxyCode}
+00123 \{
+00124     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\_estExistant};
+00125 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_a6432e5c3b9a732ef9312f67718648bf1}\label{class_utilisateur_terminal_a6432e5c3b9a732ef9312f67718648bf1}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\+\_\+nom}.
+
+
+\begin{DoxyCode}
+00133 \{
+00134     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\_nom};
+00135 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_ac38fe2414a0dcb53d0f283f231dcba01}\label{class_utilisateur_terminal_ac38fe2414a0dcb53d0f283f231dcba01}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!get\+Prenom@{get\+Prenom}}
+\index{get\+Prenom@{get\+Prenom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{get\+Prenom()}{getPrenom()}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::get\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\+\_\+prenom}.
+
+
+\begin{DoxyCode}
+00138 \{
+00139     \textcolor{keywordflow}{return} \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\_prenom};
+00140 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}\label{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!lire\+Utilisateur@{lire\+Utilisateur}}
+\index{lire\+Utilisateur@{lire\+Utilisateur}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{lire\+Utilisateur()}{lireUtilisateur()}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::lire\+Utilisateur (\begin{DoxyParamCaption}\item[{Q\+String}]{p\+\_\+identifiant,  }\item[{Q\+String}]{p\+\_\+password,  }\item[{bool}]{p\+\_\+do\+Force\+Login }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000005}{A faire}]Vérifier la validité de l\textquotesingle{}utilisateur avec son mot de passe \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{m\+\_\+badge}, \hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{m\+\_\+date\+Validite}, \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\+\_\+est\+Autorise}, \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\+\_\+est\+Existant}, \hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{m\+\_\+groupe}, \hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{m\+\_\+identifiant}, \hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{m\+\_\+id\+Groupe}, \hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{m\+\_\+id\+Profil}, \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\+\_\+id\+Utilisateur}, \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\+\_\+nom}, \hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\+\_\+p\+Base\+De\+Donnees}, \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\+\_\+prenom}, \hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{m\+\_\+profil}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}{utilisateur\+Updated()}.
+
+
+\begin{DoxyCode}
+00018 \{
+00019     QString requeteExistant =
+00020             \textcolor{stringliteral}{"SELECT COUNT(*) AS decompte "} \(\backslash\)
+00021             \textcolor{stringliteral}{"FROM Utilisateur "} \(\backslash\)
+00022             \textcolor{stringliteral}{"WHERE Utilisateur.Identifiant='"} + p\_identifiant + \textcolor{stringliteral}{"'"};
+00023     QString valeurDecompte;
+00024 
+00025     \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\_estExistant} = \textcolor{keyword}{false};
+00026     \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{false};
+00027 
+00028     \textcolor{keywordflow}{if} (!\hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteExistant, valeurDecompte))
+00029     \{
+00030         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00031     \}
+00032     \textcolor{keywordflow}{else}
+00033     \{
+00034         \textcolor{keywordflow}{if} (valeurDecompte == \textcolor{stringliteral}{"0"}) \textcolor{comment}{// Inutile de convertir en valeur numérique ici car COUNT(*)}
+00035         \{
+00036             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00037         \}
+00038         \textcolor{keywordflow}{else}
+00039         \{
+00040             \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\_estExistant} = \textcolor{keyword}{true};
+00041             \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{false};
+00042         \}
+00043     \}
+00044 
+00045     QString requeteAutorisation =
+00046             \textcolor{stringliteral}{"SELECT Utilisateur.idUtilisateur, Utilisateur.Nom, Utilisateur.Prenom,
+       Utilisateur.DateValidite, Utilisateur.Identifiant, Utilisateur.Badge, Utilisateur.Email, Profil.idProfil, Profil.Nom AS Profil,
+       Groupe.idGroupe, Groupe.Nom AS Groupe "} \(\backslash\)
+00047             \textcolor{stringliteral}{"FROM Utilisateur "} \(\backslash\)
+00048             \textcolor{stringliteral}{"INNER JOIN Groupe ON Groupe.idGroupe=Utilisateur.idGroupe "} \(\backslash\)
+00049             \textcolor{stringliteral}{"INNER JOIN Profil ON Profil.idProfil=Utilisateur.idProfil "} \(\backslash\)
+00050             \textcolor{stringliteral}{"WHERE Utilisateur.Identifiant='"} + p\_identifiant + \textcolor{stringliteral}{"'"};
+00051 
+00052     QStringList donneesUtilisateur;
+00053 
+00054     \textcolor{keywordflow}{if} (!p\_doForceLogin)
+00055     \{
+00059         requeteAutorisation += \textcolor{stringliteral}{" AND Utilisateur.MotDePasse='"} + p\_password + \textcolor{stringliteral}{"'"};
+00060     \}
+00061 
+00062 
+00063     \textcolor{comment}{/*}
+00064 \textcolor{comment}{     * Exemple de résultat :}
+00065 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00066 \textcolor{comment}{| idUtilisateur | Nom      | Prenom | DateValidite | Identifiant | Badge | Email                   |
+       idProfil | Profil      | idGroupe | Groupe   |}
+00067 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00068 \textcolor{comment}{|             7 | GAUTHIER | Robin  | 2019-07-01   | gauthier.r  | 4444  | rgauthier2510@gmail.com |       
+       3 | Utilisateur |        5 | T-BTS-SN |}
+00069 \textcolor{comment}{
+      +---------------+----------+--------+--------------+-------------+-------+-------------------------+----------+-------------+----------+----------+}
+00070 \textcolor{comment}{     */}
+00071 
+00072     \textcolor{keywordflow}{if} (\hyperlink{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}{m\_pBaseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteAutorisation, donneesUtilisateur))
+00073     \{
+00074         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesUtilisateur"} << donneesUtilisateur;
+00075         \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\_idUtilisateur} = donneesUtilisateur.at(0);
+00076         \hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{m\_idProfil} = donneesUtilisateur.at(7);
+00077         \hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{m\_idGroupe} = donneesUtilisateur.at(9);
+00078         \hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{m\_identifiant} = donneesUtilisateur.at(4);
+00079         \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\_nom} = donneesUtilisateur.at(1);
+00080         \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\_prenom} = donneesUtilisateur.at(2);
+00081         \hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{m\_dateValidite} = donneesUtilisateur.at(3);
+00082         \hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{m\_badge} = donneesUtilisateur.at(5);
+00083         \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\_idUtilisateur} = donneesUtilisateur.at(6);
+00084         \hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{m\_profil} = donneesUtilisateur.at(8);
+00085         \hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{m\_groupe} = donneesUtilisateur.at(10);
+00086 
+00087         \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{true};
+00088 
+00089         emit \hyperlink{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}{utilisateurUpdated}();
+00090 
+00091         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00092     \}
+00093     \textcolor{keywordflow}{else}
+00094     \{
+00095         \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{false};
+00096 
+00097         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00098     \}
+00099 
+00100     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00101 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}\label{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!reinitialiser@{reinitialiser}}
+\index{reinitialiser@{reinitialiser}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{reinitialiser()}{reinitialiser()}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::reinitialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{m\+\_\+badge}, \hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{m\+\_\+date\+Validite}, \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\+\_\+est\+Autorise}, \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\+\_\+est\+Existant}, \hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{m\+\_\+groupe}, \hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{m\+\_\+identifiant}, \hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{m\+\_\+id\+Groupe}, \hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{m\+\_\+id\+Profil}, \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\+\_\+id\+Utilisateur}, \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\+\_\+nom}, \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\+\_\+prenom}, \hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{m\+\_\+profil}, et \hyperlink{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}{utilisateur\+Updated()}.
+
+
+\begin{DoxyCode}
+00104 \{
+00105     qDebug() << Q\_FUNC\_INFO;
+00106     \hyperlink{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}{m\_idProfil}.clear();
+00107     \hyperlink{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}{m\_idGroupe}.clear();
+00108     \hyperlink{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}{m\_identifiant}.clear();
+00109     \hyperlink{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}{m\_nom}.clear();
+00110     \hyperlink{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}{m\_prenom}.clear();
+00111     \hyperlink{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}{m\_dateValidite}.clear();
+00112     \hyperlink{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}{m\_badge}.clear();
+00113     \hyperlink{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}{m\_idUtilisateur}.clear();
+00114     \hyperlink{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}{m\_profil}.clear();
+00115     \hyperlink{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}{m\_groupe}.clear();
+00116     \hyperlink{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}{m\_estExistant} = \textcolor{keyword}{false};
+00117     \hyperlink{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}{m\_estAutorise} = \textcolor{keyword}{false};
+00118     emit \hyperlink{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}{utilisateurUpdated}();
+00119     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}\label{class_utilisateur_terminal_ade3153552e04d348ddb5c1ebdb95450a}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!utilisateur\+Updated@{utilisateur\+Updated}}
+\index{utilisateur\+Updated@{utilisateur\+Updated}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{utilisateur\+Updated}{utilisateurUpdated}}
+{\footnotesize\ttfamily void Utilisateur\+Terminal\+::utilisateur\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}\label{class_utilisateur_terminal_a06e0603919eb3846cf5bd232c105d1a7}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+badge@{m\+\_\+badge}}
+\index{m\+\_\+badge@{m\+\_\+badge}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+badge}{m\_badge}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+badge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}\label{class_utilisateur_terminal_a7af3e6861711071624b93544adf3ca48}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+date\+Validite@{m\+\_\+date\+Validite}}
+\index{m\+\_\+date\+Validite@{m\+\_\+date\+Validite}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+date\+Validite}{m\_dateValidite}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+date\+Validite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}\label{class_utilisateur_terminal_a79d15bdf8428eb1a131ce4801ac619aa}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+est\+Autorise@{m\+\_\+est\+Autorise}}
+\index{m\+\_\+est\+Autorise@{m\+\_\+est\+Autorise}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+est\+Autorise}{m\_estAutorise}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::m\+\_\+est\+Autorise\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a6cd16c268f5ab545fc2b62f1e29a9917}{est\+Autorise()}, \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}, et \hyperlink{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}{Utilisateur\+Terminal()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}\label{class_utilisateur_terminal_a6b16983fcb2b0f1f698f595309a67828}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+est\+Existant@{m\+\_\+est\+Existant}}
+\index{m\+\_\+est\+Existant@{m\+\_\+est\+Existant}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+est\+Existant}{m\_estExistant}}
+{\footnotesize\ttfamily bool Utilisateur\+Terminal\+::m\+\_\+est\+Existant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_aa80e532db6a898bf1aa433ffb34f2389}{est\+Existant()}, \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}, et \hyperlink{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}{Utilisateur\+Terminal()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}\label{class_utilisateur_terminal_a824944eb7dc8689a0b0ecfa2fc9e4e6c}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+groupe@{m\+\_\+groupe}}
+\index{m\+\_\+groupe@{m\+\_\+groupe}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+groupe}{m\_groupe}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}\label{class_utilisateur_terminal_a4dd1abd0c87ed9bf99ab3343e17cef43}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+identifiant@{m\+\_\+identifiant}}
+\index{m\+\_\+identifiant@{m\+\_\+identifiant}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+identifiant}{m\_identifiant}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+identifiant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}\label{class_utilisateur_terminal_a669ece5480e25b47711c430d020581c2}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+id\+Groupe@{m\+\_\+id\+Groupe}}
+\index{m\+\_\+id\+Groupe@{m\+\_\+id\+Groupe}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+id\+Groupe}{m\_idGroupe}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+id\+Groupe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}\label{class_utilisateur_terminal_af3d06352ecbd2d4439626b4ba53b55be}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+id\+Profil@{m\+\_\+id\+Profil}}
+\index{m\+\_\+id\+Profil@{m\+\_\+id\+Profil}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+id\+Profil}{m\_idProfil}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+id\+Profil\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}\label{class_utilisateur_terminal_a3a8aeb429529ae1600c799e427370f78}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+id\+Utilisateur@{m\+\_\+id\+Utilisateur}}
+\index{m\+\_\+id\+Utilisateur@{m\+\_\+id\+Utilisateur}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+id\+Utilisateur}{m\_idUtilisateur}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+id\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}\label{class_utilisateur_terminal_a4b48835dcadacd5e7d5c9662b70cdc7d}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+nom@{m\+\_\+nom}}
+\index{m\+\_\+nom@{m\+\_\+nom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+nom}{m\_nom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a6432e5c3b9a732ef9312f67718648bf1}{get\+Nom()}, \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}\label{class_utilisateur_terminal_a93aefda4243fed6c1b74d78fa5fc954d}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}}
+\index{m\+\_\+p\+Base\+De\+Donnees@{m\+\_\+p\+Base\+De\+Donnees}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+p\+Base\+De\+Donnees}{m\_pBaseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Utilisateur\+Terminal\+::m\+\_\+p\+Base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a3a4e47b0f67f67f2396671941688d036}{Utilisateur\+Terminal()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}\label{class_utilisateur_terminal_a6dc3be09e844fc14aafec8019a1e2a5e}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+prenom@{m\+\_\+prenom}}
+\index{m\+\_\+prenom@{m\+\_\+prenom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+prenom}{m\_prenom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+prenom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_ac38fe2414a0dcb53d0f283f231dcba01}{get\+Prenom()}, \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+\mbox{\Hypertarget{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}\label{class_utilisateur_terminal_ac25eb049eaa55bc16d2f516a551eb769}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!m\+\_\+profil@{m\+\_\+profil}}
+\index{m\+\_\+profil@{m\+\_\+profil}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{m\+\_\+profil}{m\_profil}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::m\+\_\+profil\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_utilisateur_terminal_a196420ecc14bc0645e3e1c66d796b8e6}{lire\+Utilisateur()}, et \hyperlink{class_utilisateur_terminal_a63b37fa7cbf08976e5a09cbfbdb55f42}{reinitialiser()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_utilisateur_terminal_a92c24246effeafa1a9ea0923f13c20e8}\label{class_utilisateur_terminal_a92c24246effeafa1a9ea0923f13c20e8}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!Nom@{Nom}}
+\index{Nom@{Nom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{Nom}{Nom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::\+Nom}
+
+\mbox{\Hypertarget{class_utilisateur_terminal_a42d3d48105b486ce0fd89bcef40f8573}\label{class_utilisateur_terminal_a42d3d48105b486ce0fd89bcef40f8573}} 
+\index{Utilisateur\+Terminal@{Utilisateur\+Terminal}!Prenom@{Prenom}}
+\index{Prenom@{Prenom}!Utilisateur\+Terminal@{Utilisateur\+Terminal}}
+\paragraph{\texorpdfstring{Prenom}{Prenom}}
+{\footnotesize\ttfamily Q\+String Utilisateur\+Terminal\+::\+Prenom}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{utilisateur_terminal_8h}{utilisateur\+Terminal.\+h}\item 
+\hyperlink{utilisateur_terminal_8cpp}{utilisateur\+Terminal.\+cpp}\end{DoxyCompactItemize}

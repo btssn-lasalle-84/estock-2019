@@ -1,0 +1,64 @@
+\hypertarget{terminalmobile_2base_de_donnees_8h}{}\subsection{Référence du fichier base\+De\+Donnees.\+h}
+\label{terminalmobile_2base_de_donnees_8h}\index{base\+De\+Donnees.\+h@{base\+De\+Donnees.\+h}}
+
+
+Déclaration de la classe \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} pour Android.  
+
+
+{\ttfamily \#include $<$Q\+Object$>$}\newline
+{\ttfamily \#include $<$Qt\+Sql/\+Qt\+Sql$>$}\newline
+{\ttfamily \#include $<$Q\+Sql\+Database$>$}\newline
+{\ttfamily \#include $<$Q\+Mutex$>$}\newline
+{\ttfamily \#include $<$Q\+String$>$}\newline
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}
+\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{terminalmobile_2base_de_donnees_8h_a3760799f66ae5bcba760a4a6550d4206}{N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES}~2
+\item 
+\#define \hyperlink{terminalmobile_2base_de_donnees_8h_a26d6b2af979a9747e911a07e64b2a954}{B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE}~0
+\item 
+\#define \hyperlink{terminalmobile_2base_de_donnees_8h_aaf0ca062171227e6cb5722ad110fb783}{B\+D\+D\+\_\+\+M\+Y\+S\+QL}~1
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Thierry V\+A\+I\+RA
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des macros}
+\mbox{\Hypertarget{terminalmobile_2base_de_donnees_8h_aaf0ca062171227e6cb5722ad110fb783}\label{terminalmobile_2base_de_donnees_8h_aaf0ca062171227e6cb5722ad110fb783}} 
+\index{terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}!B\+D\+D\+\_\+\+M\+Y\+S\+QL@{B\+D\+D\+\_\+\+M\+Y\+S\+QL}}
+\index{B\+D\+D\+\_\+\+M\+Y\+S\+QL@{B\+D\+D\+\_\+\+M\+Y\+S\+QL}!terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}}
+\paragraph{\texorpdfstring{B\+D\+D\+\_\+\+M\+Y\+S\+QL}{BDD\_MYSQL}}
+{\footnotesize\ttfamily \#define B\+D\+D\+\_\+\+M\+Y\+S\+QL~1}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a5002dc7324ab6f82c607e2423709b806}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+\mbox{\Hypertarget{terminalmobile_2base_de_donnees_8h_a26d6b2af979a9747e911a07e64b2a954}\label{terminalmobile_2base_de_donnees_8h_a26d6b2af979a9747e911a07e64b2a954}} 
+\index{terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}!B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE@{B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE}}
+\index{B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE@{B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE}!terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}}
+\paragraph{\texorpdfstring{B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE}{BDD\_SQLITE}}
+{\footnotesize\ttfamily \#define B\+D\+D\+\_\+\+S\+Q\+L\+I\+TE~0}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a5002dc7324ab6f82c607e2423709b806}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+\mbox{\Hypertarget{terminalmobile_2base_de_donnees_8h_a3760799f66ae5bcba760a4a6550d4206}\label{terminalmobile_2base_de_donnees_8h_a3760799f66ae5bcba760a4a6550d4206}} 
+\index{terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}!N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES@{N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES}}
+\index{N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES@{N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES}!terminalmobile/base\+De\+Donnees.\+h@{terminalmobile/base\+De\+Donnees.\+h}}
+\paragraph{\texorpdfstring{N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES}{NB\_BASEDEDONNEES}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+B\+A\+S\+E\+D\+E\+D\+O\+N\+N\+E\+ES~2}
+

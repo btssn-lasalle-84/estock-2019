@@ -1,0 +1,273 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage[a4paper]{geometry}
+\geometry{vmargin=2cm,hmargin=2cm,lmargin=1.2cm,rmargin=1.2cm}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{\bfseries\scriptsize e-stock}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avignon 2019 }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avignon 2019 }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{\bfseries\scriptsize e-stock}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\LARGE Projet e-\/stock \\[1ex]\large 1.\+1 }\\
+\vspace*{1cm}
+{\large MACHON Thomas}\\
+{\large GIMENEZ Hadrien}\\
+{\large WAGINAIRE Nathan}\\
+{\large GAUTHIER Robin (Tablette)}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Le projet e-\/stock}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Changelog}
+\label{page_changelog}
+\Hypertarget{page_changelog}
+\input{page_changelog}
+\section{Installation}
+\label{page_install}
+\Hypertarget{page_install}
+\input{page_install}
+\section{R\+E\+A\+D\+ME}
+\label{page__r_e_a_d_m_e}
+\Hypertarget{page__r_e_a_d_m_e}
+\input{page__r_e_a_d_m_e}
+\section{A propos}
+\label{page_about}
+\Hypertarget{page_about}
+\input{page_about}
+\section{Licence G\+PL}
+\label{page_licence}
+\Hypertarget{page_licence}
+\input{page_licence}
+\section{Liste des choses à faire}
+\label{todo}
+\Hypertarget{todo}
+\input{todo}
+\section{Documentation des espaces de nommage}
+\input{namespace_ui}
+\section{Documentation des classes}
+\input{class_administrateur}
+\input{class_ajout_armoire}
+\input{class_ajout_utilisateur}
+\input{class_armoire}
+\input{class_armoires}
+\input{class_article}
+\input{class_authentification_badge}
+\input{class_base_de_donnees}
+\input{class_bouton}
+\input{class_casier}
+\input{class_casiers}
+\input{class_gestion_balances}
+\input{class_gestion_casier}
+\input{class_groupe}
+\input{class_ihm_authentification}
+\input{class_ihm_authentification_sans_badge}
+\input{class_ihm_gestion_armoire}
+\input{class_ihm_gestion_balances}
+\input{class_ihm_gestion_groupe}
+\input{class_i_h_m_principale}
+\input{class_menu_armoire}
+\input{class_modification_utilisateur}
+\input{class_mouvement}
+\input{class_mouvements}
+\input{class_mouvements_armoire}
+\input{class_profil}
+\input{class_stock_armoire}
+\input{class_suppression_utilisateur}
+\input{class_utilisateur}
+\input{class_utilisateur_armoire}
+\input{class_utilisateurs_armoire}
+\input{class_utilisateur_terminal}
+\section{Documentation des fichiers}
+\input{administrateur_8cpp}
+\input{administrateur_8h}
+\input{_ajout_armoire_8qml}
+\input{_ajout_utilisateur_8qml}
+\input{armoire_8cpp}
+\input{armoire_8h}
+\input{armoires_8cpp}
+\input{armoires_8h}
+\input{article_8cpp}
+\input{article_8h}
+\input{_authentification_badge_8cpp}
+\input{_authentification_badge_8h}
+\input{ihm-estock_2base_de_donnees_8cpp}
+\input{terminalmobile_2base_de_donnees_8cpp}
+\input{ihm-estock_2base_de_donnees_8h}
+\input{terminalmobile_2base_de_donnees_8h}
+\input{_bouton_8qml}
+\input{ihm-estock_2casier_8cpp}
+\input{terminalmobile_2casier_8cpp}
+\input{ihm-estock_2casier_8h}
+\input{terminalmobile_2casier_8h}
+\input{_casier_8qml}
+\input{casiers_8cpp}
+\input{casiers_8h}
+\input{_changelog_8md}
+\input{e-stock_8h}
+\input{_gestion_balances_8cpp}
+\input{_gestion_balances_8h}
+\input{_gestion_casier_8qml}
+\input{groupe_8cpp}
+\input{groupe_8h}
+\input{_ihm_authentification_8cpp}
+\input{_ihm_authentification_8h}
+\input{_ihm_authentification_sans_badge_8cpp}
+\input{_ihm_authentification_sans_badge_8h}
+\input{_ihm_gestion_armoire_8cpp}
+\input{_ihm_gestion_armoire_8h}
+\input{_ihm_gestion_balances_8cpp}
+\input{_ihm_gestion_balances_8h}
+\input{_ihm_gestion_groupe_8cpp}
+\input{_ihm_gestion_groupe_8h}
+\input{_i_h_m_principale_8qml}
+\input{_i_n_s_t_a_l_l_8md}
+\input{ihm-estock_2main_8cpp}
+\input{terminalmobile_2main_8cpp}
+\input{_menu_armoire_8qml}
+\input{_modification_utilisateur_8qml}
+\input{mouvement_8cpp}
+\input{mouvement_8h}
+\input{mouvements_8cpp}
+\input{mouvements_8h}
+\input{_mouvements_armoire_8qml}
+\input{profil_8cpp}
+\input{profil_8h}
+\input{_r_e_a_d_m_e_8md}
+\input{_stock_armoire_8qml}
+\input{_suppression_utilisateur_8qml}
+\input{utilisateur_8cpp}
+\input{utilisateur_8h}
+\input{utilisateur_armoire_8cpp}
+\input{utilisateur_armoire_8h}
+\input{utilisateurs_armoire_8cpp}
+\input{utilisateurs_armoire_8h}
+\input{_utilisateurs_armoire_8qml}
+\input{utilisateur_terminal_8cpp}
+\input{utilisateur_terminal_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}

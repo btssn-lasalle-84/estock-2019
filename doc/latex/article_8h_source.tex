@@ -1,0 +1,31 @@
+\hypertarget{article_8h_source}{}\subsection{article.\+h}
+\label{article_8h_source}\index{article.\+h@{article.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ARTICLE\_H}
+00002 \textcolor{preprocessor}{#define ARTICLE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QString>}
+00006 
+\Hypertarget{article_8h_source_l00007}\hyperlink{class_article}{00007} \textcolor{keyword}{class }\hyperlink{class_article}{Article} : \textcolor{keyword}{public} QObject
+00008 \{
+00009     Q\_OBJECT
+00010 
+00011 \textcolor{keyword}{private}:
+\Hypertarget{article_8h_source_l00012}\hyperlink{class_article_a0ba6c08f7dd54e4b7caf673ecd6b41a6}{00012}     QString \hyperlink{class_article_a0ba6c08f7dd54e4b7caf673ecd6b41a6}{nomArticle};
+\Hypertarget{article_8h_source_l00013}\hyperlink{class_article_a4bb0882b68de349e913fd0b46bf6da6a}{00013}     \textcolor{keywordtype}{int} \hyperlink{class_article_a4bb0882b68de349e913fd0b46bf6da6a}{quantite};
+\Hypertarget{article_8h_source_l00014}\hyperlink{class_article_ae7a9ee7f0b2bd423ff995819fa78ac17}{00014}     QString \hyperlink{class_article_ae7a9ee7f0b2bd423ff995819fa78ac17}{horodatage};
+00015 
+00016 \textcolor{keyword}{public}:
+00017     \hyperlink{class_article_aba1b3142ede0565d468cb4135384c96f}{Article}();
+00018     \hyperlink{class_article_a5c429e49b30104b1069044d0e1a6aa1a}{~Article}();
+00019 
+00020     QString \hyperlink{class_article_ad7b031dd9bd88a84006f2ff83262c42d}{rechercherArticle}();
+00021     \textcolor{keywordtype}{bool} \hyperlink{class_article_a6200b67a7afe1c4e937c4087e23cdfc4}{recupererArticle}();
+00022     \textcolor{keywordtype}{bool} \hyperlink{class_article_acd0f9d62ff85d4254d3ca6ab87d474e2}{restituerArticle}();
+00023     QString \hyperlink{class_article_a47f169939af6d2d3e840392c85c88121}{visualiserLesMouvements}();
+00024 \};
+00025 
+00026 \textcolor{preprocessor}{#endif // ARTICLE\_H}
+\end{DoxyCode}

@@ -1,0 +1,496 @@
+\hypertarget{class_ihm_authentification_sans_badge}{}\subsection{Référence de la classe Ihm\+Authentification\+Sans\+Badge}
+\label{class_ihm_authentification_sans_badge}\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+
+
+{\ttfamily \#include $<$Ihm\+Authentification\+Sans\+Badge.\+h$>$}
+
+
+
+Graphe de collaboration de Ihm\+Authentification\+Sans\+Badge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ihm_authentification_sans_badge__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_authentification_sans_badge_a610528b307f2a3f3253aed3b5f628837}{utilisateur\+Autorise} (Q\+String \hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant}, Q\+String \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{mot\+De\+Passe})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre d\textquotesingle{}authentification sans badge. \end{DoxyCompactList}\item 
+\hyperlink{class_ihm_authentification_sans_badge_a39197686724a0ad151c0c998301c198e}{$\sim$\+Ihm\+Authentification\+Sans\+Badge} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre d\textquotesingle{}authentification sans badge. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_ihm_authentification_sans_badge_acd5fea74d025db830e6e880e55d5c2f0}{get\+Id\+Utilisateur} () const
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}identifiant de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide} ()
+\begin{DoxyCompactList}\small\item\em Requete S\+QL pour valider l\textquotesingle{}identifiant de l\textquotesingle{}utilisateur et son mot de passe. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_authentification_sans_badge_ad60d540d145d0bb940ccbb0850de2c35}{show\+Event} (Q\+Show\+Event $\ast$ev)
+\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}{fermer} ()
+\begin{DoxyCompactList}\small\item\em Permet de fermer le clavier virtuel. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces} ()
+\begin{DoxyCompactList}\small\item\em Permet de valide l\textquotesingle{}acces à l\textquotesingle{}utilisateur avec son identifiant, mot de passe. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}{effacer\+Message} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_authentification_sans_badge_a5804d43d13e39e3e4890f7b08c89cb6c}{initialiser\+Fenetre} ()
+\begin{DoxyCompactList}\small\item\em Initialise le mode plein écran. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_authentification_sans_badge_aa273ef3009c84c8f5f48e4d3591df8e7}{initialiser\+Clavier\+Virtuel} ()
+\begin{DoxyCompactList}\small\item\em Initialisation d\textquotesingle{}un clavier virtuel. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_authentification_sans_badge_ab90d91062763a53ac39df5a9fdc4da85}{supprimer\+Clavier\+Virtuel} ()
+\begin{DoxyCompactList}\small\item\em Suppression du clavier virtuel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Ihm\+Authentification\+Sans\+Badge $\ast$ \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}
+\item 
+Q\+String \hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant}
+\begin{DoxyCompactList}\small\item\em le login de l\textquotesingle{}utilisateur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{mot\+De\+Passe}
+\item 
+Q\+String \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{id\+Utilisateur}
+\item 
+Q\+String \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{date\+Validite}
+\item 
+bool \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide}
+\item 
+bool \hyperlink{class_ihm_authentification_sans_badge_a53848cfd67449089f20c1d0c6df8e340}{autorise}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}\label{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{Ihm\+Authentification\+Sans\+Badge()}{IhmAuthentificationSansBadge()}}
+{\footnotesize\ttfamily Ihm\+Authentification\+Sans\+Badge\+::\+Ihm\+Authentification\+Sans\+Badge (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructeur de la fenêtre gestion armoire.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}{fermer()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_ihm_authentification_sans_badge_a5804d43d13e39e3e4890f7b08c89cb6c}{initialiser\+Fenetre()}, \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}, et \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00027                                                                           :
+00028     QWidget(parent),
+00029     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}(\textcolor{keyword}{new} Ui::IhmAuthentificationSansBadge)
+00030 \{
+00031     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->setupUi(\textcolor{keyword}{this});
+00032     qDebug() << Q\_FUNC\_INFO;
+00033 
+00034     \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00035     \textcolor{keywordflow}{if}(!\hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00036         \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}();
+00037 
+00038     \textcolor{comment}{// Connexion des signaux/slots}
+00039     connect(\hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->boutonConnexion, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{validerAcces}()));
+00040     connect(\hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->boutonFermeture, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}{fermer}()));
+00041 
+00042     \hyperlink{class_ihm_authentification_sans_badge_a5804d43d13e39e3e4890f7b08c89cb6c}{initialiserFenetre}();
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a39197686724a0ad151c0c998301c198e}\label{class_ihm_authentification_sans_badge_a39197686724a0ad151c0c998301c198e}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!````~Ihm\+Authentification\+Sans\+Badge@{$\sim$\+Ihm\+Authentification\+Sans\+Badge}}
+\index{````~Ihm\+Authentification\+Sans\+Badge@{$\sim$\+Ihm\+Authentification\+Sans\+Badge}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{$\sim$\+Ihm\+Authentification\+Sans\+Badge()}{~IhmAuthentificationSansBadge()}}
+{\footnotesize\ttfamily Ihm\+Authentification\+Sans\+Badge\+::$\sim$\+Ihm\+Authentification\+Sans\+Badge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}.
+
+
+\begin{DoxyCode}
+00051 \{
+00052     \textcolor{keyword}{delete} \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui};
+00053     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00054     qDebug() << Q\_FUNC\_INFO;
+00055 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}\label{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!effacer\+Message@{effacer\+Message}}
+\index{effacer\+Message@{effacer\+Message}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{effacer\+Message}{effacerMessage}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::effacer\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00210 \{
+00211     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->labelMessagAuthentificatioSansBadge->setText(\textcolor{stringliteral}{""});
+00212 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}\label{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!est\+Autorise@{est\+Autorise}}
+\index{est\+Autorise@{est\+Autorise}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{est\+Autorise()}{estAutorise()}}
+{\footnotesize\ttfamily bool Ihm\+Authentification\+Sans\+Badge\+::est\+Autorise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}, \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{date\+Validite}, \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide()}, \hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant}, \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{id\+Utilisateur}, \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{mot\+De\+Passe}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}, et \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+
+\begin{DoxyCode}
+00188 \{
+00189     QString dateMaintenant = QDateTime::currentDateTime().toString(\textcolor{stringliteral}{"yyyy-MM-dd"});
+00190     \hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant} = \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->text();
+00191     \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{motDePasse} = \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditMotDePasse->text();
+00192 
+00193     QString requete = \textcolor{stringliteral}{"SELECT idUtilisateur, DateValidite FROM Utilisateur WHERE Identifiant='"} + 
+      \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->text() + \textcolor{stringliteral}{"' AND MotDePasse='"} + \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditMotDePasse->text() + \textcolor{stringliteral}{"'"};
+00194     QStringList donneesUtilisateur;
+00195     \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{idUtilisateur}.clear();
+00196     \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{dateValidite}.clear();
+00197     \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{motDePasse}.clear();
+00198     \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide} = \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, donneesUtilisateur);
+00199     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide})
+00200     \{
+00201         \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{idUtilisateur} = donneesUtilisateur.at(0);
+00202         \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{dateValidite} = donneesUtilisateur.at(1);
+00203         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide} << \textcolor{stringliteral}{"idUtilisateur"} << 
+      \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{idUtilisateur} << \textcolor{stringliteral}{"dateValidite"} << \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{dateValidite} << \textcolor{stringliteral}{"motDePasse"} << 
+      \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{motDePasse};
+00204     \}
+00205     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide};
+00206     \textcolor{keywordflow}{return} (valide && \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{estValide}());
+00207 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}\label{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!est\+Valide@{est\+Valide}}
+\index{est\+Valide@{est\+Valide}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{est\+Valide()}{estValide()}}
+{\footnotesize\ttfamily Ihm\+Authentification\+Sans\+Badge\+::est\+Valide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Requete S\+QL pour autoriser l\textquotesingle{}acces de l\textquotesingle{}utilisateur.
+
+\begin{DoxyReturn}{Renvoie}
+valide
+
+valide \&\& est\+Valide 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}, \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{date\+Validite}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}, et \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}.
+
+
+\begin{DoxyCode}
+00158 \{
+00159     QString dateMaintenant = QDateTime::currentDateTime().toString(\textcolor{stringliteral}{"yyyy-MM-dd"});
+00160     QString requete = \textcolor{stringliteral}{"SELECT DateValidite FROM Utilisateur WHERE Identifiant='"} + 
+      \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->text() + \textcolor{stringliteral}{"' AND DateValidite>='"} + dateMaintenant + \textcolor{stringliteral}{"'"};
+00161     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00162     QString retour;
+00163     \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide} = \hyperlink{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, retour);
+00164     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"valide"} << \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide} << \textcolor{stringliteral}{"dateValidite"} << 
+      \hyperlink{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}{dateValidite};
+00165     \textcolor{keywordflow}{return} \hyperlink{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}{valide};
+00166 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}\label{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!fermer@{fermer}}
+\index{fermer@{fermer}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{fermer}{fermer}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::fermer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_ab90d91062763a53ac39df5a9fdc4da85}{supprimer\+Clavier\+Virtuel()}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge()}.
+
+
+\begin{DoxyCode}
+00122 \{
+00123     \hyperlink{class_ihm_authentification_sans_badge_ab90d91062763a53ac39df5a9fdc4da85}{supprimerClavierVirtuel}();
+00124     close();
+00125 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_acd5fea74d025db830e6e880e55d5c2f0}\label{class_ihm_authentification_sans_badge_acd5fea74d025db830e6e880e55d5c2f0}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!get\+Id\+Utilisateur@{get\+Id\+Utilisateur}}
+\index{get\+Id\+Utilisateur@{get\+Id\+Utilisateur}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{get\+Id\+Utilisateur()}{getIdUtilisateur()}}
+{\footnotesize\ttfamily Q\+String Ihm\+Authentification\+Sans\+Badge\+::get\+Id\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+id\+Utilisateur$\ast$ 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{id\+Utilisateur}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_add8f8e7a0fbf70cef9399ba9f7db7b7e}{Ihm\+Authentification\+::autoriser\+Sans\+Badge()}.
+
+
+\begin{DoxyCode}
+00176 \{
+00177     \textcolor{keywordflow}{return} \hyperlink{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}{idUtilisateur};
+00178 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_aa273ef3009c84c8f5f48e4d3591df8e7}\label{class_ihm_authentification_sans_badge_aa273ef3009c84c8f5f48e4d3591df8e7}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!initialiser\+Clavier\+Virtuel@{initialiser\+Clavier\+Virtuel}}
+\index{initialiser\+Clavier\+Virtuel@{initialiser\+Clavier\+Virtuel}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{initialiser\+Clavier\+Virtuel()}{initialiserClavierVirtuel()}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::initialiser\+Clavier\+Virtuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_ad60d540d145d0bb940ccbb0850de2c35}{show\+Event()}.
+
+
+\begin{DoxyCode}
+00094 \{
+00095     QProcess processus;
+00096     QString programme = \textcolor{stringliteral}{"/usr/bin/florence"};
+00097     QStringList arguments;
+00098     arguments << \textcolor{stringliteral}{"--use-config=/usr/share/doc/florence/examples/florence.conf"};
+00099     processus.startDetached(programme, arguments);
+00100 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a5804d43d13e39e3e4890f7b08c89cb6c}\label{class_ihm_authentification_sans_badge_a5804d43d13e39e3e4890f7b08c89cb6c}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!initialiser\+Fenetre@{initialiser\+Fenetre}}
+\index{initialiser\+Fenetre@{initialiser\+Fenetre}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{initialiser\+Fenetre()}{initialiserFenetre()}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::initialiser\+Fenetre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{I\+H\+M\+\_\+\+C\+SS}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge()}.
+
+
+\begin{DoxyCode}
+00064 \{
+00065     setStyleSheet(\hyperlink{e-stock_8h_a7185157bd11830373a0f95d0dc88b2c3}{IHM\_CSS});
+00066 
+00067 \textcolor{preprocessor}{    #ifndef DESKTOP}
+00068     \textcolor{keyword}{const} \textcolor{keywordtype}{int} w = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width();
+00069     \textcolor{keyword}{const} \textcolor{keywordtype}{int} h = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height();
+00070     resize(w, h);
+00071 \textcolor{preprocessor}{    #else}
+00072     \textcolor{comment}{// 800×480}
+00073     resize(800, 480);
+00074 \textcolor{preprocessor}{    #endif}
+00075     setWindowFlags(Qt::FramelessWindowHint | Qt::Dialog); \textcolor{comment}{// Ajouter Qt::WindowStaysOnTopHint}
+00076     \textcolor{comment}{//showMaximized();}
+00077     setWindowModality(Qt::WindowModal);
+00078 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_ad60d540d145d0bb940ccbb0850de2c35}\label{class_ihm_authentification_sans_badge_ad60d540d145d0bb940ccbb0850de2c35}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{show\+Event()}{showEvent()}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_aa273ef3009c84c8f5f48e4d3591df8e7}{initialiser\+Clavier\+Virtuel()}, et \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}.
+
+
+\begin{DoxyCode}
+00081 \{
+00082     Q\_UNUSED(ev)
+00083 
+00084     \hyperlink{class_ihm_authentification_sans_badge_aa273ef3009c84c8f5f48e4d3591df8e7}{initialiserClavierVirtuel}();
+00085     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->setFocus();
+00086 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_ab90d91062763a53ac39df5a9fdc4da85}\label{class_ihm_authentification_sans_badge_ab90d91062763a53ac39df5a9fdc4da85}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!supprimer\+Clavier\+Virtuel@{supprimer\+Clavier\+Virtuel}}
+\index{supprimer\+Clavier\+Virtuel@{supprimer\+Clavier\+Virtuel}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{supprimer\+Clavier\+Virtuel()}{supprimerClavierVirtuel()}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::supprimer\+Clavier\+Virtuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_aa06ddc2a4b8d578fecfb9e37dd577858}{fermer()}.
+
+
+\begin{DoxyCode}
+00108 \{
+00109     QProcess processus;
+00110     QString programme = \textcolor{stringliteral}{"killall"}; \textcolor{comment}{// le nom du programme}
+00111     QStringList arguments; \textcolor{comment}{// arguments du programme}
+00112     arguments << \textcolor{stringliteral}{"florence"};
+00113     processus.startDetached(programme, arguments);
+00114 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a610528b307f2a3f3253aed3b5f628837}\label{class_ihm_authentification_sans_badge_a610528b307f2a3f3253aed3b5f628837}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!utilisateur\+Autorise@{utilisateur\+Autorise}}
+\index{utilisateur\+Autorise@{utilisateur\+Autorise}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{utilisateur\+Autorise}{utilisateurAutorise}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::utilisateur\+Autorise (\begin{DoxyParamCaption}\item[{Q\+String}]{identifiant,  }\item[{Q\+String}]{mot\+De\+Passe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}\label{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!valider\+Acces@{valider\+Acces}}
+\index{valider\+Acces@{valider\+Acces}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{valider\+Acces}{validerAcces}}
+{\footnotesize\ttfamily void Ihm\+Authentification\+Sans\+Badge\+::valider\+Acces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}{effacer\+Message()}, \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, \hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant}, \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{mot\+De\+Passe}, \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}, et \hyperlink{class_ihm_authentification_sans_badge_a610528b307f2a3f3253aed3b5f628837}{utilisateur\+Autorise()}.
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge()}.
+
+
+\begin{DoxyCode}
+00133 \{
+00134     \textcolor{keywordflow}{if}(\hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{estAutorise}())
+00135     \{
+00136         close();
+00137         emit \hyperlink{class_ihm_authentification_sans_badge_a610528b307f2a3f3253aed3b5f628837}{utilisateurAutorise}(\hyperlink{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}{identifiant}, 
+      \hyperlink{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}{motDePasse});
+00138     \}
+00139     \textcolor{keywordflow}{else}
+00140     \{
+00141         \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->labelMessagAuthentificatioSansBadge->setText(\textcolor{stringliteral}{"Identifiant non valide !"});
+00142         QTimer::singleShot(1000, \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}{effacerMessage}()));
+00143     \}
+00144     \textcolor{comment}{// Réinitialiser la saisie d'un nouvel utilisateur}
+00145     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->setText(\textcolor{stringliteral}{""});
+00146     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditMotDePasse->setText(\textcolor{stringliteral}{""});
+00147     \hyperlink{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}{ui}->lineEditAuthentification->setFocus();
+00148 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a53848cfd67449089f20c1d0c6df8e340}\label{class_ihm_authentification_sans_badge_a53848cfd67449089f20c1d0c6df8e340}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!autorise@{autorise}}
+\index{autorise@{autorise}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{autorise}{autorise}}
+{\footnotesize\ttfamily bool Ihm\+Authentification\+Sans\+Badge\+::autorise\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}\label{class_ihm_authentification_sans_badge_acf93b261335b6128af77de61994b9491}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!bdd@{bdd}}
+\index{bdd@{bdd}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Ihm\+Authentification\+Sans\+Badge\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide()}, et \hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}\label{class_ihm_authentification_sans_badge_afd0f3b5e59208d58be78f0cb741d4be7}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!date\+Validite@{date\+Validite}}
+\index{date\+Validite@{date\+Validite}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{date\+Validite}{dateValidite}}
+{\footnotesize\ttfamily Q\+String Ihm\+Authentification\+Sans\+Badge\+::date\+Validite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, et \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}\label{class_ihm_authentification_sans_badge_aff90fe3fcf957daa57ca0318a4b1a2d0}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!identifiant@{identifiant}}
+\index{identifiant@{identifiant}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{identifiant}{identifiant}}
+{\footnotesize\ttfamily Q\+String Ihm\+Authentification\+Sans\+Badge\+::identifiant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, et \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}\label{class_ihm_authentification_sans_badge_a2ff19fe279947b469dbc48b6ff2db187}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!id\+Utilisateur@{id\+Utilisateur}}
+\index{id\+Utilisateur@{id\+Utilisateur}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{id\+Utilisateur}{idUtilisateur}}
+{\footnotesize\ttfamily Q\+String Ihm\+Authentification\+Sans\+Badge\+::id\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, et \hyperlink{class_ihm_authentification_sans_badge_acd5fea74d025db830e6e880e55d5c2f0}{get\+Id\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}\label{class_ihm_authentification_sans_badge_a3a5c5887be56c7f1b5dcd1bf824d09c4}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!mot\+De\+Passe@{mot\+De\+Passe}}
+\index{mot\+De\+Passe@{mot\+De\+Passe}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{mot\+De\+Passe}{motDePasse}}
+{\footnotesize\ttfamily Q\+String Ihm\+Authentification\+Sans\+Badge\+::mot\+De\+Passe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, et \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}\label{class_ihm_authentification_sans_badge_a95e8a9d049b6e5f262b45e3362d2bbee}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!ui@{ui}}
+\index{ui@{ui}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Ihm\+Authentification\+Sans\+Badge$\ast$ Ihm\+Authentification\+Sans\+Badge\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a6dfdc8197ea602634455e80b35af7c87}{effacer\+Message()}, \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide()}, \hyperlink{class_ihm_authentification_sans_badge_aace6d9eebcab9fee429fe9dbb6840f15}{Ihm\+Authentification\+Sans\+Badge()}, \hyperlink{class_ihm_authentification_sans_badge_ad60d540d145d0bb940ccbb0850de2c35}{show\+Event()}, \hyperlink{class_ihm_authentification_sans_badge_a1d6f062da30edd3ba8fe74906e8f16cf}{valider\+Acces()}, et \hyperlink{class_ihm_authentification_sans_badge_a39197686724a0ad151c0c998301c198e}{$\sim$\+Ihm\+Authentification\+Sans\+Badge()}.
+
+\mbox{\Hypertarget{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}\label{class_ihm_authentification_sans_badge_a653eb9abd54ba736b3d98b994a7e4f1f}} 
+\index{Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}!valide@{valide}}
+\index{valide@{valide}!Ihm\+Authentification\+Sans\+Badge@{Ihm\+Authentification\+Sans\+Badge}}
+\paragraph{\texorpdfstring{valide}{valide}}
+{\footnotesize\ttfamily bool Ihm\+Authentification\+Sans\+Badge\+::valide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ihm_authentification_sans_badge_a17b178accdfe141a7e27fa1888bebcbc}{est\+Autorise()}, et \hyperlink{class_ihm_authentification_sans_badge_a676cfdbf93ef79fb7c4c47fdd8d0fb43}{est\+Valide()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ihm_authentification_sans_badge_8h}{Ihm\+Authentification\+Sans\+Badge.\+h}\item 
+\hyperlink{_ihm_authentification_sans_badge_8cpp}{Ihm\+Authentification\+Sans\+Badge.\+cpp}\item 
+\hyperlink{_ihm_gestion_armoire_8cpp}{Ihm\+Gestion\+Armoire.\+cpp}\end{DoxyCompactItemize}

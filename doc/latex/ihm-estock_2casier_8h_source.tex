@@ -1,0 +1,37 @@
+\hypertarget{ihm-estock_2casier_8h_source}{}\subsection{ihm-\/estock/casier.h}
+\label{ihm-estock_2casier_8h_source}\index{casier.\+h@{casier.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CASIER\_H}
+00002 \textcolor{preprocessor}{#define CASIER\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QtWidgets>}
+00005 
+\Hypertarget{ihm-estock_2casier_8h_source_l00006}\hyperlink{class_casier}{00006} \textcolor{keyword}{class }\hyperlink{class_casier}{Casier} : \textcolor{keyword}{public} QLabel
+00007 \{
+00008     Q\_OBJECT
+00009 \textcolor{keyword}{public}:
+00010     \hyperlink{class_casier_a27c0b818ceacb180d031f24d57033d62}{Casier}(\textcolor{keywordtype}{int} \hyperlink{class_casier_a17aa23e73b177559266a9fb17f63b812}{numero}, \textcolor{keywordtype}{bool} \hyperlink{class_casier_a2dd9fbe4a93685080a9b5c8f69e3f29a}{autorise}=\textcolor{keyword}{true}, \textcolor{keywordtype}{bool} present=\textcolor{keyword}{true}, QWidget *parent=0);
+00011     \hyperlink{class_casier_a4aebc2219ccd4612cf79413904bb9340}{~Casier}();
+00012     \textcolor{keywordtype}{void} \hyperlink{class_casier_ad12cf89b6a99254f529997003adcf029}{mousePressEvent}(QMouseEvent *event);
+00013 
+00014     \textcolor{keywordtype}{bool} \hyperlink{class_casier_adc6f3502e2bc9bdafed9634f649b285c}{estAutorise}() \textcolor{keyword}{const};
+00015     \textcolor{keywordtype}{bool} \hyperlink{class_casier_ab26fd4da845423355835da8d445ed5dd}{estOuvert}() \textcolor{keyword}{const};
+00016     \textcolor{keywordtype}{void} \hyperlink{class_casier_a9182fdde9d86e8f67e4d96ca3dad5eaa}{actionner}();
+00017     \textcolor{keywordtype}{void} \hyperlink{class_casier_ac4b0de3ba58dc2bab52b049b278f4f90}{ouvrir}();
+00018     \textcolor{keywordtype}{void} \hyperlink{class_casier_a4a6051d72548b83d4b2dfaf189ae6c72}{fermer}();
+00019 
+00020 \textcolor{keyword}{private}:
+\Hypertarget{ihm-estock_2casier_8h_source_l00021}\hyperlink{class_casier_a17aa23e73b177559266a9fb17f63b812}{00021}     \textcolor{keywordtype}{int} \hyperlink{class_casier_a17aa23e73b177559266a9fb17f63b812}{numero};
+\Hypertarget{ihm-estock_2casier_8h_source_l00022}\hyperlink{class_casier_a2dd9fbe4a93685080a9b5c8f69e3f29a}{00022}     \textcolor{keywordtype}{bool} \hyperlink{class_casier_a2dd9fbe4a93685080a9b5c8f69e3f29a}{autorise};
+\Hypertarget{ihm-estock_2casier_8h_source_l00023}\hyperlink{class_casier_afe544ed1a87ce714a9fbbe16126669e4}{00023}     \textcolor{keywordtype}{bool} \hyperlink{class_casier_afe544ed1a87ce714a9fbbe16126669e4}{ouvert};
+00024 
+00025 \textcolor{keyword}{public} slots:
+00026 
+00027 signals:
+00028       \textcolor{keywordtype}{void} \hyperlink{class_casier_a6f147d5151d266424cc84b114ccf073b}{clicked}(\textcolor{keywordtype}{int});
+00029       \textcolor{keywordtype}{void} \hyperlink{class_casier_a6f147d5151d266424cc84b114ccf073b}{clicked}();
+00030 \};
+00031 
+00032 \textcolor{preprocessor}{#endif // CASIER\_H}
+\end{DoxyCode}
